@@ -1,0 +1,60 @@
+@import '../css/variable.scss';
+.site-id {
+    float: left;
+    height: 100%;
+}
+
+jlg-hamburger {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    jlg-hamburger {
+        display: block;
+        padding: 0 1rem;
+        float: right;
+        line-height: 3rem;
+        font-size: 2em;
+        cursor: pointer;
+    }
+    /* For mobile phones: */
+    .jlg-hamburger-menu {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        float: none;
+        min-width: auto;
+        width: 100%;
+        height: auto;
+        top: $headerHeight;
+        margin: 0;
+        padding: 0;
+    }
+    .menu-item {
+        display: block;
+        float: none;
+        width: 100%;
+        margin: 0;
+        padding: 0.5em 0;
+        background-color: lighten($menuColor, 40%);
+        color: black;
+        &:hover {
+            background-color: lighten($menuColor, 35%);
+        }
+        &:active {
+            background-color: lighten($menuColor, 35%);
+        }
+        &.active {
+            background-color: lighten($menuColor, 30%);
+        }
+    }
+    .jlg-hamburger-on {
+        display: block;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        .jlg-hamburger-menu {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,96 @@
+@import './variable';
+body {
+    color: $textColor;
+}
+
+header {
+    color: $primaryColor;
+    a {
+        color: $primaryColor;
+        text-decoration: none;
+        &.active {
+            border-color: $primaryColor;
+        }
+    }
+    
+}
+
+my-image {
+    background-image: url('../img/css/compass-purple.svg');
+}
+
+.accueil my-image {
+    background-image: url('../img/css/compass-white.svg');
+}
+
+.accueil header {
+    background-color: $primaryColor;
+    color: white;
+    a {
+        color: white;
+    }
+}
+
+.jumbo {
+    background-color: $primaryColor;
+    color: white;
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+a {
+    color: $linkColor;
+}
+
+section {
+    background-color: $sectionColor;
+    line-height: 1.5em;
+}
+
+ul {
+    margin: 1em 3em;
+}
+
+button,
+.button {
+    &:hover {
+        background-color: hsla(0, 0%, 100%, 0.2);
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $titleColor;
+}
+
+@media only screen and (max-width: 768px) {
+    .architect {
+        .menu-item {
+            font-size: 1.5em;
+            color: $primaryColor;
+            text-align: center;
+        }
+    }
+}
+
+.introduce.first-time h3,
+.introduce.first-time h4 {
+    animation: introduce 1s forwards;
+}
+
+@keyframes introduce {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

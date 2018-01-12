@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="main" ng-csp ng-strict-di>
+
+<head>
+    <base href="/app/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cabinet d'architecture DEMETRESCU-GUENEGO">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <title>Cabinet d'architecture DEMETRESCU-GUENEGO</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="wpk/vendors.css" />
+    <link rel="stylesheet" href="wpk/bundle.css" />
+</head>
+
+<body ng-cloak class="architect">
+    <header>
+        <site-id>
+            <a ui-sref="accueil">
+                <my-image></my-image>
+                <span>Cabinet d'architecture
+                    <br>DEMETRESCU - GUENEGO</span>
+            </a>
+        </site-id>
+        <jlg-hamburger></jlg-hamburger>
+        <menu class="jlg-hamburger-menu">
+            <a ui-sref="accueil" class="menu-item" ui-sref-active="active">Accueil</a>
+            <a ui-sref="realisations" class="menu-item" ui-sref-active="active">Réalisations</a>
+            <a ui-sref="clients" class="menu-item" ui-sref-active="active">Clients</a>
+            <a ui-sref="contact" class="menu-item" ui-sref-active="active">Contact</a>
+        </menu>
+    </header>
+    <main>
+        <ui-view></ui-view>
+    </main>
+    <footer>
+        <p>Copyright © 2007-2018 - Cabinet d'Architecture Demetrescu - Guénégo. All Rights Reserved.</p>
+    </footer>
+    <script src="wpk/vendors.js"></script>
+    <script src="wpk/bundle.js"></script>
+</body>
+
+</html>

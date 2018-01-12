@@ -1,0 +1,35 @@
+jlg-parallax {
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    img {
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        left: 50%;
+        opacity: 0;
+        transform: translate(-50%, 0);
+        background-color: black;
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

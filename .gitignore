@@ -1,0 +1,5 @@
+/node_modules
+/app/wpk
+/img/photo
+/dist
+/cfg/environments.js
