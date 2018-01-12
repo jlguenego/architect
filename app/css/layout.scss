@@ -92,11 +92,11 @@ section {
     padding: 0 0.5em;
 }
 
-section.jumbo {
+.jumbo {
     display: table;
     width: 100%;
     position: relative;
-    padding: $headerHeight 0 0;
+    padding: 0;
     height: 80vh;
     font-size: 2em;
     font-weight: 400;

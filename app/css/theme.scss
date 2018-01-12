@@ -4,19 +4,19 @@ body {
 }
 
 header {
-    color: $primaryColor;
+    background-color: $primaryColor;
+    color: white;
     a {
-        color: $primaryColor;
+        color: white;
         text-decoration: none;
         &.active {
-            border-color: $primaryColor;
+            border-color: white;
         }
     }
-    
 }
 
 my-image {
-    background-image: url('../img/css/compass-purple.svg');
+    background-image: url('../img/css/compass-white.svg');
 }
 
 .accueil my-image {
