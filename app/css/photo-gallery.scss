@@ -1,0 +1,17 @@
+.photo-gallery {
+    thumbnail {
+        display: block;
+        width: 100%;
+        padding: 5%;
+        border: 1px solid #ddd;
+        text-align: center;
+    }
+    img {
+        display: inline-block;
+        width: 100%;
+        transition: transform 500ms;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}

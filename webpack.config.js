@@ -55,7 +55,7 @@ module.exports = {
 				loader: 'html-loader',
 				options: {
 					minimize: true,
-					attrs: ['img:src', 'jlg-parallax:src'],
+					attrs: [],
 					
 				}
 			}],
@@ -88,6 +88,7 @@ module.exports = {
 				loader: 'file-loader',
 				options: {
 					name: '[name].[ext]',
+					publicPath: './wpk/',
 				}
 			}]
 		}, {
