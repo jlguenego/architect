@@ -1,1 +1,12 @@
-détail d'un projet.
+<style>
+    img {
+        width: 100%;
+    }
+</style>
+<article>
+	<section>
+		<h1>Réalisation : {{$ctrl.data.title}}</h1>
+		<img ng-src="{{$ctrl.data.image.main}}">
+		<p>{{$ctrl.data.text}}</p>
+	</section>
+</article>
