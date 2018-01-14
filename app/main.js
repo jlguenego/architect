@@ -10,4 +10,4 @@ import './jlg-route/jlg-route.js';
 import './jlg-realisation/jlg-realisation.js';
 
 
-angular.module('main', ['jlg-parallax', 'jlg-menu', 'jlg-onscreen', 'jlg-route', 'jlg-realisation']);
+angular.module('main', ['ngSanitize', 'jlg-parallax', 'jlg-menu', 'jlg-onscreen', 'jlg-route', 'jlg-realisation']);

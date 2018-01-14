@@ -1,12 +1,15 @@
 <style>
-    img {
-        width: 100%;
-    }
+	img {
+		width: 100%;
+	}
+
 </style>
 <article>
 	<section>
-		<h1>Réalisation : {{$ctrl.data.title}}</h1>
-		<img ng-src="{{$ctrl.data.image.main}}">
-		<p>{{$ctrl.data.text}}</p>
+		<div class="container">
+			<h1>Réalisation : {{$ctrl.data.title}}</h1>
+			<img ng-src="{{$ctrl.data.image.main}}">
+			<p ng-bind-html="$ctrl.data.text"></p>
+		</div>
 	</section>
 </article>
