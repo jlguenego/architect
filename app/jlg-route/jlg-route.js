@@ -7,7 +7,10 @@ const app = angular.module('jlg-route', ['ui.router', 'jlg-seo', 'jlg-clients'])
 app.config(config);
 app.run((seoConfig) => {
 	seoConfig.titlePrefix = 'Architectes GUÉNÉGO';
-	
+});
+
+app.run(($rootScope) => {
+	$rootScope.now = new Date();
 });
 
 app.run(($transitions) => {
