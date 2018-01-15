@@ -16,7 +16,9 @@ context.keys().forEach(function(key) {
 	const obj = context(key);
 	app.config(($stateProvider) => {
 		'ngInject';
-		$stateProvider.state(obj.state);
+		const state = obj.state;
+		state.url = `/realisations/${state.name}`;
+		$stateProvider.state(state);
 	});
 
 	app.run((projects) => {

@@ -4,7 +4,6 @@ import chauconinTextHtml from './text.html';
 
 export const state = {
 	name: 'monthyon',
-	url: '/realisations/monthyon',
 	template: projectHtml,
 	controller: function($state) {
         'ngInject';
