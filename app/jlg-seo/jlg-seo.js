@@ -12,9 +12,12 @@ app.run(($transitions, seoConfig) => {
 		console.log('seoConfig', seoConfig);
 		if (!data) {
 			document.querySelector('title').innerHTML = seoConfig.titlePrefix;
+			document.querySelector('meta[name="description"]').setAttribute('content', seoConfig.metaDescription);
 			return;
 		}
 
 		document.querySelector('title').innerHTML = `${seoConfig.titlePrefix}: ${data.title}`;
+		document.querySelector('meta[name="description"]').setAttribute('content', data.description);
+		
 	});
 });

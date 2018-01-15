@@ -21,7 +21,7 @@ export function config($locationProvider, $stateProvider, $urlRouterProvider) {
 		url: '/clients',
 		template: clientsHtml,
 		data: {
-			title: `CADG: nos clients.`,
+			title: `Nos clients.`,
 			description: `Cabinet d'architecture DEMETRESCU - GUENEGO: liste de nos clients.`,
 		}
 	});
@@ -30,7 +30,7 @@ export function config($locationProvider, $stateProvider, $urlRouterProvider) {
 		url: '/realisations',
 		template: realisationsHtml,
 		data: {
-			title: `CADG: nos réalisations.`,
+			title: `Nos réalisations.`,
 			description: `
 Cabinet d'architecture DEMETRESCU - GUENEGO: liste de nos réalisations.
 Projet architecturaux réalisé par nos architectes du patrimoine.
@@ -43,10 +43,10 @@ Logements collectifs, Promotions immobilières, maisons individuelles`,
 		url: '/contact',
 		template: contactHtml,
 		data: {
-			title: 'CADG: Contactez-nous.',
+			title: 'Contactez-nous.',
 			description: `
 Adresse du Cabinet d'architecture: 99 rue de Paris, Batiment A - 1er étage. 77200 TORCY. Ile de France.`,
 		}
 	});
 
-};
+}
