@@ -8,8 +8,17 @@
 	<section>
 		<div class="container">
 			<h1>Réalisation : {{$ctrl.data.title}}</h1>
-			<img ng-src="{{$ctrl.data.image.main}}">
-			<p ng-bind-html="$ctrl.data.text"></p>
+			<my-text ng-bind-html="$ctrl.data.text"></my-text>
+		</div>
+	</section>
+	<section class="parallax">
+		<jlg-parallax landscape="$ctrl.data.image.main" portrait="$ctrl.data.image.main"></jlg-parallax>
+	</section>
+	<section>
+
+		<div class="container">
+			<p>Montant des travaux: {{$ctrl.data.price}}</p>
+
 		</div>
 	</section>
 </article>

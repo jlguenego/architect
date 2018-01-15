@@ -4,8 +4,8 @@ const app = angular.module('jlg-parallax', []);
 
 app.component('jlgParallax', {
 	bindings: {
-		landscape: '@',
-		portrait: '@',
+		landscape: '<',
+		portrait: '<',
 	},
 	controller: function JLGParallaxCtrl($scope, $element, $q, $compile, $document, $timeout) {
 		function loadImage(url) {
