@@ -8,7 +8,6 @@ app.directive('jlgOnscreen', function () {
 			jlgOnscreen: '@',
 		},
 		controller: function JLGOnscreenCtrl($scope, $element) {
-			console.log('onscreen', $scope);
 			this.firstTime = true;
 
 			this.check = function() {

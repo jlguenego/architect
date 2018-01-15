@@ -14,9 +14,7 @@ app.component('jlgThumbnail', {
 	},
 	template: html,
 	controller: function() {
-		console.log('jlg-thumbnail');
 		this.$onInit = () => {
-			console.log('jlg-thumbnail constructor', this.title);
 		};
 	},
 });

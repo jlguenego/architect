@@ -9,8 +9,6 @@ export const config = ($stateProvider) => {
 		template: realisationHtml,
 		controller: function($state) {
 			this.data = $state.$current.data;
-			console.log('data', this.data);
-
 		},
 		controllerAs: '$ctrl',
 		data: {
