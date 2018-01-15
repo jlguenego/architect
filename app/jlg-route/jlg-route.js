@@ -4,8 +4,13 @@ import '../jlg-seo/jlg-seo.js';
 const app = angular.module('jlg-route', ['ui.router', 'jlg-seo']);
 
 app.config(config);
+app.run((seoConfig) => {
+	seoConfig.titlePrefix = 'Architectes GUÉNÉGO';
+	
+});
 
-app.run(($transitions, seoConfig) => {
+
+app.run(($transitions) => {
 
 	$transitions.onSuccess({}, function(transition) {
 		angular.element(document.body).removeClass(transition.from().name);
