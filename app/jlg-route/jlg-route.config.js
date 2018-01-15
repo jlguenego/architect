@@ -20,6 +20,8 @@ export function config($locationProvider, $stateProvider, $urlRouterProvider) {
 		name: 'clients',
 		url: '/clients',
 		template: clientsHtml,
+		controller: 'ClientCtrl',
+		controllerAs: '$ctrl',
 		data: {
 			title: `Nos clients.`,
 			description: `Cabinet d'architecture DEMETRESCU - GUENEGO: liste de nos clients.`,

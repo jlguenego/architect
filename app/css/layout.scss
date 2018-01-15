@@ -226,11 +226,15 @@ footer {
     width: 80%;
 }
 
+.h-200px {
+    height: 200px !important;
+}
+
 .center {
     text-align: center;
 }
 
-section.parallax {
+.parallax {
     padding: 0;
     margin: 0;
     height: 500px;

@@ -1,7 +1,8 @@
 import { config } from './jlg-route.config.js';
 import '../jlg-seo/jlg-seo.js';
+import '../jlg-clients/jlg-clients.js';
 
-const app = angular.module('jlg-route', ['ui.router', 'jlg-seo']);
+const app = angular.module('jlg-route', ['ui.router', 'jlg-seo', 'jlg-clients']);
 
 app.config(config);
 app.run((seoConfig) => {
