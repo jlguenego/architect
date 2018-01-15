@@ -2,6 +2,9 @@
 	<section>
 		<div class="container">
 			<h1>Nos clients</h1>
+			<p>Nous indiquons ici seulement nos clients publics, 
+				les clients privés souhaitant la plupart rester sous confidence. 
+			</p>
 			<h2>Public</h2>
 			<h3>Mairies</h3>
 			<table class="table">
@@ -10,7 +13,7 @@
 					<th>Code postal </th>
 					<th>Année</th>
 				</tr>
-				<tr ng-repeat="client in $ctrl.mairies" class="table-row">
+				<tr ng-repeat="client in $ctrl.mairies | orderBy : 'zip'" class="table-row">
 					<td>{{client.name}}</td>
 					<td>{{client.zip}}</td>
 					<td>{{client.year}}</td>

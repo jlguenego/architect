@@ -222,7 +222,16 @@ app.controller('ClientCtrl', function ClientCtrl() {
 			zip: 77200,
 			type: 'Public Autres',
 			year: '2007',
-		}
+        },
+        
+        // Privé
+        {
+			name: `Communauté d'aglomérations Marne et Gondoires`,
+			zip: 77200,
+			type: 'Public Autres',
+			year: '2007',
+        },
+
 	];
 
 	this.mairies = this.list.filter(n => n.type === 'Mairie');
