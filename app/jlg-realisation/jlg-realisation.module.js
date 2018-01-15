@@ -1,8 +1,13 @@
 import './jlg-realisation.scss';
 
 import { jlgThumbnail } from './jlg-thumbnail.component.js';
+import { realisationRoute } from './realisation.route.js';
 
-const app = angular.module('jlg-realisation', []);
+
+
+const app = angular.module('jlg-realisation', ['ui.router']);
+
+app.value('projects', []);
 
 
 
@@ -13,6 +18,28 @@ context.keys().forEach(function(key) {
 		'ngInject';
 		$stateProvider.state(obj.state);
 	});
+
+	app.run((projects) => {
+		'ngInject';
+		projects.push(obj.state);
+	});
 });
 
 app.component('jlgThumbnail', jlgThumbnail);
+app.component('realisationRoute', realisationRoute);
+
+app.config(($stateProvider) => {
+	$stateProvider.state({
+		name: 'realisations',
+		url: '/realisations',
+		component: 'realisationRoute',
+		data: {
+			title: `Nos réalisations.`,
+			description: `
+Cabinet d'architecture DEMETRESCU - GUENEGO: liste de nos réalisations.
+Projet architecturaux réalisé par nos architectes du patrimoine.
+Eglises, Chateaux, Granges, Ecoles, Remparts, Lavoir, Mairies,
+Logements collectifs, Promotions immobilières, maisons individuelles`,
+		}
+	});
+});

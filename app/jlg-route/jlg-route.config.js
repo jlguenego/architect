@@ -1,6 +1,5 @@
 import accueilHtml from './tmpl/accueil.html';
 import clientsHtml from './tmpl/clients.html';
-import realisationsHtml from './tmpl/realisations.html';
 import contactHtml from './tmpl/contact.html';
 
 export function config($locationProvider, $stateProvider, $urlRouterProvider) {
@@ -27,19 +26,7 @@ export function config($locationProvider, $stateProvider, $urlRouterProvider) {
 			description: `Cabinet d'architecture DEMETRESCU - GUENEGO: liste de nos clients.`,
 		}
 	});
-	$stateProvider.state({
-		name: 'realisations',
-		url: '/realisations',
-		template: realisationsHtml,
-		data: {
-			title: `Nos réalisations.`,
-			description: `
-Cabinet d'architecture DEMETRESCU - GUENEGO: liste de nos réalisations.
-Projet architecturaux réalisé par nos architectes du patrimoine.
-Eglises, Chateaux, Granges, Ecoles, Remparts, Lavoir, Mairies,
-Logements collectifs, Promotions immobilières, maisons individuelles`,
-		}
-	});
+	
 	$stateProvider.state({
 		name: 'contact',
 		url: '/contact',
