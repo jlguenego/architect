@@ -9,12 +9,12 @@ app.run((seoConfig) => {
 	
 });
 
-
 app.run(($transitions) => {
 
 	$transitions.onSuccess({}, function(transition) {
 		angular.element(document.body).removeClass(transition.from().name);
 		angular.element(document.body).addClass(transition.to().name);
+		// this should be managed by ui router... :(
 		document.body.scrollTop = document.documentElement.scrollTop = 0;
 	});
 });
