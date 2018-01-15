@@ -74,11 +74,8 @@ app.component('jlgParallax', {
 
 			const rect = $element[0].getBoundingClientRect();
 
-			const isVisible = rect.bottom >= 0 &&
-				rect.top <= wh;
+			const isVisible = rect.bottom >= 0 && rect.top <= wh;
 
-			
-			
 			let ratio;
 
 			const setOpacity = (mode) => {
@@ -116,7 +113,7 @@ app.component('jlgParallax', {
 			}
 
 			if (!isVisible) {
-				this.img.style.animation = 'fadeout 2s forwards';
+				this.img.style.animation = 'fadeout 0s forwards';
 				return;
 			}
 

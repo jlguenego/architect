@@ -1,45 +1,43 @@
 <article>
 	<section>
-		<h1>Nos clients</h1>
-		<ul>
-			<li ng-repeat="client in $ctrl.mairies">{{client.name}} ({{client.year}})</li>
-		</ul>
+		<div class="container">
+			<h1>Nos clients</h1>
+			<h2>Public</h2>
+			<h3>Mairies</h3>
+			<table class="table">
+				<tr>
+					<th>Nom</th>
+					<th>Code postal </th>
+					<th>Année</th>
+				</tr>
+				<tr ng-repeat="client in $ctrl.mairies" class="table-row">
+					<td>{{client.name}}</td>
+					<td>{{client.zip}}</td>
+					<td>{{client.year}}</td>
+				</tr>
+			</table>
+		</div>
 	</section>
-	<section class="parallax h-200px">
-		<jlg-parallax landscape="'img/photo/clients-landscape.jpg'" portrait="'img/photo/clients-portrait.jpg'"></jlg-parallax>
-	</section>
+
 	<section>
-		<ul>
-			<li>xxx</li>
-			<li>xxx</li>
-			<li>xxx</li>
-			<li>xxx</li>
-			<li>xxx</li>
-			<li>xxx</li>
-			<li>xxx</li>
-			<li>xxx</li>
-			<li>xxx</li>
-			<li>xxx</li>
-			<li>xxx</li>
-			<li>xxx</li>
-			<li>xxx</li>
-			<li>xxx</li>
-			<li>xxx</li>
-			<li>xxx</li>
-			<li>xxx</li>
-			<li>xxx</li>
-			<li>xxx</li>
-			<li>xxx</li>
-			<li>xxx</li>
-			<li>xxx</li>
-			<li>xxx</li>
-			<li>xxx</li>
-			<li>xxx</li>
-			<li>xxx</li>
-			<li>xxx</li>
-			<li>xxx</li>
+		<div class="container">
+			<h3>Collectivités locales</h3>
+			<table class="table">
+				<tr>
+					<th>Nom</th>
+					<th>Code postal </th>
+					<th>Année</th>
+				</tr>
+				<tr ng-repeat="client in $ctrl.collectivitesLocales" class="table-row">
+					<td>{{client.name}}</td>
+					<td>{{client.zip}}</td>
+					<td>{{client.year}}</td>
+				</tr>
+			</table>
+		</div>
+	</section>
 
-
-		</ul>
+	<section class="parallax h-300px">
+		<jlg-parallax landscape="'img/photo/clients-landscape.jpg'" portrait="'img/photo/clients-portrait.jpg'"></jlg-parallax>
 	</section>
 </article>
