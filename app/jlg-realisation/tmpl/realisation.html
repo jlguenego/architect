@@ -10,50 +10,15 @@
 				</div>
 			</div>
 
-			<div class="row">
-				<div class="col-4 realisation-item">
-					<jlg-thumbnail href="'./realisations/chauconin'" src="'img/photo/realisations/chauconin/saint-saturnin.jpg'"
-					    caption="'Eglise Saint Saturnin de Chauconin'"></jlg-thumbnail>
+			<div class="row" ng-repeat="trio in $ctrl.trios">
+				<div class="col-4 realisation-item" ng-repeat="project in trio">
+					<jlg-thumbnail href="'.' + project.url" src="project.data.image.main"
+					    caption="project.data.title"></jlg-thumbnail>
 				</div>
-				<div class="col-4 realisation-item">
-					<jlg-thumbnail href="'titi.html'" src="'img/photo/realisations/varennes-sur-seine/varennes-eglise.jpg'"
-					    caption="'Eglise Saint Saturnin de Chauconin'"></jlg-thumbnail>
-				</div>
-				<div class="col-4 realisation-item">
-					<jlg-thumbnail href="'tutu.html'" src="'img/photo/realisations/monthyon/monthyon-eglise.jpg'"
-					    caption="'Eglise Saint Georges de Monthyon'"></jlg-thumbnail>
-				</div>
+				
 			</div>
 		
-			<div class="row">
-				<div class="col-4 realisation-item">
-					<jlg-thumbnail href="'toto.html'" src="'img/photo/realisations/chauconin/saint-saturnin.jpg'"
-					    caption="'Eglise Saint Saturnin de Chauconin'"></jlg-thumbnail>
-				</div>
-				<div class="col-4 realisation-item">
-					<jlg-thumbnail href="'titi.html'" src="'img/photo/realisations/varennes-sur-seine/varennes-eglise.jpg'"
-					    caption="'Eglise Saint Saturnin de Chauconin'"></jlg-thumbnail>
-				</div>
-				<div class="col-4 realisation-item">
-					<jlg-thumbnail href="'tutu.html'" src="'img/photo/realisations/monthyon/monthyon-eglise.jpg'"
-					    caption="'Eglise Saint Georges de Monthyon'"></jlg-thumbnail>
-				</div>
-			</div>
-		
-			<div class="row">
-				<div class="col-4 realisation-item">
-					<jlg-thumbnail href="'toto.html'" src="'img/photo/realisations/chauconin/saint-saturnin.jpg'"
-					    caption="'Eglise Saint Saturnin de Chauconin'"></jlg-thumbnail>
-				</div>
-				<div class="col-4 realisation-item">
-					<jlg-thumbnail href="'titi.html'" src="'img/photo/realisations/varennes-sur-seine/varennes-eglise.jpg'"
-					    caption="'Eglise Saint Saturnin de Chauconin'"></jlg-thumbnail>
-				</div>
-				<div class="col-4 realisation-item">
-					<jlg-thumbnail href="'tutu.html'" src="'img/photo/realisations/monthyon/monthyon-eglise.jpg'"
-					    caption="'Eglise Saint Georges de Monthyon'"></jlg-thumbnail>
-				</div>
-			</div>
+			
 		</div>
 	</section>
 </article>

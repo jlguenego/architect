@@ -6,7 +6,7 @@ export const realisationRoute = {
         'ngInject';
         console.log('projects', projects);
 
-        this.list = projects.reduce((acc, n, i) => {
+        this.trios = projects.reduce((acc, n, i) => {
             if (i % 3) {
                 acc[acc.length - 1].push(n);
             } else {
@@ -14,6 +14,6 @@ export const realisationRoute = {
             }
             return acc;
         }, []);
-        console.log('this.list', this.list);
+        console.log('this.trios', this.trios);
     }
 };

@@ -12,7 +12,7 @@ export const state = {
 	},
 	controllerAs: '$ctrl',
 	data: {
-		title: `Eglise Saint Saturnin de Chauconin`,
+		title: `Eglise Saint Lambert de Varennes-sur-Seine`,
 		description: `
 this is the meta description...`,
 		image: {
