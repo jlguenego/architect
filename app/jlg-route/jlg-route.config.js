@@ -13,13 +13,7 @@ export function config($locationProvider, $stateProvider, $urlRouterProvider) {
 		url: '/',
 		template: accueilHtml,
 		data: {
-			title: `Cabinet d'architecture DEMETRESCU - GUÉNÉGO.`,
-			description: `
-Cabinet d'Architecture de Seine et Marne, à Torcy.
-Architectes du patrimoine, HMONP, DPLG.
-Etude préalable, Permis de construire, Elaboration de cahier des charges, Maîtrise d'oeuvre.
-Dialogue avec administrations, DRAC, ABF, CAUE.
-Restauration, réhabilitation de patrimoine anciens: Eglises Chateau Granges Ecoles.`,
+			// see index.html
 		}
 	});
 	$stateProvider.state({
