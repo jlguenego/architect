@@ -80,13 +80,13 @@ h6 {
 
 .introduce.first-time h3,
 .introduce.first-time h4 {
-    animation: introduce 1s forwards;
+    animation: introduce 2s forwards;
 }
 
 @keyframes introduce {
     from {
         opacity: 0;
-        transform: translateX(-10px);
+        transform: translateX(-20px);
     }
     to {
         opacity: 1;
