@@ -12,22 +12,22 @@ app.controller('ClientCtrl', function ClientCtrl() {
 			name: 'Mesnil-Amélot',
 			zip: 77990,
 			type: 'Mairie',
-			year: '2016-maintenant',
+			year: '2016-actuel',
 		}, {
 			name: 'Les Mârets',
 			zip: 77560,
 			type: 'Mairie',
-			year: '2016-maintenant',
+			year: '2016-actuel',
 		}, {
 			name: 'Guignes',
 			zip: 77390,
 			type: 'Mairie',
-			year: '2016-maintenant',
+			year: '2016-actuel',
 		}, {
 			name: 'Amillis',
 			zip: 77120,
 			type: 'Mairie',
-			year: '2016-maintenant',
+			year: '2016-actuel',
 		}, {
 			name: 'Villeneuve-sous-Dammartin',
 			zip: 77230,
@@ -67,7 +67,7 @@ app.controller('ClientCtrl', function ClientCtrl() {
 			name: 'Chauconin-Neufmontiers',
 			zip: 77124,
 			type: 'Mairie',
-			year: '2006-maintenant',
+			year: '2006-actuel',
 		}, {
 			name: 'Thieux',
 			zip: 77230,
@@ -87,7 +87,7 @@ app.controller('ClientCtrl', function ClientCtrl() {
 			name: 'Le Thillay',
 			zip: 95500,
 			type: 'Mairie',
-			year: '2016-maintenant',
+			year: '2016-actuel',
 		}, {
 			name: 'Louan-Villegruis-Fontaine',
 			zip: 77560,
@@ -147,12 +147,12 @@ app.controller('ClientCtrl', function ClientCtrl() {
 			name: `Coupvray`,
 			zip: 77700,
 			type: 'Mairie',
-			year: '2013-maintenant',
+			year: '2013-actuel',
 		}, {
 			name: `Ferrières-en-Brie`,
 			zip: 77164,
 			type: 'Mairie',
-			year: '2017-maintenant',
+			year: '2017-actuel',
 		}, {
 			name: `Bois le Roi`,
 			zip: 77590,
