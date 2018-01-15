@@ -4,37 +4,37 @@ app.controller('ClientCtrl', function ClientCtrl() {
 	this.list = [
 		// Mairies
 		{
-			name: 'Commune de Torcy',
+			name: 'Torcy',
 			zip: 77200,
 			type: 'Mairie',
 			year: '2010',
 		}, {
-			name: 'Commune de Mesnil-Amélot',
+			name: 'Mesnil-Amélot',
 			zip: 77990,
 			type: 'Mairie',
 			year: '2016-maintenant',
 		}, {
-			name: 'Commune de Les Mârets',
+			name: 'Les Mârets',
 			zip: 77560,
 			type: 'Mairie',
 			year: '2016-maintenant',
 		}, {
-			name: 'Commune de Guignes',
+			name: 'Guignes',
 			zip: 77390,
 			type: 'Mairie',
 			year: '2016-maintenant',
 		}, {
-			name: 'Commune de Amillis',
+			name: 'Amillis',
 			zip: 77120,
 			type: 'Mairie',
 			year: '2016-maintenant',
 		}, {
-			name: 'Commune de Villeneuve-sous-Dammartin',
+			name: 'Villeneuve-sous-Dammartin',
 			zip: 77230,
 			type: 'Mairie',
 			year: '2012-2017',
 		}, {
-			name: 'Commune de Crécy-la-Chapelle',
+			name: 'Crécy-la-Chapelle',
 			zip: 77580,
 			type: 'Mairie',
 			year: '2010-2016',
@@ -108,23 +108,123 @@ app.controller('ClientCtrl', function ClientCtrl() {
 			zip: 77580,
 			type: 'Mairie',
 			year: '2016',
+		}, {
+			name: `Orbais l'abbaye`,
+			zip: 51270,
+			type: 'Mairie',
+			year: '2007',
+		}, {
+			name: `Bussy-Saint-Martin`,
+			zip: 77600,
+			type: 'Mairie',
+			year: '2015',
+		}, {
+			name: `Grisy-Suisnes`,
+			zip: 77166,
+			type: 'Mairie',
+			year: '2007',
+		}, {
+			name: `Moissy Cramayel`,
+			zip: 77550,
+			type: 'Mairie',
+			year: '2012',
+		}, {
+			name: `Dammarie les Lys`,
+			zip: 77190,
+			type: 'Mairie',
+			year: '2012',
+		}, {
+			name: `Longjumeau`,
+			zip: 91160,
+			type: 'Mairie',
+			year: '2012',
+		}, {
+			name: `Jouarre`,
+			zip: 77640,
+			type: 'Mairie',
+			year: '2015-2016',
+		}, {
+			name: `Coupvray`,
+			zip: 77700,
+			type: 'Mairie',
+			year: '2013-maintenant',
+		}, {
+			name: `Ferrières-en-Brie`,
+			zip: 77164,
+			type: 'Mairie',
+			year: '2017-maintenant',
+		}, {
+			name: `Bois le Roi`,
+			zip: 77590,
+			type: 'Mairie',
+			year: '2017',
+		}, {
+			name: `Villiers en Bière`,
+			zip: 77190,
+			type: 'Mairie',
+			year: '2017',
+		}, {
+			name: `Tournan-en-Brie`,
+			zip: 77220,
+			type: 'Mairie',
+			year: '2017',
+		}, {
+			name: `Joigny`,
+			zip: 89300,
+			type: 'Mairie',
+			year: '2015',
+		}, {
+			name: `Chelles`,
+			zip: 77500,
+			type: 'Mairie',
+			year: '2015',
+		}, {
+			name: `Poincy`,
+			zip: 77470,
+			type: 'Mairie',
+			year: '2016',
 		},
 		// Collectivité locales
 
 
 		{
 			name: 'EPAMARNE',
-			zip: 77200,
-			type: 'CL',
+			zip: 77186,
+			type: 'Public Autres',
+			year: '2006',
+		}, {
+			name: `Les résidences`,
+			zip: 78000,
+			type: 'Public Autres',
+			year: '2007',
+		}, {
+			name: `Conseil Régionial de Bourgogne`,
+			zip: 21000,
+			type: 'Public Autres',
+			year: '2008',
+		}, {
+			name: `Conseil Régionial d'Ile de France`,
+			zip: 75000,
+			type: 'Public Autres',
 			year: '2010',
 		}, {
-			name: 'Marne et Gondoires',
+			name: `Conseil Départemental de Seine-et-Marne`,
+			zip: 77000,
+			type: 'Public Autres',
+			year: '2006',
+		}, {
+			name: `Conseil Départemental de l'Yonne`,
+			zip: 89000,
+			type: 'Public Autres',
+			year: '2006',
+		}, {
+			name: `Communauté d'aglomérations Marne et Gondoires`,
 			zip: 77200,
-			type: 'CL',
-			year: '2010',
+			type: 'Public Autres',
+			year: '2007',
 		}
 	];
 
 	this.mairies = this.list.filter(n => n.type === 'Mairie');
-	this.collectivitesLocales = this.list.filter(n => n.type === 'CL');
+	this.autresEntitesPubliques = this.list.filter(n => n.type === 'Public Autres');
 });
