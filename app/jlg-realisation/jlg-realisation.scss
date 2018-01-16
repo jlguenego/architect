@@ -1,3 +1,8 @@
+@import '~sprite.scss';
+
+@include sprites($spritesheet-sprites);
+
+
 jlg-thumbnail {
     display: block;
     width: 100%;
@@ -15,13 +20,14 @@ jlg-thumbnail {
             right: 0;
             bottom: 0;
             overflow: hidden;
-            img {
+            my-picture {
+                display: block;
                 width: 100%;
-                min-height: 100%;
-                transition: transform 1000ms;
-                &:hover, {
-                    transform: scale(1.1);
-                }
+                height: 100%;
+                background-position: 0% 100% !important;
+                background-size: 400% 400%;
+                background-image: url(~sprite.png);
+
             }
         }
     }

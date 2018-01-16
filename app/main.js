@@ -11,7 +11,6 @@ import './jlg-route/jlg-route.js';
 import './jlg-realisation/jlg-realisation.module.js';
 import './jlg-array/jlg-array.js';
 
-
 angular.module('main', [
 	'ngSanitize',
 	'jlg-parallax',

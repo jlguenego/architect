@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const SpritesmithPlugin = require('webpack-spritesmith');
 
 module.exports = {
 	entry: {
@@ -11,6 +12,9 @@ module.exports = {
 		filename: '[name].js',
 		path: path.resolve(__dirname, './app/wpk'),
 	},
+	resolve: {
+        modules: ['node_modules', 'spritesmith_modules']
+    },
 	module: {
 		rules: [{
 			test: /\.js$/,
@@ -38,7 +42,7 @@ module.exports = {
 				use: [{
 					loader: 'css-loader',
 					options: {
-						minimize: true,
+						minimize: false,
 						sourceMap: true,
 						// root: '../img'
 					}
@@ -92,8 +96,13 @@ module.exports = {
 				}
 			}]
 		}, {
-			test: /\.png$/,
-			use: ['url-loader?mimetype=image/png']
+			test: /sprite.png$/,
+			use: [{
+				loader: 'file-loader',
+				options: {
+					name: '[name].[ext]',
+				}
+			}]
 		}, {
 			test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
 			use: [{
@@ -131,6 +140,20 @@ module.exports = {
 		new webpack.optimize.UglifyJsPlugin({
 			sourceMap: true,
 		}),
+		new SpritesmithPlugin({
+			src: {
+				cwd: path.resolve(__dirname, 'app/img/photo/project'),
+				glob: './**/thumbnail-*.jpg'
+			},
+			target: {
+				image: path.resolve(__dirname, 'spritesmith_modules/sprite.png'),
+				css: path.resolve(__dirname, 'spritesmith_modules/sprite.scss')
+			},
+			apiOptions: {
+				// the tilde means a module for webpack css import.
+				cssImageRef: '~sprite.png'
+			}
+		})
 	],
 	// let webpack access to the filename.
 	context: __dirname,
