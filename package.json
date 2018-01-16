@@ -44,7 +44,7 @@
     "run-sequence": "^2.2.1",
     "sass-loader": "^6.0.6",
     "serve-index": "^1.9.1",
-    "sprity": "^1.0.8",
+    "spritesmith": "^3.3.0",
     "style-loader": "^0.19.1",
     "url-loader": "^0.6.2",
     "webpack": "^3.10.0",
