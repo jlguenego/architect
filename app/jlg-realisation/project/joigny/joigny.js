@@ -1,13 +1,8 @@
-
-import chauconinTextHtml from './text.html';
+import textHtml from './text.html';
 
 export const state = {
-	name: 'chauconin',
-	disabled: false,
-	type: 'Eglise',
-	
 	data: {
-		title: `Eglise Saint Saturnin de Chauconin`,
+		title: `Caisse Primaire d'Assurance Maladie`,
 		description: `
 this is the meta description...`,
 		image: {
@@ -22,6 +17,6 @@ this is the meta description...`,
 			url: 'http://chauconin-neufmontiers.fr/',
 		},
 		price: '300 000 Euros HT',
-		text: chauconinTextHtml,
+		text: textHtml,
 	}
 };

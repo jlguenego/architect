@@ -6,7 +6,7 @@ export const realisationRoute = {
         'ngInject';
         console.log('projects', projects);
 
-        this.trios = projects.reduce((acc, n, i) => {
+        this.Eglisetrios = projects.filter(n => n.type === 'Eglise').reduce((acc, n, i) => {
             if (i % 3) {
                 acc[acc.length - 1].push(n);
             } else {
@@ -14,6 +14,5 @@ export const realisationRoute = {
             }
             return acc;
         }, []);
-        console.log('this.trios', this.trios);
     }
 };

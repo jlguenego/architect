@@ -28,14 +28,13 @@ context.keys().forEach(function(key) {
 	state.name = basename(key);
 	state.url = `/realisations/${state.name}`;
 	state.template = state.template || projectHtml;
-	state.controller = function($state) {
+	state.controller = state.controller || function($state) {
 		'ngInject';
 		this.data = $state.$current.data;
 	};
-	state.controllerAs = '$ctrl';
+	state.controllerAs = state.controllerAs || '$ctrl';
 	app.config(($stateProvider) => {
 		'ngInject';
-
 		$stateProvider.state(state);
 	});
 
