@@ -8,13 +8,13 @@
 						<td>Maîtrise d'ouvrage</td>
 						<td>{{$ctrl.data.moa.name}}</td>
 					</tr>
-					<tr>
+					<tr ng-if="$ctrl.data.moa.url">
 						<td>Site</td>
 						<td>
 							<a ng-href="{{$ctrl.data.moa.url}}" target="_blank">{{$ctrl.data.moa.url}}</a>
 						</td>
 					</tr>
-					<tr ng-show="$ctrl.data.classement">
+					<tr ng-if="$ctrl.data.classement">
 						<td>Monuments historiques</td>
 						<td>
 							{{$ctrl.data.classement}}
@@ -26,7 +26,7 @@
 		</div>
 	</section>
 	<section class="parallax">
-		<jlg-parallax landscape="$ctrl.data.image.main" portrait="$ctrl.data.image.main"></jlg-parallax>
+		<jlg-parallax landscape="$ctrl.data.image.main" portrait="$ctrl.data.image.portraitMain"></jlg-parallax>
 	</section>
 	<section>
 
@@ -38,7 +38,7 @@
 						<td><b>{{intervention.year}}</b></td>
 						<td>{{intervention.title}}</td>
 					</tr>
-					<tr ng-show="intervention.missions">
+					<tr ng-if="intervention.missions">
 						<td>Missions</td>
 						<td>
 							{{intervention.missions | join}}
