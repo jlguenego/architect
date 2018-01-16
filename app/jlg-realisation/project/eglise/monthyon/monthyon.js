@@ -6,7 +6,7 @@ export const state = {
 		title: `Eglise Saint Georges à Monthyon`,
 		description: `Restauration de la toiture - Eglise Saint Georges à Monthyon`,
 		image: {
-			thumbnail: 'img/photo/project/eglise/monthyon/monthyon-eglise.jpg',
+			thumbnail: 'img/photo/project/eglise/monthyon/thumbnail.jpg',
 			main: 'img/photo/project/eglise/monthyon/monthyon-eglise.jpg',
 			mainPortrait: 'img/photo/project/eglise/monthyon/monthyon-eglise.jpg',
 			others: [

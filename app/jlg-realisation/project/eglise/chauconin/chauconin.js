@@ -6,7 +6,7 @@ export const state = {
 		title: `Eglise Saint Saturnin de Chauconin`,
 		description: `Restauration du transept - Eglise Saint Saturnin de Chauconin`,
 		image: {
-			thumbnail: 'img/photo/project/eglise/chauconin/saint-saturnin.jpg',
+			thumbnail: 'img/photo/project/eglise/chauconin/thumbnail.jpg',
 			main: 'img/photo/project/eglise/chauconin/saint-saturnin.jpg',
 			mainPortrait: 'img/photo/project/eglise/chauconin/saint-saturnin.jpg',
 			others: [

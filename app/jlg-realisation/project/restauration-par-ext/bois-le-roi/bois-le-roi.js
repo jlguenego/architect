@@ -6,7 +6,7 @@ export const state = {
 		title: `Mairie de Bois le Roi`,
 		description: `Rénovation extérieure et intérieure Mairie à Bois le Roi`,
 		image: {
-			thumbnail: 'img/photo/project/restauration-par-ext/bois-le-roi/mairie.jpg',
+			thumbnail: 'img/photo/project/restauration-par-ext/bois-le-roi/thumbnail.jpg',
 			main: 'img/photo/project/restauration-par-ext/bois-le-roi/mairie.jpg',
 			mainPortrait: 'img/photo/project/restauration-par-ext/bois-le-roi/mairie.jpg',
 			others: [

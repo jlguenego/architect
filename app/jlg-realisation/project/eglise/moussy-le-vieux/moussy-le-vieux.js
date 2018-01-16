@@ -5,7 +5,7 @@ export const state = {
 		title: `Eglise Saint Martin de Moussy-le-Vieux`,
 		description: `Restauration du clocher - Eglise Saint Martin de Moussy-le-Vieux`,
 		image: {
-			thumbnail: 'img/photo/project/eglise/moussy-le-vieux/eglise.jpg',
+			thumbnail: 'img/photo/project/eglise/moussy-le-vieux/thumbnail.jpg',
 			main: 'img/photo/project/eglise/moussy-le-vieux/eglise.jpg',
 			mainPortrait: 'img/photo/project/eglise/moussy-le-vieux/eglise.jpg',
 			others: [

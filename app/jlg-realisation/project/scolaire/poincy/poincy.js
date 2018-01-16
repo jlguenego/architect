@@ -6,7 +6,7 @@ export const state = {
 		title: `Ecole de Poincy`,
 		description: `Réhabilitation de l’école à Poincy`,
 		image: {
-			thumbnail: 'img/photo/project/scolaire/poincy/ecole.jpg',
+			thumbnail: 'img/photo/project/scolaire/poincy/thumbnail.jpg',
 			main: 'img/photo/project/scolaire/poincy/ecole.jpg',
 			mainPortrait: 'img/photo/project/scolaire/poincy/ecole.jpg',
 			others: [

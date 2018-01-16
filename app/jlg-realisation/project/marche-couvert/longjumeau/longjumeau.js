@@ -6,7 +6,7 @@ export const state = {
 		title: `Marché d’Approvisionnement de Longjumeau`,
 		description: `Réhabilitation du Marché d’Approvisionnement à Longjumeau`,
 		image: {
-			thumbnail: 'img/photo/project/marche-couvert/longjumeau/marche.jpg',
+			thumbnail: 'img/photo/project/marche-couvert/longjumeau/thumbnail.jpg',
 			main: 'img/photo/project/marche-couvert/longjumeau/marche.jpg',
 			mainPortrait: 'img/photo/project/marche-couvert/longjumeau/marche.jpg',
 			others: [

@@ -7,7 +7,7 @@ export const state = {
 		description: `Restauration des parements extérieurs et réfection du beffroi du clocher - 
 		Eglise Saint Martin du Mesnil-Amélot`,
 		image: {
-			thumbnail: 'img/photo/project/eglise/mesnil-amelot/eglise.jpg',
+			thumbnail: 'img/photo/project/eglise/mesnil-amelot/thumbnail.jpg',
 			main: 'img/photo/project/eglise/mesnil-amelot/eglise.jpg',
 			mainPortrait: 'img/photo/project/eglise/mesnil-amelot/eglise.jpg',
 			others: [

@@ -5,7 +5,7 @@ export const state = {
 		title: `Crypte de l’Abbaye de Jouarre`,
 		description: `Réfection des parements extérieurs - Crypte de l’Abbaye de Jouarre`,
 		image: {
-			thumbnail: 'img/photo/project/abbaye/jouarre/crypte.jpg',
+			thumbnail: 'img/photo/project/abbaye/jouarre/thumbnail.jpg',
 			main: 'img/photo/project/abbaye/jouarre/crypte.jpg',
 			mainPortrait: 'img/photo/project/abbaye/jouarre/crypte.jpg',
 			others: [

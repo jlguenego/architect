@@ -6,7 +6,7 @@ export const state = {
 		title: `Remparts de Charleville-Mézières`,
 		description: `Reprise de la structure des remparts, des charpentes et des bâtiments, 12 places du Château`,
 		image: {
-			thumbnail: 'img/photo/project/rempart/charleville-mezieres/rempart.jpg',
+			thumbnail: 'img/photo/project/rempart/charleville-mezieres/thumbnail.jpg',
 			main: 'img/photo/project/rempart/charleville-mezieres/rempart.jpg',
 			mainPortrait: 'img/photo/project/rempart/charleville-mezieres/rempart.jpg',
 			others: [
