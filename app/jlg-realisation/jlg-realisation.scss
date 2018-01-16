@@ -17,6 +17,12 @@ jlg-thumbnail {
             right: 0;
             bottom: 0;
             overflow: hidden;
+            my-picture {
+                transition: transform 1s;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
         }
     }
     

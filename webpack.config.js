@@ -2,8 +2,16 @@ const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const SpritesmithPlugin = require('webpack-spritesmith');
+const fs = require('fs');
+
+
 
 function mySpriteTemplate(data) {
+	if (fs.existsSync(path.resolve(__dirname, 'spritesmith_modules/sprite.png'))) {
+		console.log('file exists !!!');
+	} else {
+		console.log('file DO NOT exists !!!');
+	}
 	const result = data.sprites.map(function(sprite) {
 		const totalX = sprite.total_width / sprite.width;
 		const totalY = sprite.total_height / sprite.height;
@@ -176,7 +184,7 @@ module.exports = {
 			},
 			apiOptions: {
 				// the tilde means a module for webpack css import.
-				cssImageRef: '~sprite.jpg'
+				cssImageRef: '~sprite.png'
 			},
 			customTemplates: {
 				'mySpriteTemplate': mySpriteTemplate,
