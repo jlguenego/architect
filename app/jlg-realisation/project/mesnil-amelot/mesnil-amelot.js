@@ -1,15 +1,6 @@
-import projectHtml from '../../tmpl/project.html';
-
 import chauconinTextHtml from './text.html';
 
 export const state = {
-	name: 'mesnil-amelot',
-	template: projectHtml,
-	controller: function($state) {
-        'ngInject';
-		this.data = $state.$current.data;
-	},
-	controllerAs: '$ctrl',
 	data: {
 		title: `Eglise Saint Martin du Mesnil-Amélot`,
 		description: `

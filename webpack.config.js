@@ -56,7 +56,7 @@ module.exports = {
 				options: {
 					minimize: true,
 					attrs: [],
-					
+
 				}
 			}],
 		}, {
@@ -131,5 +131,10 @@ module.exports = {
 		new webpack.optimize.UglifyJsPlugin({
 			sourceMap: true,
 		}),
-	]
+	],
+	// let webpack access to the filename.
+	context: __dirname,
+	node: {
+		__filename: true
+	}
 };

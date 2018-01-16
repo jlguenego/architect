@@ -11,25 +11,31 @@ const app = angular.module('jlg-realisation', ['ui.router']);
 
 app.value('projects', []);
 
+function basename(path) {
+	return path.split(/[\\/]/).pop().replace(/\..*$/, '');
+}
+
 
 
 const context = require.context('./project', true, /\.js$/);
 context.keys().forEach(function(key) {
+	console.log('key', key);
 	const obj = context(key);
 	const state = obj.state;
 	if (state.disabled) {
 		return;
 	}
+	state.name = basename(key);
+	state.url = `/realisations/${state.name}`;
+	state.template = state.template || projectHtml;
+	state.controller = function($state) {
+		'ngInject';
+		this.data = $state.$current.data;
+	};
+	state.controllerAs = '$ctrl';
 	app.config(($stateProvider) => {
 		'ngInject';
-		
-		state.url = `/realisations/${state.name}`;
-		state.template = state.template || projectHtml;
-		state.controller = function($state) {
-			'ngInject';
-			this.data = $state.$current.data;
-		};
-		state.controllerAs = '$ctrl';
+
 		$stateProvider.state(state);
 	});
 
