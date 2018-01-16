@@ -6,12 +6,12 @@ export const state = {
 		title: `Mairie de Bois le Roi`,
 		description: `Rénovation extérieure et intérieure Mairie à Bois le Roi`,
 		image: {
-			thumbnail: 'img/photo/project/lavoir/torcy/lavoir.jpg',
-			main: 'img/photo/project/lavoir/torcy/lavoir.jpg',
-			mainPortrait: 'img/photo/project/lavoir/torcy/lavoir.jpg',
+			thumbnail: 'img/photo/project/restauration-par-ext/bois-le-roi/mairie.jpg',
+			main: 'img/photo/project/restauration-par-ext/bois-le-roi/mairie.jpg',
+			mainPortrait: 'img/photo/project/restauration-par-ext/bois-le-roi/mairie.jpg',
 			others: [
-				'img/photo/project/lavoir/torcy/lavoir.jpg',
-				'img/photo/project/lavoir/torcy/lavoir.jpg',
+				'img/photo/project/restauration-par-ext/bois-le-roi/mairie.jpg',
+				'img/photo/project/restauration-par-ext/bois-le-roi/mairie.jpg',
 			]
 		},
 		moa: {
@@ -23,8 +23,7 @@ export const state = {
 				year: '2017',
 				title: `Rénovation extérieure et intérieure mairie`,
 				missions: [
-					'Etudes',
-					'Autorisation de travaux'
+					'Maîtrise d’œuvre'
 				],
 				price: '350 000 € HT'
 			}
@@ -32,9 +31,4 @@ export const state = {
 		text: textHtml,
 	}
 };
-
-// Rénovation extérieure et intérieure Mairie à Bois le Roi (77) 
-// Maîtrise d’ouvrage : Ville de Bois le Roi (77)
-// 2017
-// Mission de Maîtrise d’œuvre / Montant des travaux : 350 000 € HT
 
