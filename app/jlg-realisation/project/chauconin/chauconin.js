@@ -3,6 +3,7 @@ import projectHtml from '../../tmpl/project.html';
 import chauconinTextHtml from './text.html';
 
 export const state = {
+	disabled: true,
 	name: 'chauconin',
 	template: projectHtml,
 	controller: function($state) {
