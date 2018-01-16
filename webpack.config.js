@@ -3,6 +3,28 @@ const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const SpritesmithPlugin = require('webpack-spritesmith');
 
+function mySpriteTemplate(data) {
+
+	const result = data.sprites.map(function(sprite) {
+		console.log('sprite', sprite);
+		const totalX = sprite.total_width / sprite.width;
+		const totalY = sprite.total_height / sprite.height;
+		const x = sprite.x / sprite.height;
+		const y = sprite.y / sprite.height;
+		return `
+.${sprite.name} {
+	display: block; 
+	width: 100%; 
+	height: 100%; 
+	background-position: ${x/(totalX-1)*100}% ${y/(totalY-1)*100}%;
+	background-size: ${(sprite.total_width / sprite.width)*100}% ${(sprite.total_height / sprite.height)*100}%;
+	background-image: url(${sprite.image});
+}`;
+	});
+
+	return result;
+}
+
 module.exports = {
 	entry: {
 		bundle: './app/main.js',
@@ -13,8 +35,8 @@ module.exports = {
 		path: path.resolve(__dirname, './app/wpk'),
 	},
 	resolve: {
-        modules: ['node_modules', 'spritesmith_modules']
-    },
+		modules: ['node_modules', 'spritesmith_modules']
+	},
 	module: {
 		rules: [{
 			test: /\.js$/,
@@ -147,12 +169,19 @@ module.exports = {
 			},
 			target: {
 				image: path.resolve(__dirname, 'spritesmith_modules/sprite.png'),
-				css: path.resolve(__dirname, 'spritesmith_modules/sprite.scss')
+				css: [
+					[path.resolve(__dirname, 'spritesmith_modules/sprite.scss'), {
+						format: 'mySpriteTemplate'
+					}]
+				]
 			},
 			apiOptions: {
 				// the tilde means a module for webpack css import.
 				cssImageRef: '~sprite.png'
-			}
+			},
+			customTemplates: {
+				'mySpriteTemplate': mySpriteTemplate,
+			},
 		})
 	],
 	// let webpack access to the filename.
