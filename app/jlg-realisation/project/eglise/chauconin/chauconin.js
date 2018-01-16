@@ -1,20 +1,13 @@
-import projectHtml from '../../tmpl/project.html';
 
-import chauconinTextHtml from './text.html';
+import textHtml from './text.html';
 
 export const state = {
-	name: 'moussy-le-vieux',
-	template: projectHtml,
-	controller: function($state) {
-        'ngInject';
-		this.data = $state.$current.data;
-	},
-	controllerAs: '$ctrl',
 	data: {
-		title: `Eglise Saint Martin de Moussy-le-Vieux`,
+		title: `Eglise Saint Saturnin de Chauconin`,
 		description: `
 this is the meta description...`,
 		image: {
+			thumbnail: 'img/photo/project/chauconin/saint-saturnin.jpg',
 			main: 'img/photo/project/chauconin/saint-saturnin.jpg',
 			others: [
 				'img/photo/project/chauconin/saint-saturnin.jpg',
@@ -26,6 +19,6 @@ this is the meta description...`,
 			url: 'http://chauconin-neufmontiers.fr/',
 		},
 		price: '300 000 Euros HT',
-		text: chauconinTextHtml,
+		text: textHtml,
 	}
 };

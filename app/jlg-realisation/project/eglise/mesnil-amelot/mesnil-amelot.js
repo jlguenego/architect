@@ -1,20 +1,12 @@
-import projectHtml from '../../tmpl/project.html';
-
 import chauconinTextHtml from './text.html';
 
 export const state = {
-	name: 'varennes',
-	template: projectHtml,
-	controller: function($state) {
-        'ngInject';
-		this.data = $state.$current.data;
-	},
-	controllerAs: '$ctrl',
 	data: {
-		title: `Eglise Saint Lambert de Varennes-sur-Seine`,
+		title: `Eglise Saint Martin du Mesnil-Amélot`,
 		description: `
 this is the meta description...`,
 		image: {
+			thumbnail: 'img/photo/project/chauconin/saint-saturnin.jpg',
 			main: 'img/photo/project/chauconin/saint-saturnin.jpg',
 			others: [
 				'img/photo/project/chauconin/saint-saturnin.jpg',

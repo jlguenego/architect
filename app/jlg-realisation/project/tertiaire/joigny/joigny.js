@@ -6,10 +6,11 @@ export const state = {
 		description: `
 this is the meta description...`,
 		image: {
-			main: 'img/photo/project/chauconin/saint-saturnin.jpg',
+			thumbnail: 'img/photo/project/joigny/cpam.jpg',
+			main: 'img/photo/project/joigny/cpam.jpg',
 			others: [
-				'img/photo/project/chauconin/saint-saturnin.jpg',
-				'img/photo/project/chauconin/saint-saturnin.jpg',
+				'img/photo/project/joigny/cpam.jpg',
+				'img/photo/project/joigny/cpam.jpg',
 			]
 		},
 		client: {

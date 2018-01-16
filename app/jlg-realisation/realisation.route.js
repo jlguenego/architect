@@ -4,20 +4,19 @@ export const realisationRoute = {
 	template: realisationHtml,
 	controller: function RealisationCtrl(projects) {
 		'ngInject';
-		console.log('projects', projects);
 
 		this.chapterMap = [{
-			key: 'EGLISES',
+			key: 'eglise',
 			value: 'Eglises',
 			description: `
             Au moins 40 mairies du département de Seine-et-Marne nous ont fait confiance
             pour intervenir sur leur églises (Etude préalable, Travaux, etc.)           
             `
 		}, {
-			key: 'REMPARTS',
+			key: 'rempart',
 			value: 'Remparts',
 		}, {
-			key: 'ABBAYES',
+			key: 'abbaye',
 			value: 'Abbayes',
 		}, {
 			key: 'FERMES',
@@ -35,7 +34,7 @@ export const realisationRoute = {
 			key: 'LAVOIRS',
 			value: 'LAVOIRS',
 		}, {
-			key: 'TERTIAIRE_ADMINISTRATION_AUTRE_PUBLIC',
+			key: 'tertiaire',
 			value: 'TERTIAIRE_ADMINISTRATION_AUTRE_PUBLIC',
 		}, {
 			key: 'RESTAURATION_PAREMENTS_EXTERIEURS',

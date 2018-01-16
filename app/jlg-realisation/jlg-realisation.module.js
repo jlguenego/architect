@@ -1,6 +1,7 @@
 import './jlg-realisation.scss';
 
 import projectHtml from './tmpl/project.html';
+import './tmpl/project.scss';
 
 import { jlgThumbnail } from './jlg-thumbnail.component.js';
 import { realisationRoute } from './realisation.route.js';
@@ -11,21 +12,27 @@ const app = angular.module('jlg-realisation', ['ui.router']);
 
 app.value('projects', []);
 
-function basename(path) {
+function getName(path) {
 	return path.split(/[\\/]/).pop().replace(/\..*$/, '');
 }
 
-
+function getType(path) {
+	const a = path.split(/[\\/]/);
+	a.pop();
+	a.pop();
+	const result = a.pop();
+	return result;
+}
 
 const context = require.context('./project', true, /\.js$/);
 context.keys().forEach(function(key) {
-	console.log('key', key);
 	const obj = context(key);
 	const state = obj.state;
 	if (state.disabled) {
 		return;
 	}
-	state.name = basename(key);
+	state.name = state.name || getName(key);
+	state.type = state.type || getType(key);
 	state.url = `/realisations/${state.name}`;
 	state.template = state.template || projectHtml;
 	state.controller = state.controller || function($state) {

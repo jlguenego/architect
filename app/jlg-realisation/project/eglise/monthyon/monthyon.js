@@ -1,16 +1,12 @@
-
-import chauconinTextHtml from './text.html';
+import textHtml from './text.html';
 
 export const state = {
-	name: 'chauconin',
-	disabled: false,
-	type: 'EGLISES',
-	
 	data: {
-		title: `Eglise Saint Saturnin de Chauconin`,
+		title: `Eglise Saint Georges à Monthyon`,
 		description: `
 this is the meta description...`,
 		image: {
+			thumbnail: 'img/photo/project/chauconin/saint-saturnin.jpg',
 			main: 'img/photo/project/chauconin/saint-saturnin.jpg',
 			others: [
 				'img/photo/project/chauconin/saint-saturnin.jpg',
@@ -22,6 +18,6 @@ this is the meta description...`,
 			url: 'http://chauconin-neufmontiers.fr/',
 		},
 		price: '300 000 Euros HT',
-		text: chauconinTextHtml,
+		text: textHtml,
 	}
 };
