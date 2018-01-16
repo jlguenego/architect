@@ -8,6 +8,7 @@ export const state = {
 		image: {
 			thumbnail: 'img/photo/project/serre/villiers-en-biere/serre.jpg',
 			main: 'img/photo/project/serre/villiers-en-biere/serre.jpg',
+			mainPortrait: 'img/photo/project/serre/villiers-en-biere/serre.jpg',
 			others: [
 				'img/photo/project/serre/villiers-en-biere/serre.jpg',
 				'img/photo/project/serre/villiers-en-biere/serre.jpg',

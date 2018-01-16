@@ -8,6 +8,7 @@ export const state = {
 		image: {
 			thumbnail: 'img/photo/project/eglise/monthyon/monthyon-eglise.jpg',
 			main: 'img/photo/project/eglise/monthyon/monthyon-eglise.jpg',
+			mainPortrait: 'img/photo/project/eglise/monthyon/monthyon-eglise.jpg',
 			others: [
 				'img/photo/project/eglise/monthyon/monthyon-eglise.jpg',
 				'img/photo/project/eglise/monthyon/monthyon-eglise.jpg',

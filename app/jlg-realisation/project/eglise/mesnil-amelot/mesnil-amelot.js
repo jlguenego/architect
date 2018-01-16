@@ -9,6 +9,7 @@ export const state = {
 		image: {
 			thumbnail: 'img/photo/project/eglise/mesnil-amelot/eglise.jpg',
 			main: 'img/photo/project/eglise/mesnil-amelot/eglise.jpg',
+			mainPortrait: 'img/photo/project/eglise/mesnil-amelot/eglise.jpg',
 			others: [
 				'img/photo/project/eglise/mesnil-amelot/eglise.jpg',
 				'img/photo/project/eglise/mesnil-amelot/eglise.jpg',

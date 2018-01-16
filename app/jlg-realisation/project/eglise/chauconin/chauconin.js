@@ -8,6 +8,7 @@ export const state = {
 		image: {
 			thumbnail: 'img/photo/project/eglise/chauconin/saint-saturnin.jpg',
 			main: 'img/photo/project/eglise/chauconin/saint-saturnin.jpg',
+			mainPortrait: 'img/photo/project/eglise/chauconin/saint-saturnin.jpg',
 			others: [
 				'img/photo/project/eglise/chauconin/saint-saturnin.jpg',
 				'img/photo/project/eglise/chauconin/saint-saturnin.jpg',

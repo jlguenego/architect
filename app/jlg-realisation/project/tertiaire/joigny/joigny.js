@@ -7,6 +7,7 @@ export const state = {
 		image: {
 			thumbnail: 'img/photo/project/tertiaire/joigny/cpam.jpg',
 			main: 'img/photo/project/tertiaire/joigny/cpam.jpg',
+			mainPortrait: 'img/photo/project/tertiaire/joigny/cpam.jpg',
 			others: [
 				'img/photo/project/tertiaire/joigny/cpam.jpg',
 				'img/photo/project/tertiaire/joigny/cpam.jpg',

@@ -7,6 +7,7 @@ export const state = {
 		image: {
 			thumbnail: 'img/photo/project/eglise/moussy-le-vieux/eglise.jpg',
 			main: 'img/photo/project/eglise/moussy-le-vieux/eglise.jpg',
+			mainPortrait: 'img/photo/project/eglise/moussy-le-vieux/eglise.jpg',
 			others: [
 				'img/photo/project/eglise/moussy-le-vieux/eglise.jpg',
 				'img/photo/project/eglise/moussy-le-vieux/eglise.jpg',

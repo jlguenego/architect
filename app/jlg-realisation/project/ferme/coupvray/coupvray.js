@@ -8,6 +8,7 @@ export const state = {
 		image: {
 			thumbnail: 'img/photo/project/ferme/coupvray/ferme.png',
 			main: 'img/photo/project/ferme/coupvray/ferme.png',
+			mainPortrait: 'img/photo/project/ferme/coupvray/ferme.png',
 			others: [
 				'img/photo/project/ferme/coupvray/ferme.png',
 				'img/photo/project/ferme/coupvray/ferme.png',

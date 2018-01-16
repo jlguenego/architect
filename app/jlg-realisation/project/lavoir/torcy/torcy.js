@@ -8,6 +8,7 @@ export const state = {
 		image: {
 			thumbnail: 'img/photo/project/lavoir/torcy/lavoir.jpg',
 			main: 'img/photo/project/lavoir/torcy/lavoir.jpg',
+			mainPortrait: 'img/photo/project/lavoir/torcy/lavoir.jpg',
 			others: [
 				'img/photo/project/lavoir/torcy/lavoir.jpg',
 				'img/photo/project/lavoir/torcy/lavoir.jpg',

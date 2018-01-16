@@ -7,6 +7,7 @@ export const state = {
 		image: {
 			thumbnail: 'img/photo/project/abbaye/jouarre/crypte.jpg',
 			main: 'img/photo/project/abbaye/jouarre/crypte.jpg',
+			mainPortrait: 'img/photo/project/abbaye/jouarre/crypte.jpg',
 			others: [
 				'img/photo/project/abbaye/jouarre/crypte.jpg',
 				'img/photo/project/abbaye/jouarre/crypte.jpg',

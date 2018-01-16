@@ -8,6 +8,7 @@ export const state = {
 		image: {
 			thumbnail: 'img/photo/project/rempart/charleville-mezieres/rempart.jpg',
 			main: 'img/photo/project/rempart/charleville-mezieres/rempart.jpg',
+			mainPortrait: 'img/photo/project/rempart/charleville-mezieres/rempart.jpg',
 			others: [
 				'img/photo/project/rempart/charleville-mezieres/rempart.jpg',
 				'img/photo/project/rempart/charleville-mezieres/rempart.jpg',
