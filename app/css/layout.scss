@@ -5,7 +5,7 @@ header {
     z-index: 2;
     top: 0;
     width: 100%;
-    padding: 0.5em 0;
+    padding: 0.30em 0 0.70em;
     height: $headerHeight;
     &::after {
         content: "";
@@ -172,12 +172,12 @@ section {
 }
 
 h1 {
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
     font-size: 2em;
 }
 
 h2 {
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
     font-size: 1.4em;
 }
 
