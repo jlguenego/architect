@@ -8,7 +8,7 @@
 						<td>Maîtrise d'ouvrage</td>
 						<td>{{$ctrl.data.moa.name}}</td>
 					</tr>
-					<tr>
+					<tr ng-show="$ctrl.data.moa.url">
 						<td>Site</td>
 						<td>
 							<a ng-href="{{$ctrl.data.moa.url}}" target="_blank">{{$ctrl.data.moa.url}}</a>

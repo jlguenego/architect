@@ -22,7 +22,7 @@ Restauration des parements extérieurs ainsi que de tous les intérieurs. Réaff
 				title: `Restauration complète et réaménagement du château de la famille Rothschild 
 				en vue de l’ouverture d’une école d’hôtellerie, de gastronomie et de luxe`,
 				missions: [
-					'Complète',
+					'Mission de maîtrise d’œuvre Complète',
 				],
 				price: '10 000 000 € HT'
 			}
