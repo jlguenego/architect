@@ -4,12 +4,10 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const SpritesmithPlugin = require('webpack-spritesmith');
 
 function mySpriteTemplate(data) {
-
 	const result = data.sprites.map(function(sprite) {
-		console.log('sprite', sprite);
 		const totalX = sprite.total_width / sprite.width;
 		const totalY = sprite.total_height / sprite.height;
-		const x = sprite.x / sprite.height;
+		const x = sprite.x / sprite.width;
 		const y = sprite.y / sprite.height;
 		return `
 .${sprite.name} {

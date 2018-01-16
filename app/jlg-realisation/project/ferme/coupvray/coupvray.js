@@ -6,7 +6,6 @@ export const state = {
 		title: `Ferme du couvent de Coupvray`,
 		description: `Restauration de la Maison de Maître - Ferme du couvent de Coupvray`,
 		image: {
-			thumbnail: 'img/photo/project/ferme/coupvray/thumbnail.jpg',
 			main: 'img/photo/project/ferme/coupvray/ferme.jpg',
 			mainPortrait: 'img/photo/project/ferme/coupvray/ferme.jpg',
 			others: [

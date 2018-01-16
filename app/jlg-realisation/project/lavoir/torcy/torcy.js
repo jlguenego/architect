@@ -6,7 +6,6 @@ export const state = {
 		title: `Lavoir communal de Torcy `,
 		description: `Restauration du lavoir communal de Torcy`,
 		image: {
-			thumbnail: 'img/photo/project/lavoir/torcy/thumbnail.jpg',
 			main: 'img/photo/project/lavoir/torcy/lavoir.jpg',
 			mainPortrait: 'img/photo/project/lavoir/torcy/lavoir.jpg',
 			others: [

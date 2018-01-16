@@ -42,6 +42,7 @@ context.keys().forEach(function(key) {
 	state.controllerAs = state.controllerAs || '$ctrl';
 
 	state.data.image.portraitMain = state.data.image.portraitMain || state.data.image.main;
+	state.data.image.thumbnail = state.data.image.thumbnail || `thumbnail-${getName(key)}`;
 
 	app.config(($stateProvider) => {
 		'ngInject';

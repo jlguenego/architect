@@ -6,7 +6,6 @@ export const state = {
 		title: `L’Orangerie du domaine de Villiers en Bière`,
 		description: `Restauration de l’Orangerie du domaine de Villiers en Bière`,
 		image: {
-			thumbnail: 'img/photo/project/serre/villiers-en-biere/thumbnail.jpg',
 			main: 'img/photo/project/serre/villiers-en-biere/serre.jpg',
 			mainPortrait: 'img/photo/project/serre/villiers-en-biere/serre.jpg',
 			others: [

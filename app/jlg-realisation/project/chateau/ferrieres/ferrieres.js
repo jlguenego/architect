@@ -6,7 +6,6 @@ export const state = {
 		description: `
 Restauration des parements extérieurs ainsi que de tous les intérieurs. Réaffectation du château`,
 		image: {
-			thumbnail: 'img/photo/project/chateau/ferrieres/thumbnail.jpg',
 			main: 'img/photo/project/chateau/ferrieres/ferrieres.jpg',
 			mainPortrait: 'img/photo/project/chateau/ferrieres/ferrieres-portrait.jpg',
 			others: [

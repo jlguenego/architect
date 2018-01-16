@@ -5,7 +5,6 @@ export const state = {
 		title: `Aménagement CPAM de la ville de Joigny`,
 		description: `Aménagement CPAM de la ville de Joigny`,
 		image: {
-			thumbnail: 'img/photo/project/tertiaire/joigny/thumbnail.jpg',
 			main: 'img/photo/project/tertiaire/joigny/cpam.jpg',
 			mainPortrait: 'img/photo/project/tertiaire/joigny/cpam.jpg',
 			others: [

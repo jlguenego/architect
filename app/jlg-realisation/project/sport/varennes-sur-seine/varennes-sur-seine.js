@@ -6,7 +6,6 @@ export const state = {
 		title: `Stade de Varennes-sur-Seine`,
 		description: `Construction d’un club house Stade de Varennes-sur-Seine (77)`,
 		image: {
-			thumbnail: 'img/photo/project/sport/varennes-sur-seine/thumbnail.jpg',
 			main: 'img/photo/project/sport/varennes-sur-seine/stade.jpg',
 			mainPortrait: 'img/photo/project/sport/varennes-sur-seine/stade.jpg',
 			others: [
