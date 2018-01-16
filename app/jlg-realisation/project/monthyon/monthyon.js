@@ -15,10 +15,10 @@ export const state = {
 		description: `
 this is the meta description...`,
 		image: {
-			main: 'img/photo/realisations/chauconin/saint-saturnin.jpg',
+			main: 'img/photo/project/chauconin/saint-saturnin.jpg',
 			others: [
-				'img/photo/realisations/chauconin/saint-saturnin.jpg',
-				'img/photo/realisations/chauconin/saint-saturnin.jpg',
+				'img/photo/project/chauconin/saint-saturnin.jpg',
+				'img/photo/project/chauconin/saint-saturnin.jpg',
 			]
 		},
 		client: {
