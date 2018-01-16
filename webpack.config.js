@@ -108,6 +108,7 @@ module.exports = {
 			}]
 		}, {
 			test: /\.jpg$/,
+			exclude: /sprite.(png|jpg)$/,
 			use: [{
 				loader: 'file-loader',
 				options: {
@@ -116,7 +117,7 @@ module.exports = {
 				}
 			}]
 		}, {
-			test: /sprite.png$/,
+			test: /sprite.(png|jpg)$/,
 			use: [{
 				loader: 'file-loader',
 				options: {
@@ -175,7 +176,7 @@ module.exports = {
 			},
 			apiOptions: {
 				// the tilde means a module for webpack css import.
-				cssImageRef: '~sprite.png'
+				cssImageRef: '~sprite.jpg'
 			},
 			customTemplates: {
 				'mySpriteTemplate': mySpriteTemplate,
