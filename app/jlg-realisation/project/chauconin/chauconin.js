@@ -4,7 +4,7 @@ import chauconinTextHtml from './text.html';
 export const state = {
 	name: 'chauconin',
 	disabled: false,
-	type: 'Eglise',
+	type: 'EGLISES',
 	
 	data: {
 		title: `Eglise Saint Saturnin de Chauconin`,
