@@ -4,11 +4,7 @@ import chauconinTextHtml from './text.html';
 export const state = {
 	name: 'chauconin',
 	disabled: true,
-	controller: function($state) {
-        'ngInject';
-		this.data = $state.$current.data;
-	},
-	controllerAs: '$ctrl',
+	
 	data: {
 		title: `Eglise Saint Saturnin de Chauconin`,
 		description: `

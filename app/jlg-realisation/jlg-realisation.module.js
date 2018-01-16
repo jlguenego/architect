@@ -25,6 +25,11 @@ context.keys().forEach(function(key) {
 		
 		state.url = `/realisations/${state.name}`;
 		state.template = state.template || projectHtml;
+		state.controller = function($state) {
+			'ngInject';
+			this.data = $state.$current.data;
+		};
+		state.controllerAs = '$ctrl';
 		$stateProvider.state(state);
 	});
 
