@@ -8,6 +8,7 @@ Restauration des parements extérieurs ainsi que de tous les intérieurs. Réaff
 		image: {
 			thumbnail: 'img/photo/project/chateau/ferrieres/thumbnail.jpg',
 			main: 'img/photo/project/chateau/ferrieres/ferrieres.jpg',
+			mainPortrait: 'img/photo/project/chateau/ferrieres/ferrieres-portrait.jpg',
 			others: [
 				'img/photo/project/chateau/ferrieres/ferrieres.jpg',
 				'img/photo/project/chateau/ferrieres/ferrieres.jpg',
