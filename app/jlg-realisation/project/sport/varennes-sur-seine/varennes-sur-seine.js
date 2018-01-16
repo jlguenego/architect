@@ -1,0 +1,39 @@
+
+import textHtml from './text.html';
+
+export const state = {
+	data: {
+		title: `Stade de Varennes-sur-Seine`,
+		description: `Construction d’un club house Stade de Varennes-sur-Seine (77)`,
+		image: {
+			thumbnail: 'img/photo/project/sport/varennes-sur-seine/stade.jpg',
+			main: 'img/photo/project/sport/varennes-sur-seine/stade.jpg',
+			mainPortrait: 'img/photo/project/sport/varennes-sur-seine/stade.jpg',
+			others: [
+				'img/photo/project/sport/varennes-sur-seine/stade.jpg',
+				'img/photo/project/sport/varennes-sur-seine/stade.jpg',
+			]
+		},
+		moa: {
+			name: 'Commune de Varennes sur Seine (77)',
+			url: 'http://www.varennes-sur-seine.fr/',
+		},
+		interventions: [
+			{
+				year: 2016,
+				title: `Construction d’un club house`,
+				missions: [
+					'Maîtrise d’œuvre',
+					'OPC'
+				],
+				price: '150 400 Euros HT'
+			}
+		],
+		text: textHtml,
+	}
+};
+
+Construction d’un club house Stade de Varennes-sur-Seine (77)
+Maîtrise d’ouvrage : Commune de Varennes sur Seine (77)
+2016
+Mission de Maîtrise d’œuvre OPC / Montant des travaux : 150 400 Euros HT
