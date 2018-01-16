@@ -32,8 +32,3 @@ export const state = {
 		text: textHtml,
 	}
 };
-
-Construction d’un club house Stade de Varennes-sur-Seine (77)
-Maîtrise d’ouvrage : Commune de Varennes sur Seine (77)
-2016
-Mission de Maîtrise d’œuvre OPC / Montant des travaux : 150 400 Euros HT
