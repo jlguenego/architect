@@ -13,7 +13,7 @@ this is the meta description...`,
 				'img/photo/project/joigny/cpam.jpg',
 			]
 		},
-		client: {
+		moa: {
 			name: 'Mairie de Chauconin-Neufmontiers (77)',
 			url: 'http://chauconin-neufmontiers.fr/',
 		},

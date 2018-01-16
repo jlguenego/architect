@@ -57,6 +57,10 @@ app.component('jlgParallax', {
 		window.document.addEventListener('touchmove', () => {
 			this.render();
 		});
+		
+		window.document.addEventListener('onresize', () => {
+			this.render();
+		});
 
 		// for browsers
 		window.document.addEventListener('scroll', () => {
