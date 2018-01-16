@@ -1,23 +1,35 @@
-import chauconinTextHtml from './text.html';
+
+import textHtml from './text.html';
 
 export const state = {
 	data: {
 		title: `Eglise Saint Martin du Mesnil-Amélot`,
-		description: `
-this is the meta description...`,
+		description: `Restauration des parements extérieurs et réfection du beffroi du clocher - 
+		Eglise Saint Martin du Mesnil-Amélot`,
 		image: {
-			thumbnail: 'img/photo/project/chauconin/saint-saturnin.jpg',
-			main: 'img/photo/project/chauconin/saint-saturnin.jpg',
+			thumbnail: 'img/photo/project/eglise/mesnil-amelot/eglise.jpg',
+			main: 'img/photo/project/eglise/mesnil-amelot/eglise.jpg',
 			others: [
-				'img/photo/project/chauconin/saint-saturnin.jpg',
-				'img/photo/project/chauconin/saint-saturnin.jpg',
+				'img/photo/project/eglise/mesnil-amelot/eglise.jpg',
+				'img/photo/project/eglise/mesnil-amelot/eglise.jpg',
 			]
 		},
-		client: {
-			name: 'Mairie de Chauconin-Neufmontiers (77)',
-			url: 'http://chauconin-neufmontiers.fr/',
+		moa: {
+			name: 'Commune du Mesnil-Amélot (77)',
+			url: 'http://www.lemesnilamelot.fr/',
 		},
-		price: '300 000 Euros HT',
-		text: chauconinTextHtml,
+		interventions: [
+			{
+				year: '2016 - En cours',
+				title: `Restauration des parements extérieurs et réfection du beffroi du clocher`,
+				missions: [
+					'Maîtrise d\'oeuvre',
+					'OPC'
+				],
+				price: '390 000 € HT'
+			}
+		],
+		classement: 'Classée MH',
+		text: textHtml,
 	}
 };

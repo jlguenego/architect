@@ -3,21 +3,36 @@ import textHtml from './text.html';
 export const state = {
 	data: {
 		title: `Eglise Saint Martin de Moussy-le-Vieux`,
-		description: `
-this is the meta description...`,
+		description: `Restauration du clocher - Eglise Saint Martin de Moussy-le-Vieux`,
 		image: {
-			thumbnail: 'img/photo/project/chauconin/saint-saturnin.jpg',
-			main: 'img/photo/project/chauconin/saint-saturnin.jpg',
+			thumbnail: 'img/photo/project/eglise/moussy-le-vieux/eglise.jpg',
+			main: 'img/photo/project/eglise/moussy-le-vieux/eglise.jpg',
 			others: [
-				'img/photo/project/chauconin/saint-saturnin.jpg',
-				'img/photo/project/chauconin/saint-saturnin.jpg',
+				'img/photo/project/eglise/moussy-le-vieux/eglise.jpg',
+				'img/photo/project/eglise/moussy-le-vieux/eglise.jpg',
 			]
 		},
-		client: {
-			name: 'Mairie de Chauconin-Neufmontiers (77)',
-			url: 'http://chauconin-neufmontiers.fr/',
+		moa: {
+			name: 'Commune de Moussy-le-Vieux (77)',
+			url: 'http://www.moussy-le-vieux.fr/',
 		},
-		price: '300 000 Euros HT',
+		interventions: [
+			{
+				year: 2015,
+				title: `Restauration du clocher`,
+				missions: [
+					'Maîtrise d\'oeuvre'
+				],
+				price: '83 000 € HT'
+			},
+			{
+				year: 2014,
+				title: `Etude préalable`,
+			}
+		],
+		classement: 'Inscrit MH',
 		text: textHtml,
 	}
 };
+
+

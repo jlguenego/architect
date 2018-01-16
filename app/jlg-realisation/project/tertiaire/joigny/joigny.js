@@ -2,22 +2,29 @@ import textHtml from './text.html';
 
 export const state = {
 	data: {
-		title: `Caisse Primaire d'Assurance Maladie`,
-		description: `
-this is the meta description...`,
+		title: `Aménagement CPAM de la ville de Joigny`,
+		description: `Aménagement CPAM de la ville de Joigny`,
 		image: {
-			thumbnail: 'img/photo/project/joigny/cpam.jpg',
-			main: 'img/photo/project/joigny/cpam.jpg',
+			thumbnail: 'img/photo/project/tertiaire/joigny/cpam.jpg',
+			main: 'img/photo/project/tertiaire/joigny/cpam.jpg',
 			others: [
-				'img/photo/project/joigny/cpam.jpg',
-				'img/photo/project/joigny/cpam.jpg',
+				'img/photo/project/tertiaire/joigny/cpam.jpg',
+				'img/photo/project/tertiaire/joigny/cpam.jpg',
 			]
 		},
 		moa: {
-			name: 'Mairie de Chauconin-Neufmontiers (77)',
-			url: 'http://chauconin-neufmontiers.fr/',
+			name: 'Ville de Joigny (89)',
+			url: 'http://www.ville-joigny.fr/',
 		},
-		price: '300 000 Euros HT',
+		interventions: [
+			{
+				year: 2015,
+				missions: [
+					'Maîtrise d\'oeuvre'
+				],
+				price: '210 000 € HT'
+			}
+		],
 		text: textHtml,
 	}
 };

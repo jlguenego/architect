@@ -1,23 +1,36 @@
+
 import textHtml from './text.html';
 
 export const state = {
 	data: {
 		title: `Eglise Saint Georges à Monthyon`,
-		description: `
-this is the meta description...`,
+		description: `Restauration de la toiture - Eglise Saint Georges à Monthyon`,
 		image: {
-			thumbnail: 'img/photo/project/chauconin/saint-saturnin.jpg',
-			main: 'img/photo/project/chauconin/saint-saturnin.jpg',
+			thumbnail: 'img/photo/project/eglise/monthyon/monthyon-eglise.jpg',
+			main: 'img/photo/project/eglise/monthyon/monthyon-eglise.jpg',
 			others: [
-				'img/photo/project/chauconin/saint-saturnin.jpg',
-				'img/photo/project/chauconin/saint-saturnin.jpg',
+				'img/photo/project/eglise/monthyon/monthyon-eglise.jpg',
+				'img/photo/project/eglise/monthyon/monthyon-eglise.jpg',
 			]
 		},
-		client: {
-			name: 'Mairie de Chauconin-Neufmontiers (77)',
-			url: 'http://chauconin-neufmontiers.fr/',
+		moa: {
+			name: 'Commune de Monthyon (77)',
+			url: 'http://www.monthyon.fr/',
 		},
-		price: '300 000 Euros HT',
+		interventions: [
+			{
+				year: 2010,
+				title: `Restauration de la toiture`,
+				missions: [
+					'Maîtrise d\'oeuvre'
+				],
+				price: '370 000 € HT'
+			},
+			{
+				year: 2007,
+				title: `Etude préalable`,
+			}
+		],
 		text: textHtml,
 	}
 };

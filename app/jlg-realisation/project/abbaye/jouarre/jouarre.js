@@ -3,14 +3,13 @@ import textHtml from './text.html';
 export const state = {
 	data: {
 		title: `Crypte de l’Abbaye de Jouarre`,
-		description: `
-this is the meta description...`,
+		description: `Réfection des parements extérieurs - Crypte de l’Abbaye de Jouarre`,
 		image: {
-			thumbnail: 'img/photo/project/jouarre/crypte.jpg',
-			main: 'img/photo/project/jouarre/crypte.jpg',
+			thumbnail: 'img/photo/project/abbaye/jouarre/crypte.jpg',
+			main: 'img/photo/project/abbaye/jouarre/crypte.jpg',
 			others: [
-				'img/photo/project/chauconin/saint-saturnin.jpg',
-				'img/photo/project/chauconin/saint-saturnin.jpg',
+				'img/photo/project/abbaye/jouarre/crypte.jpg',
+				'img/photo/project/abbaye/jouarre/crypte.jpg',
 			]
 		},
 		moa: {

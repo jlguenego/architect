@@ -6,21 +6,30 @@ export const state = {
 		title: `Remparts de Charleville-Mézières`,
 		description: `Reprise de la structure des remparts, des charpentes et des bâtiments, 12 places du Château`,
 		image: {
-			thumbnail: 'img/photo/project/chauconin/saint-saturnin.jpg',
-			main: 'img/photo/project/chauconin/saint-saturnin.jpg',
+			thumbnail: 'img/photo/project/rempart/charleville-mezieres/rempart.jpg',
+			main: 'img/photo/project/rempart/charleville-mezieres/rempart.jpg',
 			others: [
-				'img/photo/project/chauconin/saint-saturnin.jpg',
-				'img/photo/project/chauconin/saint-saturnin.jpg',
+				'img/photo/project/rempart/charleville-mezieres/rempart.jpg',
+				'img/photo/project/rempart/charleville-mezieres/rempart.jpg',
 			]
 		},
 		moa: {
-			name: 'Conseil départemental des Ardennes',
+			name: 'Conseil départemental des Ardennes (08)',
 			url: 'http://www.cd08.fr/',
 		},
-		price: '360 000 € HT',
-		mission: 'Mission de Maîtrise d’œuvre / OPC',
+		interventions: [
+			{
+				year: '2015 – En cours',
+				title: `Reprise de la structure des remparts, des charpentes et des bâtiments`,
+				missions: [
+					'Maîtrise d\'oeuvre',
+					'OPC'
+				],
+				price: '360 000 € HT'
+			}
+		],
 		classement: 'Inscrit MH',
-		year: '2015 - 2018',
 		text: textHtml,
 	}
 };
+
