@@ -11,7 +11,7 @@ app.value('projects', []);
 
 
 
-const context = require.context('./projects', true, /\.js$/);
+const context = require.context('./project', true, /\.js$/);
 context.keys().forEach(function(key) {
 	const obj = context(key);
 	app.config(($stateProvider) => {
