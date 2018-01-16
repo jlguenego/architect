@@ -1,5 +1,7 @@
 import './jlg-realisation.scss';
 
+import projectHtml from './tmpl/project.html';
+
 import { jlgThumbnail } from './jlg-thumbnail.component.js';
 import { realisationRoute } from './realisation.route.js';
 
@@ -22,6 +24,7 @@ context.keys().forEach(function(key) {
 		'ngInject';
 		
 		state.url = `/realisations/${state.name}`;
+		state.template = state.template || projectHtml;
 		$stateProvider.state(state);
 	});
 

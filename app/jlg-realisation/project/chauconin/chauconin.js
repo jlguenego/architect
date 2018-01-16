@@ -1,11 +1,9 @@
-import projectHtml from '../../tmpl/project.html';
 
 import chauconinTextHtml from './text.html';
 
 export const state = {
-	disabled: true,
 	name: 'chauconin',
-	template: projectHtml,
+	disabled: true,
 	controller: function($state) {
         'ngInject';
 		this.data = $state.$current.data;
