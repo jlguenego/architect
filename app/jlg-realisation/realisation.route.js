@@ -19,26 +19,32 @@ export const realisationRoute = {
 			key: 'abbaye',
 			value: 'Abbayes',
 		}, {
-			key: 'FERMES',
-			value: 'FERMES',
+			key: 'ferme',
+			value: 'Fermes',
 		}, {
-			key: 'CHATEAUX',
-			value: 'CHATEAUX',
+			key: 'chateau',
+			value: 'Chateaux',
 		}, {
-			key: 'RESTAURATION_PAREMENTS_EXTERIEURS',
-			value: 'RESTAURATION_PAREMENTS_EXTERIEURS',
+			key: 'restauration-par-ext',
+			value: 'Restauration - Parements extérieurs',
 		}, {
-			key: 'SERRES',
-			value: 'SERRES',
+			key: 'serre',
+			value: 'Serres',
 		}, {
-			key: 'LAVOIRS',
-			value: 'LAVOIRS',
+			key: 'lavoir',
+			value: 'Lavoir',
 		}, {
 			key: 'tertiaire',
-			value: 'TERTIAIRE_ADMINISTRATION_AUTRE_PUBLIC',
+			value: 'Tertiaire - Administration - Autres - Public',
 		}, {
-			key: 'RESTAURATION_PAREMENTS_EXTERIEURS',
-			value: 'RESTAURATION_PAREMENTS_EXTERIEURS',
+			key: 'sport',
+			value: 'Sports - Loisirs',
+		}, {
+			key: 'marche-couvert',
+			value: 'Marchés couverts',
+		}, {
+			key: 'scolaire',
+			value: 'Scolaire - Education',
 		}];
 
 		const chapters = this.chapterMap.map(n => n.key);
@@ -52,7 +58,5 @@ export const realisationRoute = {
 				return acc;
 			}, []);
 		});
-
-
 	}
 };
