@@ -2,16 +2,8 @@ const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const SpritesmithPlugin = require('webpack-spritesmith');
-const fs = require('fs');
-
-
 
 function mySpriteTemplate(data) {
-	if (fs.existsSync(path.resolve(__dirname, 'spritesmith_modules/sprite.png'))) {
-		console.log('file exists !!!');
-	} else {
-		console.log('file DO NOT exists !!!');
-	}
 	const result = data.sprites.map(function(sprite) {
 		const totalX = sprite.total_width / sprite.width;
 		const totalY = sprite.total_height / sprite.height;
@@ -19,9 +11,6 @@ function mySpriteTemplate(data) {
 		const y = sprite.y / sprite.height;
 		return `
 .${sprite.name} {
-	display: block; 
-	width: 100%; 
-	height: 100%; 
 	background-position: ${x/(totalX-1)*100}% ${y/(totalY-1)*100}%;
 	background-size: ${(sprite.total_width / sprite.width)*100}% ${(sprite.total_height / sprite.height)*100}%;
 	background-image: url(${sprite.image});
