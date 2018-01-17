@@ -15,7 +15,7 @@ function mySpriteTemplate(data) {
 	background-size: ${(sprite.total_width / sprite.width)*100}% ${(sprite.total_height / sprite.height)*100}%;
 	background-image: url(${sprite.image});
 }`;
-	});
+	}).join('\n');
 
 	return result;
 }
@@ -104,7 +104,7 @@ module.exports = {
 				}
 			}]
 		}, {
-			test: /\.jpg$/,
+			test: /\.(png|jpg)$/,
 			exclude: /sprite.(png|jpg)$/,
 			use: [{
 				loader: 'file-loader',
@@ -114,12 +114,14 @@ module.exports = {
 				}
 			}]
 		}, {
-			test: /sprite.(png|jpg)$/,
+			test: /sprite.png$/,
 			use: [{
 				loader: 'file-loader',
 				options: {
-					name: '[name].[ext]',
+					name: 'sprite.jpg',
 				}
+			}, {
+				loader: path.resolve(__dirname, './utils/png2jpg-loader.js'),
 			}]
 		}, {
 			test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
