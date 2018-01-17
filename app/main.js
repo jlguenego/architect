@@ -10,6 +10,7 @@ import './jlg-onscreen/jlg-onscreen.js';
 import './jlg-route/jlg-route.js';
 import './jlg-realisation/jlg-realisation.module.js';
 import './jlg-array/jlg-array.js';
+import './jlg-social/jlg-social.js';
 
 angular.module('main', [
 	'ngSanitize',
@@ -18,5 +19,6 @@ angular.module('main', [
 	'jlg-onscreen',
 	'jlg-route',
 	'jlg-array',
-	'jlg-realisation'
+	'jlg-realisation',
+	'jlg-social',
 ]);

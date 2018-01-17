@@ -2,48 +2,52 @@
 <html lang="en" ng-app="main" ng-csp ng-strict-di>
 
 <head>
-    <base href="/app/">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="
+	<base href="/app/">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="
 Cabinet d'Architecture de Seine et Marne, à Torcy.
 Architectes du patrimoine, HMONP, DPLG.
 Etude préalable, Permis de construire, Elaboration de cahier des charges, Maîtrise d'oeuvre.
 Dialogue avec administrations, DRAC, ABF, CAUE.
 Restauration, réhabilitation de patrimoine anciens: Eglises Chateau Granges Ecoles.
 ">
-    <link rel="icon" type="image/png" href="img/favicon.png">
-    <title>Cabinet d'architecture DEMETRESCU-GUENEGO</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link rel="stylesheet" href="wpk/vendors.css" />
-    <link rel="stylesheet" href="wpk/bundle.css" />
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<title>Cabinet d'architecture DEMETRESCU-GUENEGO</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" href="wpk/vendors.css" />
+	<link rel="stylesheet" href="wpk/bundle.css" />
 </head>
 
 <body ng-cloak class="architect">
-    <header>
-        <site-id>
-            <a ui-sref="accueil">
-                <my-image></my-image>
-                <span>Cabinet d'architecture
-                    <br>DEMETRESCU - GUENEGO</span>
-            </a>
-        </site-id>
-        <jlg-hamburger></jlg-hamburger>
-        <menu class="jlg-hamburger-menu">
-            <a ui-sref="accueil" class="menu-item" ui-sref-active="active">Accueil</a>
-            <a ui-sref="realisations" class="menu-item" ui-sref-active="active">Réalisations</a>
-            <a ui-sref="clients" class="menu-item" ui-sref-active="active">Clients</a>
-            <a ui-sref="contact" class="menu-item" ui-sref-active="active">Contact</a>
-        </menu>
-    </header>
-    <main>
-        <ui-view></ui-view>
-    </main>
-    <footer>
-        <p>Copyright © 2003-{{now | date : 'yyyy'}} - Cabinet d'Architecture Demetrescu - Guénégo. Tout droit réservés. Site réalisé par <a href="https://jlg-consulting.com">JLG Consulting</a>.</p>
-    </footer>
-    <script src="wpk/vendors.js"></script>
-    <script src="wpk/bundle.js"></script>
+
+	<header>
+		<site-id>
+			<a ui-sref="accueil">
+				<my-image></my-image>
+				<span>Cabinet d'architecture
+					<br>DEMETRESCU - GUENEGO</span>
+			</a>
+		</site-id>
+		<jlg-hamburger></jlg-hamburger>
+		<menu class="jlg-hamburger-menu">
+			<a ui-sref="accueil" class="menu-item" ui-sref-active="active">Accueil</a>
+			<a ui-sref="realisations" class="menu-item" ui-sref-active="active">Réalisations</a>
+			<a ui-sref="clients" class="menu-item" ui-sref-active="active">Clients</a>
+			<a ui-sref="contact" class="menu-item" ui-sref-active="active">Contact</a>
+		</menu>
+	</header>
+	<main>
+		<ui-view></ui-view>
+		<jlg-facebook-share></jlg-facebook-share>
+	</main>
+	<footer>
+		<p>Copyright © 2003-{{now | date : 'yyyy'}} - Cabinet d'Architecture Demetrescu -
+			Guénégo. Tout droit réservés. Site réalisé par
+			<a href="https://jlg-consulting.com">JLG Consulting</a>.</p>
+	</footer>
+	<script src="wpk/vendors.js"></script>
+	<script src="wpk/bundle.js"></script>
 </body>
 
 </html>
