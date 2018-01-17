@@ -105,7 +105,7 @@ module.exports = {
 			}]
 		}, {
 			test: /\.(png|jpg)$/,
-			exclude: /sprite.(png|jpg)$/,
+			exclude: /sprite.png$/,
 			use: [{
 				loader: 'file-loader',
 				options: {
