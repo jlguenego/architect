@@ -2,6 +2,7 @@
 
 const express = require('express');
 const serveIndex = require('serve-index');
+const config = require('./package.json');
 
 const webpack = require('webpack');
 const webpackConfig = require('./webpack.config.js');
@@ -38,7 +39,7 @@ app.use(function (req, res, next) {
 	next();
 });
 
-const port = 8000;
+const port = config.server.port;
 app.listen(port, function () {
 	console.log(`server started on port ${port}`);
 });
