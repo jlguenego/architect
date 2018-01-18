@@ -1,13 +1,32 @@
 const HCCrawler = require('headless-chrome-crawler');
+const fs = require('fs');
+const path = require('path');
+const mkdirp = require('mkdirp');
+    
+
+
+const url = 'http://localhost:8000/app/';
 
 HCCrawler.launch({
 		// Function to be evaluated in browsers
 		evaluatePage: (() => ({
-			title: $('title').text(),
+			dom: document.children[0].innerHTML,
 		})),
 		// Function to be called with evaluated results from browsers
 		onSuccess: (result => {
 			console.log('toto', result);
+			let suffix = result.response.url.substring(url.length);
+			console.log('suffix', suffix);
+            suffix = (suffix === '') ? 'index.html' : suffix + '.html';
+            
+            const filename = path.resolve(__dirname, `../tmp/${suffix}`);
+            console.log('filename', filename);
+
+           
+            
+            mkdirp.sync(path.dirname(filename));
+
+			fs.writeFileSync(filename, result.result.dom);
 		}),
 	})
 	.then(crawler => {
@@ -15,7 +34,10 @@ HCCrawler.launch({
 		// crawler.queue('http://localhost:8000/app/');
 
 		crawler.queue({
-			url: 'http://localhost:8000/app/',
+			url: url,
+			jQuery: false,
+			allowedDomains: ['localhost'],
+			maxDepth: 3,
 			// Emulate a tablet device
 			//   device: 'Nexus 7',
 			// Enable screenshot by passing options

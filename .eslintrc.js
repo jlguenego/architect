@@ -1,7 +1,7 @@
 module.exports = {
 	extends: ['google', 'eslint:recommended'],
 	parserOptions: {
-		ecmaVersion: 6,
+		ecmaVersion: 7,
 		sourceType: 'module',
 	},
 	rules: {
