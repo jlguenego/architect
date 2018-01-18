@@ -3,8 +3,8 @@ DirectoryIndex index.html
 
 RewriteEngine On
 <IfModule mod_ssl.c>
-#    RewriteCond %{HTTPS} off
-#    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 </IfModule>
 
 # If an existing asset or directory is requested go to it as it is
