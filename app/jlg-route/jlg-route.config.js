@@ -12,7 +12,8 @@ export function config($locationProvider, $stateProvider, $urlRouterProvider) {
 		url: '/',
 		template: accueilHtml,
 		data: {
-			// see index.html
+			title: `Acceuil`,
+			description: `Cabinet d'architecture DEMETRESCU - GUENEGO: architectes DPLG, architectes du patrimoine.`,
 		}
 	});
 	$stateProvider.state({
