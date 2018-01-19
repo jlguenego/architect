@@ -24,3 +24,21 @@ body {
     // do not put overflow: hidden on the html element, you will stop the mobile rolling lscroll
     overflow-x: hidden;
 }
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

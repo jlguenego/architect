@@ -99,3 +99,8 @@ h6 {
         transform: translateX(0);
     }
 }
+
+article {
+    will-change: opacity;
+    animation: fadein 1s;
+}
