@@ -7,6 +7,11 @@ RewriteEngine On
     RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 </IfModule>
 
+# If search engine crawler (facebook for seo), then redirect to prerendered website.
+RewriteCond %{HTTP_USER_AGENT} (kiki|facebookexternalhit/[0-9]|Twitterbot|Pinterest|Google.*snippet)
+RewriteRule !^seo_snapshots/.*$ seo_snapshots/index.html [NC,L]
+
+
 # If an existing asset or directory is requested go to it as it is
 RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
 RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d

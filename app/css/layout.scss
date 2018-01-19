@@ -76,6 +76,7 @@ menu {
 main {
     display: block;
     padding-top: $headerHeight;
+    overflow-x: hidden;
 }
 
 section {

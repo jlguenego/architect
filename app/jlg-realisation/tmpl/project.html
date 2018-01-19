@@ -4,25 +4,26 @@
 			<h1>Réalisation : {{$ctrl.data.title}}</h1>
 			<h2>Présentation</h2>
 			<table class="table">
-					<tr>
-						<td>Maîtrise d'ouvrage</td>
-						<td>{{$ctrl.data.moa.name}}</td>
-					</tr>
-					<tr ng-if="$ctrl.data.moa.url">
-						<td>Site</td>
-						<td>
-							<a ng-href="{{$ctrl.data.moa.url}}" target="_blank">{{$ctrl.data.moa.url}}</a>
-						</td>
-					</tr>
-					<tr ng-if="$ctrl.data.classement">
-						<td>Monuments historiques</td>
-						<td>
-							{{$ctrl.data.classement}}
-						</td>
-					</tr>
-				</table>
+				<tr>
+					<td>Maîtrise d'ouvrage</td>
+					<td>
+						<a ng-if="$ctrl.data.moa.url" ng-href="{{$ctrl.data.moa.url}}" target="_blank">
+							{{$ctrl.data.moa.name}}
+						</a>
+						<span ng-if="!$ctrl.data.moa.url">
+							{{$ctrl.data.moa.name}}
+						</span>
+					</td>
+				</tr>
+				<tr ng-if="$ctrl.data.classement">
+					<td>Monuments historiques</td>
+					<td>
+						{{$ctrl.data.classement}}
+					</td>
+				</tr>
+			</table>
 			<my-text ng-bind-html="$ctrl.data.text"></my-text>
-			
+
 		</div>
 	</section>
 	<section class="parallax">
@@ -35,7 +36,9 @@
 			<table class="table">
 				<tbody ng-repeat="intervention in $ctrl.data.interventions">
 					<tr>
-						<td><b>{{intervention.year}}</b></td>
+						<td>
+							<b>{{intervention.year}}</b>
+						</td>
 						<td>{{intervention.title}}</td>
 					</tr>
 					<tr ng-if="intervention.missions">
