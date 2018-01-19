@@ -10,8 +10,14 @@ const url = 'http://localhost:8000/app/';
 HCCrawler.launch({
 		// Function to be evaluated in browsers
 		evaluatePage: () => {
+			const html = document.querySelector('html').cloneNode(true);
+			
+
+			html.querySelector('body').innerHTML = 'Hello crawler'; 
+			html.querySelector('style').innerHTML = ''; 
+			// document.querySelector('script').innerHTML = '';
 			return {
-				dom: document.children[0].outerHTML,
+				dom: html.outerHTML,
 			};
 		},
 		// Function to be called with evaluated results from browsers
