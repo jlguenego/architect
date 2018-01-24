@@ -28,6 +28,7 @@ export const state = {
 				price: '150 000 € HT'
 			}
 		],
+		
 		text: textHtml,
 	}
 };
