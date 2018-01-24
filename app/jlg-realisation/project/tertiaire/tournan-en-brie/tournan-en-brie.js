@@ -19,7 +19,7 @@ export const state = {
 		interventions: [
 			{
 				year: '2017 – en cours',
-				title:'Réhabilitation d’une ancienne grange en locaux administratifs',
+				title: 'Réhabilitation d’une ancienne grange en locaux administratifs',
 				missions: [
 					'Maîtrise d\'oeuvre'
 				],

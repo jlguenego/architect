@@ -5,11 +5,11 @@ export const state = {
 		title: `Construction d’un hangar de stockage et bureaux à Chambly`,
 		description: `Construction d’un hangar de stockage et bureaux à Chambly`,
 		image: {
-			main: 'img/photo/project/tertiaire/chambly/tertiaire.jpg',
-			mainPortrait: 'img/photo/project/tertiaire/chambly/tertiaire.jpg',
+			main: 'img/photo/project/tertiaire/chambly/chambly.jpg',
+			mainPortrait: 'img/photo/project/tertiaire/chambly/chambly.jpg',
 			others: [
-				'img/photo/project/tertiaire/chambly/tertiaire.jpg',
-				'img/photo/project/tertiaire/chambly/tertiaire.jpg',
+				'img/photo/project/tertiaire/chambly/chambly.jpg',
+				'img/photo/project/tertiaire/chambly/chambly.jpg',
 			]
 		},
 		moa: {
@@ -19,6 +19,7 @@ export const state = {
 		interventions: [
 			{
 				year: '2017 – en cours',
+				title: 'Construction d’un hangar de stockage et bureaux',
 				missions: [
 					'Maîtrise d\'oeuvre'
 				],

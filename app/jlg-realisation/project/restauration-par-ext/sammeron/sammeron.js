@@ -15,7 +15,7 @@ export const state = {
 		},
 		moa: {
 			name: 'Commune de Sammeron (77)',
-			url: 'http://www.ville-boisleroi.fr/',
+			url: 'http://www.sammeron.fr/',
 		},
 		interventions: [
 			{

@@ -19,6 +19,7 @@ export const state = {
 		interventions: [
 			{
 				year: 2015,
+				title: 'Aménagement CPAM',
 				missions: [
 					'Maîtrise d\'oeuvre'
 				],
