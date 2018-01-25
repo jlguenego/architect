@@ -7,7 +7,7 @@ const pathConfig = {
 	wpk: 'app/wpk',
 	indexHtml: 'app/**/index.html',
 	htaccess: ['app/**/.htaccess'],
-	resources: ['app/img/**/*', 'app/wpk/**/*'],
+	resources: ['app/img/**/*', 'app/wpk/**/*', 'app/crawler-prerender/**/*'],
 	ftp: ['dist/**/**', 'dist/**/.htaccess'],
 	// ftp: ['dist/**/index.html', 'dist/.htaccess'],
 };

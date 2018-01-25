@@ -5,7 +5,7 @@ app.value('seoConfig', {
 	metaDescription: document.querySelector('meta[name="description"]').getAttribute('content'),
 });
 
-app.run(($transitions, seoConfig) => {
+app.run(($location, $transitions, seoConfig) => {
 	$transitions.onSuccess({}, function(transition) {
 		const data = transition.to().data;
 		if (!data) {
@@ -16,6 +16,12 @@ app.run(($transitions, seoConfig) => {
 
 		document.querySelector('title').innerHTML = `${seoConfig.titlePrefix}: ${data.title}`;
 		document.querySelector('meta[name="description"]').setAttribute('content', data.description);
+
+		// seo open graph
 		document.querySelector('meta[property="og:image"]').setAttribute('content', data.image.main);
+		document.querySelector('meta[property="og:title"]').setAttribute('content', data.title);
+		document.querySelector('meta[property="og:description"]').setAttribute('content', data.description);
+		document.querySelector('meta[property="og:url"]').setAttribute('content', '.' + $location.path());
+
 	});
 });
