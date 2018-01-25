@@ -74,7 +74,7 @@ app.controller('ClientCtrl', function ClientCtrl() {
 			type: 'Mairie',
 			year: '2016',
 		}, {
-			name: 'Saint Fiacre',
+			name: 'Saint-Fiacre',
 			zip: 77470,
 			type: 'Mairie',
 			year: '2016',
@@ -109,7 +109,7 @@ app.controller('ClientCtrl', function ClientCtrl() {
 			type: 'Mairie',
 			year: '2016',
 		}, {
-			name: `Orbais l'abbaye`,
+			name: `Orbais-l'abbaye`,
 			zip: 51270,
 			type: 'Mairie',
 			year: '2007',
@@ -124,12 +124,12 @@ app.controller('ClientCtrl', function ClientCtrl() {
 			type: 'Mairie',
 			year: '2007',
 		}, {
-			name: `Moissy Cramayel`,
+			name: `Moissy-Cramayel`,
 			zip: 77550,
 			type: 'Mairie',
 			year: '2012',
 		}, {
-			name: `Dammarie les Lys`,
+			name: `Dammarie-les-Lys`,
 			zip: 77190,
 			type: 'Mairie',
 			year: '2012',
@@ -154,12 +154,12 @@ app.controller('ClientCtrl', function ClientCtrl() {
 			type: 'Mairie',
 			year: '2017-actuel',
 		}, {
-			name: `Bois le Roi`,
+			name: `Bois-le-Roi`,
 			zip: 77590,
 			type: 'Mairie',
 			year: '2017',
 		}, {
-			name: `Villiers en Bière`,
+			name: `Villiers-en-Bière`,
 			zip: 77190,
 			type: 'Mairie',
 			year: '2017',

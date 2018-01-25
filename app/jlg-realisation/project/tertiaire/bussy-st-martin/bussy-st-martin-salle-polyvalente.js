@@ -5,11 +5,11 @@ export const state = {
 		title: `Salle polyvalente à Bussy-Saint-Martin`,
 		description: `Extension de la salle polyvalente à Bussy-Saint-Martin`,
 		image: {
-			main: 'img/photo/project/tertiaire/bussy-st-martin/bussy-st-martin2.jpg',
-			mainPortrait: 'img/photo/project/tertiaire/bussy-st-martin/bussy-st-martin2.jpg',
+			main: 'img/photo/project/tertiaire/bussy-st-martin/salle-polyvalente.jpg',
+			mainPortrait: 'img/photo/project/tertiaire/bussy-st-martin/salle-polyvalente.jpg',
 			others: [
-				'img/photo/project/tertiaire/bussy-st-martin/bussy-st-martin2.jpg',
-				'img/photo/project/tertiaire/bussy-st-martin/bussy-st-martin2.jpg',
+				'img/photo/project/tertiaire/bussy-st-martin/salle-polyvalente.jpg',
+				'img/photo/project/tertiaire/bussy-st-martin/salle-polyvalente.jpg',
 			]
 		},
 		moa: {

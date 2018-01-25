@@ -5,11 +5,11 @@ export const state = {
 		title: `Ateliers communaux à Sammeron`,
 		description: `Construction des ateliers communaux à Sammeron`,
 		image: {
-			main: 'img/photo/project/tertiaire/sammeron/sammeron2.jpg',
-			mainPortrait: 'img/photo/project/tertiaire/sammeron/sammeron2.jpg',
+			main: 'img/photo/project/tertiaire/sammeron/ateliers-communaux.jpg',
+			mainPortrait: 'img/photo/project/tertiaire/sammeron/ateliers-communaux.jpg',
 			others: [
-				'img/photo/project/tertiaire/sammeron/sammeron2.jpg',
-				'img/photo/project/tertiaire/sammeron/sammeron2.jpg',
+				'img/photo/project/tertiaire/sammeron/ateliers-communaux.jpg',
+				'img/photo/project/tertiaire/sammeron/ateliers-communaux.jpg',
 			]
 		},
 		moa: {
