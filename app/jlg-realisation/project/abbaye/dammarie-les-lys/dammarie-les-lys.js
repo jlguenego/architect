@@ -2,7 +2,7 @@ import textHtml from './text.html';
 
 export const state = {
 	data: {
-		title: `Abbaye du Lys de Dammarie les Lys`,
+		title: `Abbaye du Lys de Dammarie-les-Lys`,
 		description: `Restauration et mise en valeur des vestiges de l’ancienne abbaye`,
 		image: {
 			main: 'img/photo/project/abbaye/dammarie-les-lys/abbaye.jpg',
@@ -13,7 +13,7 @@ export const state = {
 			]
 		},
 		moa: {
-			name: 'Ville de Dammarie les Lys (77)',
+			name: 'Ville de Dammarie-les-Lys (77)',
 			url: 'http://www.mairie-dammarie-les-lys.fr/',
 		},
 		interventions: [

@@ -3,8 +3,8 @@ import textHtml from './text.html';
 
 export const state = {
 	data: {
-		title: `Mairie de Bois le Roi`,
-		description: `Rénovation extérieure et intérieure Mairie à Bois le Roi`,
+		title: `Mairie de Bois-le-roi`,
+		description: `Rénovation extérieure et intérieure Mairie à Bois-le-roi`,
 		image: {
 			main: 'img/photo/project/restauration-par-ext/bois-le-roi/mairie.jpg',
 			mainPortrait: 'img/photo/project/restauration-par-ext/bois-le-roi/mairie.jpg',
@@ -14,7 +14,7 @@ export const state = {
 			]
 		},
 		moa: {
-			name: 'Ville de Bois le Roi (77)',
+			name: 'Ville de Bois-le-roi (77)',
 			url: 'http://www.ville-boisleroi.fr/',
 		},
 		interventions: [

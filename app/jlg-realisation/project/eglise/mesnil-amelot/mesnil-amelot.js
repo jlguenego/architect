@@ -3,9 +3,9 @@ import textHtml from './text.html';
 
 export const state = {
 	data: {
-		title: `Eglise Saint Martin du Mesnil-Amélot`,
+		title: `Eglise Saint Martin du Mesnil-Amelot`,
 		description: `Restauration des parements extérieurs et réfection du beffroi du clocher - 
-		Eglise Saint Martin du Mesnil-Amélot`,
+		Eglise Saint Martin du Mesnil-Amelot`,
 		image: {
 			main: 'img/photo/project/eglise/mesnil-amelot/eglise.jpg',
 			mainPortrait: 'img/photo/project/eglise/mesnil-amelot/eglise.jpg',
@@ -15,7 +15,7 @@ export const state = {
 			]
 		},
 		moa: {
-			name: 'Commune du Mesnil-Amélot (77)',
+			name: 'Commune du Mesnil-Amelot (77)',
 			url: 'http://www.lemesnilamelot.fr/',
 		},
 		interventions: [

@@ -2,8 +2,8 @@ import textHtml from './text.html';
 
 export const state = {
 	data: {
-		title: `Eglise Saint Fiacre à Saint Fiacre`,
-		description: `Eglise Saint Fiacre à Saint Fiacre`,
+		title: `Eglise Saint-Fiacre à Saint-Fiacre`,
+		description: `Eglise Saint-Fiacre à Saint-Fiacre`,
 		image: {
 			main: 'img/photo/project/eglise/saint-fiacre/eglise.jpg',
 			mainPortrait: 'img/photo/project/eglise/saint-fiacre/eglise.jpg',
