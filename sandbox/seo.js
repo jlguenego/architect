@@ -14,22 +14,18 @@ const url = 'http://localhost:8000/app/';
 HCCrawler.launch({
 		// Function to be evaluated in browsers
 		evaluatePage: () => {
-			try {
+			const html = document.querySelector('html').cloneNode(true);
 
-				const html = document.querySelector('html').cloneNode(true);
-
-				html.querySelector('body').innerHTML = 'Hello crawler';
-				html.querySelector('style').innerHTML = '';
-				console.log('coucou');
-				const result = html.outerHTML;
-
-				return {
-					dom: result,
-				};
-			} catch (e) {
-				console.log('error', e);
-				return e;
+			html.querySelector('body').innerHTML = 'Hello crawler';
+			html.querySelector('style').innerHTML = '';
+			const links = html.querySelectorAll('link');
+			for (let i = 0; i < links.length; i++) {
+				links[i].parentNode.removeChild(links[i]);
 			}
+			const result = html.outerHTML;
+			return {
+				dom: result,
+			};
 		},
 		// Function to be called with evaluated results from browsers
 		onSuccess: (result => {
