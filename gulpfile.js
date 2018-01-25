@@ -8,7 +8,8 @@ const pathConfig = {
 	indexHtml: 'app/**/index.html',
 	htaccess: ['app/**/.htaccess'],
 	resources: ['app/img/**/*', 'app/wpk/**/*', 'app/crawler-prerender/**/*'],
-	ftp: ['dist/**/**', 'dist/**/.htaccess'],
+	rewriteBase: ['app/**/index.html', 'app/**/.htaccess'],
+	ftp: ['dist/**/**', 'dist/**/.htaccess', '!dist/img/**/*', '!./**/*.map'],
 	// ftp: ['dist/**/index.html', 'dist/.htaccess'],
 };
 

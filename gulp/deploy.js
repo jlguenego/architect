@@ -10,8 +10,8 @@ module.exports = function(gulp, pathConfig) {
 	gulp.task('deploy:config', function(cb) {
 		const deployEnv = cfgUtils.getEnv('deploy');
 		console.log(deployEnv.base);		
-		return gulp.src(pathConfig.indexHtml, { base: pathConfig.base })
-			.pipe(replace(/\/app\//, `${deployEnv.base}`))
+		return gulp.src(pathConfig.rewriteBase, { base: pathConfig.base })
+			.pipe(replace(/\/app\//g, `${deployEnv.base}`))
 			.pipe(gulp.dest(pathConfig.dist));
 
 	});
