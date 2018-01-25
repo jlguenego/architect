@@ -44,19 +44,21 @@ HCCrawler.launch({
 	.then(crawler => {
 		// Queue a request
 		// crawler.queue('http://localhost:8000/app/');
-
-		crawler.queue({
-			url: url,
-			jQuery: false,
-			allowedDomains: ['localhost'],
-			maxDepth: 3,
-			// Emulate a tablet device
-			//   device: 'Nexus 7',
-			// Enable screenshot by passing options
-			// screenshot: {
-			// 	path: 'example-com.png'
-			// },
+		crawler.clearCache().then(() => {
+			crawler.queue({
+				url: url,
+				jQuery: false,
+				allowedDomains: ['localhost'],
+				maxDepth: 3,
+				// Emulate a tablet device
+				//   device: 'Nexus 7',
+				// Enable screenshot by passing options
+				// screenshot: {
+				// 	path: 'example-com.png'
+				// },
+			});
 		});
+		
 		crawler.onIdle() // Resolved when no queue is left
 			.then(() => crawler.close()); // Close the crawler
 	});

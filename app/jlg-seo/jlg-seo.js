@@ -19,7 +19,7 @@ app.run(($location, $transitions, seoConfig) => {
 
 		// seo open graph
 		const url = document.querySelector('base').href;
-		document.querySelector('meta[property="og:image"]').setAttribute('content', url + data.image.main);
+		document.querySelector('meta[property="og:image:secure_url"]').setAttribute('content', url + data.image.main);
 		document.querySelector('meta[property="og:title"]').setAttribute('content', data.title);
 		document.querySelector('meta[property="og:description"]').setAttribute('content', data.description);
 		document.querySelector('meta[property="og:url"]').setAttribute('content',
