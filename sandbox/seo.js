@@ -2,30 +2,30 @@ const HCCrawler = require('headless-chrome-crawler');
 const fs = require('fs');
 const path = require('path');
 const mkdirp = require('mkdirp');
-    
-
 
 const url = 'http://localhost:8000/app/';
 
 HCCrawler.launch({
 		// Function to be evaluated in browsers
-		evaluatePage: (() => ({
-			dom: document.children[0].innerHTML,
-		})),
+		evaluatePage: () => {
+			const html = document.querySelector('html').cloneNode(true);
+
+			html.querySelector('body').innerHTML = 'Hello crawler'; 
+			html.querySelector('style').innerHTML = ''; 
+			const result = html.outerHTML;
+			return {
+				dom: result,
+			};
+		},
 		// Function to be called with evaluated results from browsers
 		onSuccess: (result => {
-			console.log('toto', result);
 			let suffix = result.response.url.substring(url.length);
-			console.log('suffix', suffix);
-            suffix = (suffix === '') ? 'index.html' : suffix + '.html';
-            
-            const filename = path.resolve(__dirname, `../tmp/${suffix}`);
-            console.log('filename', filename);
-
-           
-            
-            mkdirp.sync(path.dirname(filename));
-
+			suffix = (suffix === '') ? 'index.html' : suffix + '.html';
+			
+			const filename = path.resolve(__dirname, `../crawler-prerender/${suffix}`);
+			mkdirp.sync(path.dirname(filename));
+			
+			console.log('writing to ', filename);
 			fs.writeFileSync(filename, result.result.dom);
 		}),
 	})

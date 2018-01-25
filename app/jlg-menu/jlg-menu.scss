@@ -19,16 +19,23 @@ jlg-hamburger {
     }
     /* For mobile phones: */
     .jlg-hamburger-menu {
-        display: none;
+        display: block;
+        // make it not visible
+        height: auto;
+        transform: scaleY(0);
+        transform-origin: top;
+        will-change: transform;
+        transition: transform 200ms;
+        // end
         position: fixed;
         z-index: 1000;
         float: none;
         min-width: auto;
         width: 100%;
-        height: auto;
         top: $headerHeight;
         margin: 0;
         padding: 0;
+        border-bottom: 1px solid black;
     }
     .menu-item {
         display: block;
@@ -54,7 +61,7 @@ jlg-hamburger {
         top: 0;
         width: 100%;
         .jlg-hamburger-menu {
-            display: block;
+            transform: scaleY(1);
         }
     }
 }
