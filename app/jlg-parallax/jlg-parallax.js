@@ -111,7 +111,6 @@ app.component('jlgParallax', {
 				this.img.style.width = '100vw';
 				this.img.style.height = 'auto';
 			} else {
-				const ratio = this.images.landscape.width / this.images.landscape.height;
 				this.img.style.width = 'auto';
 				this.img.style.height = '100vh';
 			}

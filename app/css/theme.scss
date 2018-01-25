@@ -101,6 +101,7 @@ h6 {
 }
 
 article {
-    will-change: opacity;
+    // warning: this cause bug with parallax fixed.
+    // will-change: opacity;
     animation: fadein 1s;
 }
