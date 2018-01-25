@@ -16,6 +16,14 @@ module.exports = function(gulp, pathConfig) {
 
 	});
 
+	gulp.task('deploy:seo', function(cb) {
+		const deployEnv = cfgUtils.getEnv('deploy');
+		console.log(deployEnv.base);		
+		return gulp.src(pathConfig.seo, { base: pathConfig.base })
+			.pipe(replace(new RegExp('http://localhost:8000/app/', 'g'), `${deployEnv.url}`))
+			.pipe(gulp.dest(pathConfig.dist));
+	});
+
 	gulp.task('deploy:ftp', function() {
 		const deployEnv = cfgUtils.getEnv('deploy');
 		return gulp.src(pathConfig.ftp)
@@ -24,6 +32,6 @@ module.exports = function(gulp, pathConfig) {
 	});
 
 	gulp.task('deploy', [], function() {
-		runSequence('deploy:config', 'deploy:ftp');
+		runSequence('deploy:config', 'deploy:seo', 'deploy:ftp');
 	});
 };

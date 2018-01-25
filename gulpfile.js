@@ -7,9 +7,10 @@ const pathConfig = {
 	wpk: 'app/wpk',
 	indexHtml: 'app/**/index.html',
 	htaccess: ['app/**/.htaccess'],
-	resources: ['app/img/**/*', 'app/wpk/**/*', 'app/crawler-prerender/**/*'],
+	resources: ['app/img/**/*', 'app/wpk/**/*'],
 	rewriteBase: ['app/**/index.html', 'app/**/.htaccess'],
-	ftp: ['dist/**/**', 'dist/**/.htaccess', '!dist/img/**/*', '!./**/*.map'],
+	seo: ['app/crawler-prerender/**/*'],
+	ftp: ['dist/**/**', 'dist/**/.htaccess', '!distx/img/**/*', '!./**/*.map'],
 	// ftp: ['dist/**/index.html', 'dist/.htaccess'],
 };
 
