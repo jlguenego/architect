@@ -18,12 +18,12 @@ app.run(($location, $transitions, seoConfig) => {
 		document.querySelector('meta[name="description"]').setAttribute('content', data.description);
 
 		// seo open graph
-		const baseUrl = document.querySelector('base').href;
-		const baseAbsoluteUrl = `${baseUrl}`;
-		document.querySelector('meta[property="og:image"]').setAttribute('content', baseAbsoluteUrl + data.image.main);
+		const url = document.querySelector('base').href;
+		document.querySelector('meta[property="og:image"]').setAttribute('content', url + data.image.main);
 		document.querySelector('meta[property="og:title"]').setAttribute('content', data.title);
 		document.querySelector('meta[property="og:description"]').setAttribute('content', data.description);
-		document.querySelector('meta[property="og:url"]').setAttribute('content', '.' + $location.path());
+		document.querySelector('meta[property="og:url"]').setAttribute('content',
+			url.substr(0, url.length - 1) + $location.path());
 
 	});
 });
