@@ -30,7 +30,7 @@ HCCrawler.launch({
 		// Function to be called with evaluated results from browsers
 		onSuccess: (result => {
 			const dom = result.result.dom.replace(/<base href=".*?">/g,
-				`<base href="${deployEnv.base}crawler-prerender/">`);
+				`<base href="${deployEnv.base}">`);
 
 			let suffix = result.response.url.substring(url.length);
 			suffix = (suffix === '') ? 'index.html' : suffix + '.html';
