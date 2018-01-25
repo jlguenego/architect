@@ -8,8 +8,14 @@ RewriteEngine On
 </IfModule>
 
 # If search engine crawler (facebook for seo), then redirect to prerendered website.
-RewriteCond %{HTTP_USER_AGENT} (kiki|facebookexternalhit/[0-9]|Twitterbot|Pinterest|Google.*snippet)
+RewriteCond %{HTTP_USER_AGENT} (facebookexternalhit/[0-9]|Twitterbot|Pinterest|Google.*snippet)
+RewriteCond %{REQUEST_URI}  ^/app/$
 RewriteRule !^crawler-prerender crawler-prerender/index.html [L]
+
+# If search engine crawler (facebook for seo), then redirect to prerendered website.
+RewriteCond %{HTTP_USER_AGENT} (facebookexternalhit/[0-9]|Twitterbot|Pinterest|Google.*snippet)
+RewriteCond %{REQUEST_URI}  ^/app/(.*)$
+RewriteRule !^crawler-prerender crawler-prerender/%1.html [L]
 
 
 # If an existing asset or directory is requested go to it as it is
