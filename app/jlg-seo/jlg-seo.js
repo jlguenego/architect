@@ -16,6 +16,6 @@ app.run(($transitions, seoConfig) => {
 
 		document.querySelector('title').innerHTML = `${seoConfig.titlePrefix}: ${data.title}`;
 		document.querySelector('meta[name="description"]').setAttribute('content', data.description);
-		
+		document.querySelector('meta[property="og:image"]').setAttribute('content', data.image.main);
 	});
 });

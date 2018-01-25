@@ -3,30 +3,47 @@ const fs = require('fs');
 const path = require('path');
 const mkdirp = require('mkdirp');
 
+const cfgUtils = require('../cfg/utils.js');
+
+const deployEnv = cfgUtils.getEnv('deploy');
+
+console.log('base', deployEnv.base);
+
 const url = 'http://localhost:8000/app/';
 
 HCCrawler.launch({
 		// Function to be evaluated in browsers
 		evaluatePage: () => {
-			const html = document.querySelector('html').cloneNode(true);
+			try {
 
-			html.querySelector('body').innerHTML = 'Hello crawler'; 
-			html.querySelector('style').innerHTML = ''; 
-			const result = html.outerHTML;
-			return {
-				dom: result,
-			};
+				const html = document.querySelector('html').cloneNode(true);
+
+				html.querySelector('body').innerHTML = 'Hello crawler';
+				html.querySelector('style').innerHTML = '';
+				console.log('coucou');
+				const result = html.outerHTML;
+
+				return {
+					dom: result,
+				};
+			} catch (e) {
+				console.log('error', e);
+				return e;
+			}
 		},
 		// Function to be called with evaluated results from browsers
 		onSuccess: (result => {
+			const dom = result.result.dom.replace(/<base href=".*?">/g,
+				`<base href="${deployEnv.base}crawler-prerender/">`);
+
 			let suffix = result.response.url.substring(url.length);
 			suffix = (suffix === '') ? 'index.html' : suffix + '.html';
-			
-			const filename = path.resolve(__dirname, `../crawler-prerender/${suffix}`);
+
+			const filename = path.resolve(__dirname, `../app/crawler-prerender/${suffix}`);
 			mkdirp.sync(path.dirname(filename));
-			
+
 			console.log('writing to ', filename);
-			fs.writeFileSync(filename, result.result.dom);
+			fs.writeFileSync(filename, dom);
 		}),
 	})
 	.then(crawler => {
