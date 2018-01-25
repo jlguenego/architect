@@ -7,11 +7,13 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # If search engine crawler (facebook for seo), then redirect to prerendered website.
 RewriteCond %{HTTP_USER_AGENT} (facebookexternalhit/[0-9]|Twitterbot|Pinterest|Google.*snippet)
+RewriteCond %{REQUEST_URI}  !/img/
 RewriteCond %{REQUEST_URI}  ^/app/$
 RewriteRule !^crawler-prerender crawler-prerender/index.html [L]
 
 # If search engine crawler (facebook for seo), then redirect to prerendered website.
 RewriteCond %{HTTP_USER_AGENT} (facebookexternalhit/[0-9]|Twitterbot|Pinterest|Google.*snippet)
+RewriteCond %{REQUEST_URI}  !/img/
 RewriteCond %{REQUEST_URI}  ^/app/(.*)$
 RewriteRule !^crawler-prerender crawler-prerender/%1.html [L]
 
