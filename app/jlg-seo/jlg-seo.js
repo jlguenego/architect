@@ -18,7 +18,9 @@ app.run(($location, $transitions, seoConfig) => {
 		document.querySelector('meta[name="description"]').setAttribute('content', data.description);
 
 		// seo open graph
-		document.querySelector('meta[property="og:image"]').setAttribute('content', data.image.main);
+		const baseUrl = document.querySelector('base').href;
+		const baseAbsoluteUrl = `${baseUrl}`;
+		document.querySelector('meta[property="og:image"]').setAttribute('content', baseAbsoluteUrl + data.image.main);
 		document.querySelector('meta[property="og:title"]').setAttribute('content', data.title);
 		document.querySelector('meta[property="og:description"]').setAttribute('content', data.description);
 		document.querySelector('meta[property="og:url"]').setAttribute('content', '.' + $location.path());
