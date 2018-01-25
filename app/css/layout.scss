@@ -255,3 +255,7 @@ footer {
         font-style: italic;
     }
 }
+
+button, .button, [ng-click] {
+    cursor: pointer;
+}

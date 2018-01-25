@@ -1,13 +1,22 @@
+@import '../css/variable';
+
 jlg-facebook-share {
     display: block;
     background-color: white;
     width: 100%;
     overflow-x: hidden;
-    .jlg-margin {
-        max-width: 960px;
-        width: 100%;
-        margin: 0 auto;
-        text-align: center;
-        padding: 2em;
+    padding: 1em;
+    text-align: center;
+    button {
+        display: inline-block;
+        border: none;
+        border-radius: 0.1em;
+        padding: 0.5em;
+        font-size: 2em;
+        color: white;
+        background-color: hsl(225, 37%, 50%);
+        &:hover {
+            background-color: hsl(225, 37%, 43%);
+        }
     }
 }

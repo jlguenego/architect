@@ -4,17 +4,15 @@ import './jlg-facebook-share.scss';
 const app = angular.module('jlg-social', []);
 
 app.component('jlgFacebookShare', {
+	template: fbShareHtml,
 	controller: function JLGFacebookShareCtrl($element) {
-		this.url = window.location.href;
-		const html = fbShareHtml.replace(/URL/, this.url);
-		$element.html(html);
-		(function(d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) return;
-			js = d.createElement(s);
-			js.id = id;
-			js.src = '//connect.facebook.net/en_US/all.js#xfbml=1';
-			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
+		this.share = (event) => {
+			console.log('share', event);
+			const url = window.location.href;
+			const x = window.screen.width / 4;
+			const y = window.screen.height / 4;
+			window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`,
+				'', `menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600,top=${y},left=${x}`);
+		};
 	}
 });
