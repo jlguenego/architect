@@ -100,8 +100,7 @@ h6 {
     }
 }
 
-article {
-    // warning: this cause bug with parallax fixed.
-    // will-change: opacity;
-    animation: fadein 1s;
+₥ain {
+    will-change: opacity;
+    animation: fadein 1s forwards;
 }
