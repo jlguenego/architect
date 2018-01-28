@@ -29,7 +29,6 @@ app.component('jlgParallax', {
 			const html = `<img src="">`;
 			$element.html(html);
 			this.img = $element[0].querySelector('img');
-			this.img.style.opacity = '0';
 			$q.all([
 				loadImage(this.landscape),
 				loadImage(this.portrait),

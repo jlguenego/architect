@@ -1,16 +1,17 @@
 jlg-parallax {
     display: block;
     position: relative;
+    z-index: -2;
     padding: 0;
     margin: 0;
     height: 100%;
     overflow: hidden;
+    background-color: #eee;
     img {
         position: fixed;
         z-index: -1;
         top: 0;
         left: 50%;
-        opacity: 0;
         transform: translate(-50%, 0);
         background-color: black;
     }
