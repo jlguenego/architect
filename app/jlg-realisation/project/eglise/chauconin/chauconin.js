@@ -1,4 +1,3 @@
-
 import textHtml from './text.html';
 
 export const state = {
@@ -8,17 +7,22 @@ export const state = {
 		image: {
 			main: 'img/photo/project/eglise/chauconin/saint-saturnin.jpg',
 			mainPortrait: 'img/photo/project/eglise/chauconin/saint-saturnin.jpg',
-			others: [
-				'img/photo/project/eglise/chauconin/saint-saturnin.jpg',
-				'img/photo/project/eglise/chauconin/saint-saturnin.jpg',
-			]
+			trios: [[{
+				url: 'img/photo/project/eglise/chauconin/saint-saturnin.jpg',
+				caption: 'Belle aquarelle'
+			}, {
+				url: 'img/photo/project/eglise/chauconin/saint-saturnin.jpg',
+				caption: 'Belle aquarelle'
+			}, {
+				url: 'img/photo/project/eglise/chauconin/saint-saturnin.jpg',
+				caption: 'Belle aquarelle'
+			}]]
 		},
 		moa: {
 			name: 'Mairie de Chauconin-Neufmontiers (77)',
 			url: 'http://chauconin-neufmontiers.fr/',
 		},
-		interventions: [
-			{
+		interventions: [{
 				year: 2012,
 				title: `Restauration du transept`,
 				missions: [
@@ -43,4 +47,3 @@ export const state = {
 		text: textHtml,
 	}
 };
-

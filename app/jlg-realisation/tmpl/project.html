@@ -22,15 +22,7 @@
 					</td>
 				</tr>
 			</table>
-			<my-text ng-bind-html="$ctrl.data.text"></my-text>
-
 		</div>
-	</section>
-	<section class="parallax">
-		<jlg-parallax landscape="$ctrl.data.image.main" portrait="$ctrl.data.image.portraitMain"></jlg-parallax>
-	</section>
-	<section>
-
 		<div class="container">
 			<h2>Interventions</h2>
 			<table class="table">
@@ -56,6 +48,22 @@
 				</tbody>
 
 			</table>
+		</div>
+	</section>
+	<section class="parallax">
+		<jlg-parallax landscape="$ctrl.data.image.main" portrait="$ctrl.data.image.portraitMain"></jlg-parallax>
+	</section>
+	<section>
+		<div class="container">
+			<h2>Description</h2>
+			<my-text ng-bind-html="$ctrl.data.text"></my-text>
+			<h2>Photos</h2>
+
+			<div class="row" ng-repeat="trio in $ctrl.data.image.trios">
+				<div class="col-4 realisation-item" ng-repeat="picture in trio">
+					<jlg-photo-thumbnail url="picture.url" caption="picture.caption"></jlg-photo-thumbnail>
+				</div>
+			</div>
 		</div>
 	</section>
 </article>

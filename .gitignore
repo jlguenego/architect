@@ -1,7 +1,7 @@
 /node_modules
 /spritesmith_modules
 /app/wpk
-/img/photo
+/app/img/photo
 /dist
 /cfg/environments.js
 /app/crawler-prerender

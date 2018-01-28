@@ -12,6 +12,7 @@ import './jlg-realisation/jlg-realisation.module.js';
 import './jlg-array/jlg-array.js';
 import './jlg-social/jlg-social.js';
 import './jlg-layout/jlg-layout.js';
+import './jlg-photo-thumbnail/jlg-photo-thumbnail.js';
 
 angular.module('main', [
 	'ngSanitize',
@@ -23,4 +24,5 @@ angular.module('main', [
 	'jlg-realisation',
 	'jlg-social',
 	'jlg-layout',
+	'jlg-photo-thumbnail',
 ]);
