@@ -1,4 +1,7 @@
 <div>
-	<img ng-src="{{$ctrl.url}}">
+	<img ng-click="$ctrl.state = 1;" ng-src="{{$ctrl.url}}">
 </div>
 <figcaption>{{$ctrl.caption}}</figcaption>
+<overlay ng-click="$ctrl.state = 0;">
+	<img ng-click="$ctrl.state = 0;" ng-src="{{$ctrl.url}}">
+</overlay>

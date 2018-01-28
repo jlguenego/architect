@@ -8,5 +8,15 @@ app.component('jlgPhotoThumbnail', {
 	bindings: {
 		url: '<',
 		caption: '<',
+	},
+	controller: function JLGPhotoThumbnailCtrl($scope, $element) {
+		this.state = 0;
+		$scope.$watch('$ctrl.state', () => {
+			if (this.state === 0) {
+				$element.removeClass('active');
+			} else {
+				$element.addClass('active');
+			}
+		});
 	}
 });

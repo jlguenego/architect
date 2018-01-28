@@ -1,5 +1,29 @@
 jlg-photo-thumbnail {
-	img {
+	div>img {
 		width: 100%;
 	}
+	overlay {
+		display: none;
+	}
+&.active {
+	overlay {
+		display: block;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: black;
+		text-align: center;
+		>img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			max-height: 100%;
+			max-width: 100%;
+			animation: fadein 1s;
+		}
+	}
+}
 }
