@@ -2,8 +2,8 @@ import textHtml from './text.html';
 
 export const state = {
 	data: {
-		title: `Eglise Notre Dame en l’Assoption à Bernay-Vilbert`,
-		description: `Eglise Notre Dame en l’Assoption à Bernay-Vilbert`,
+		title: `Eglise Notre Dame en l’Assomption à Bernay-Vilbert`,
+		description: `Eglise Notre Dame en l’Assomption à Bernay-Vilbert`,
 		image: {
 			main: 'img/photo/project/eglise/bernay-vilbert/eglise.jpg',
 			mainPortrait: 'img/photo/project/eglise/bernay-vilbert/eglise.jpg',
