@@ -5,11 +5,11 @@ export const state = {
 		title: `Eglise Saint Germain à Bombon`,
 		description: `Eglise Saint Germain à Bombon`,
 		image: {
-			main: 'img/photo/project/eglise/sammeron/eglise.jpg',
-			mainPortrait: 'img/photo/project/eglise/sammeron/eglise.jpg',
+			main: 'img/photo/project/eglise/bombon/eglise.jpg',
+			mainPortrait: 'img/photo/project/eglise/bombon/eglise.jpg',
 			others: [
-				'img/photo/project/eglise/sammeron/eglise.jpg',
-				'img/photo/project/eglise/sammeron/eglise.jpg',
+				'img/photo/project/eglise/bombon/eglise.jpg',
+				'img/photo/project/eglise/bombon/eglise.jpg',
 			]
 		},
 		moa: {
