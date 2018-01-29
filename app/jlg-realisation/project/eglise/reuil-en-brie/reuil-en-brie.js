@@ -2,7 +2,7 @@ import textHtml from './text.html';
 
 export const state = {
 	data: {
-		title: `Eglise Saint Jacques et Saint Philippe à Reuil-en-Brie`,
+		title: `Eglise Saint-Jacques et Saint-Philippe à Reuil-en-Brie`,
 		description: `Eglise Saint Jacques et Saint Philippe à Reuil-en-Brie`,
 		image: {
 			main: 'img/photo/project/eglise/reuil-en-brie/eglise.jpg',
