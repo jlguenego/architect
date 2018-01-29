@@ -7,10 +7,13 @@ export const state = {
 		image: {
 			main: 'img/photo/project/tertiaire/villenoy-entrepot/entrepot.jpg',
 			mainPortrait: 'img/photo/project/tertiaire/villenoy-entrepot/entrepot.jpg',
-			others: [
-				'img/photo/project/tertiaire/villenoy-entrepot/entrepot.jpg',
-				'img/photo/project/tertiaire/villenoy-entrepot/entrepot.jpg',
-			]
+			trios: [[{
+				url: 'img/photo/project/tertiaire/villenoy-entrepot/01.jpg',
+				caption: 'Image 1'
+			}, {
+				url: 'img/photo/project/tertiaire/villenoy-entrepot/02.jpg',
+				caption: 'Image 2'
+			}]]
 		},
 		moa: {
 			name: 'privée',

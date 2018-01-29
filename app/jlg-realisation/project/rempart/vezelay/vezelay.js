@@ -8,10 +8,16 @@ export const state = {
 		image: {
 			main: 'img/photo/project/rempart/vezelay/rempart.jpg',
 			mainPortrait: 'img/photo/project/rempart/vezelay/rempart.jpg',
-			others: [
-				'img/photo/project/rempart/vezelay/rempart.jpg',
-				'img/photo/project/rempart/vezelay/rempart.jpg',
-			]
+			trios: [[{
+				url: 'img/photo/project/rempart/vezelay/01.jpg',
+				caption: 'Image 1'
+			}, {
+				url: 'img/photo/project/rempart/vezelay/02.jpg',
+				caption: 'Image 2'
+			}, {
+				url: 'img/photo/project/rempart/vezelay/03.jpg',
+				caption: 'Image 3'
+			}]]
 		},
 		moa: {
 			name: 'Conseil départemental de l’Yonne (89)',
