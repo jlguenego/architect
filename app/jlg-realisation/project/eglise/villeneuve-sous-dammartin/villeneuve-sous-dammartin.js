@@ -2,8 +2,8 @@ import textHtml from './text.html';
 
 export const state = {
 	data: {
-		title: `Eglise Saint Pierre et Saint Paul de Villeneuve-sous-Dammartin`,
-		description: `Eglise Saint Pierre et Saint Paul de Villeneuve-sous-Dammartin`,
+		title: `Eglise Saint-Pierre et Saint-Paul de Villeneuve-sous-Dammartin`,
+		description: `Eglise Saint-Pierre et Saint-Paul de Villeneuve-sous-Dammartin`,
 		image: {
 			main: 'img/photo/project/eglise/villeneuve-sous-dammartin/eglise.jpg',
 			mainPortrait: 'img/photo/project/eglise/villeneuve-sous-dammartin/eglise.jpg',
