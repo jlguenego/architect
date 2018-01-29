@@ -2,8 +2,8 @@ import textHtml from './text.html';
 
 export const state = {
 	data: {
-		title: `Eglise Saint Martin à Sammeron`,
-		description: `Eglise Saint Martin à Sammeron`,
+		title: `Eglise Saint-Martin à Sammeron`,
+		description: `Eglise Saint-Martin à Sammeron`,
 		image: {
 			main: 'img/photo/project/eglise/sammeron/eglise.jpg',
 			mainPortrait: 'img/photo/project/eglise/sammeron/eglise.jpg',
