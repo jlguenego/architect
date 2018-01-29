@@ -7,10 +7,16 @@ export const state = {
 		image: {
 			main: 'img/photo/project/eglise/bombon/eglise.jpg',
 			mainPortrait: 'img/photo/project/eglise/bombon/eglise.jpg',
-			others: [
-				'img/photo/project/eglise/bombon/eglise.jpg',
-				'img/photo/project/eglise/bombon/eglise.jpg',
-			]
+			trios: [[{
+				url: 'img/photo/project/eglise/bombon/01.jpg',
+				caption: 'Coupe'
+			}, {
+				url: 'img/photo/project/eglise/bombon/02.jpg',
+				caption: ''
+			}, {
+				url: 'img/photo/project/eglise/bombon/03.jpg',
+				caption: ''
+			}]]
 		},
 		moa: {
 			name: 'Commune de Bombon (77)',

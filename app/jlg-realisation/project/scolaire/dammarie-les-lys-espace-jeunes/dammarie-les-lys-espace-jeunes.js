@@ -7,10 +7,16 @@ export const state = {
 		image: {
 			main: 'img/photo/project/scolaire/dammarie-les-lys/espace-jeunes.jpg',
 			mainPortrait: 'img/photo/project/scolaire/dammarie-les-lys/espace-jeunes.jpg',
-			others: [
-				'img/photo/project/scolaire/dammarie-les-lys/espace-jeunes.jpg',
-				'img/photo/project/scolaire/dammarie-les-lys/espace-jeunes.jpg',
-			]
+			trios: [[{
+				url: 'img/photo/project/scolaire/dammarie-les-lys/01.jpg',
+				caption: 'Image 1'
+			}, {
+				url: 'img/photo/project/scolaire/dammarie-les-lys/02.jpg',
+				caption: 'Image 2'
+			}, {
+				url: 'img/photo/project/scolaire/dammarie-les-lys/03.jpg',
+				caption: 'Image 3'
+			}]]
 		},
 		moa: {
 			name: 'Ville de Dammarie-les-Lys (77)',
