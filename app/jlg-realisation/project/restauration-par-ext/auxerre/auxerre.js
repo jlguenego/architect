@@ -8,10 +8,16 @@ export const state = {
 		image: {
 			main: 'img/photo/project/restauration-par-ext/auxerre/auxerre.jpg',
 			mainPortrait: 'img/photo/project/restauration-par-ext/auxerre/auxerre.jpg',
-			others: [
-				'img/photo/project/restauration-par-ext/auxerre/auxerre.jpg',
-				'img/photo/project/restauration-par-ext/auxerre/auxerre.jpg',
-			]
+			trios: [[{
+				url: 'img/photo/project/restauration-par-ext/auxerre/01.jpg',
+				caption: ''
+			}, {
+				url: 'img/photo/project/restauration-par-ext/auxerre/02.jpg',
+				caption: ''
+			}, {
+				url: 'img/photo/project/restauration-par-ext/auxerre/03.jpg',
+				caption: ''
+			}]]
 		},
 		moa: {
 			name: 'Conseil Régional de Bourgogne (21)',

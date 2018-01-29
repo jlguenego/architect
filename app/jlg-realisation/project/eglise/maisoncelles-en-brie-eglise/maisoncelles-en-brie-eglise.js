@@ -13,10 +13,10 @@ export const state = {
 				caption: 'Coupe'
 			}, {
 				url: 'img/photo/project/eglise/maisoncelles-en-brie/02.jpg',
-				caption: 'Façade de l\'église'
+				caption: ''
 			}, {
 				url: 'img/photo/project/eglise/maisoncelles-en-brie/03.jpg',
-				caption: 'Intérieur de l\'église'
+				caption: ''
 			}]]
 		},
 		moa: {

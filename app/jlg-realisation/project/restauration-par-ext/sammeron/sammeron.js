@@ -8,10 +8,16 @@ export const state = {
 		image: {
 			main: 'img/photo/project/restauration-par-ext/sammeron/mairie.jpg',
 			mainPortrait: 'img/photo/project/restauration-par-ext/sammeron/mairie.jpg',
-			others: [
-				'img/photo/project/restauration-par-ext/sammeron/mairie.jpg',
-				'img/photo/project/restauration-par-ext/sammeron/mairie.jpg',
-			]
+			trios: [[{
+				url: 'img/photo/project/restauration-par-ext/sammeron/01.jpg',
+				caption: ''
+			}, {
+				url: 'img/photo/project/restauration-par-ext/sammeron/02.jpg',
+				caption: ''
+			}, {
+				url: 'img/photo/project/restauration-par-ext/sammeron/03.jpg',
+				caption: ''
+			}]]
 		},
 		moa: {
 			name: 'Commune de Sammeron (77)',

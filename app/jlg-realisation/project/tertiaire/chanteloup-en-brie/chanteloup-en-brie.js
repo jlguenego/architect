@@ -7,10 +7,16 @@ export const state = {
 		image: {
 			main: 'img/photo/project/tertiaire/chanteloup-en-brie/chanteloup-en-brie.jpg',
 			mainPortrait: 'img/photo/project/tertiaire/chanteloup-en-brie/chanteloup-en-brie.jpg',
-			others: [
-				'img/photo/project/tertiaire/chanteloup-en-brie/chanteloup-en-brie.jpg',
-				'img/photo/project/tertiaire/chanteloup-en-brie/chanteloup-en-brie.jpg',
-			]
+			trios: [[{
+				url: 'img/photo/project/tertiaire/chanteloup-en-brie/01.jpg',
+				caption: ''
+			}, {
+				url: 'img/photo/project/tertiaire/chanteloup-en-brie/02.jpg',
+				caption: ''
+			}, {
+				url: 'img/photo/project/tertiaire/chanteloup-en-brie/03.jpg',
+				caption: ''
+			}]]
 		},
 		moa: {
 			name: 'privée'

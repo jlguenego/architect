@@ -7,10 +7,16 @@ export const state = {
 		image: {
 			main: 'img/photo/project/chateau/bussy-st-martin/chateau.jpg',
 			mainPortrait: 'img/photo/project/chateau/bussy-st-martin/chateau.jpg',
-			others: [
-				'img/photo/project/chateau/bussy-st-martin/chateau.jpg',
-				'img/photo/project/chateau/bussy-st-martin/chateau.jpg',
-			]
+			trios: [[{
+				url: 'img/photo/project/chateau/bussy-st-martin/01.jpg',
+				caption: 'Plans'
+			}, {
+				url: 'img/photo/project/chateau/bussy-st-martin/02.jpg',
+				caption: ''
+			}, {
+				url: 'img/photo/project/chateau/bussy-st-martin/03.jpg',
+				caption: ''
+			}]]
 		},
 		moa: {
 			name: 'Communauté d’agglomération de Marne et Gondoire',

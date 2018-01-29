@@ -7,10 +7,16 @@ export const state = {
 		image: {
 			main: 'img/photo/project/eglise/sammeron/eglise.jpg',
 			mainPortrait: 'img/photo/project/eglise/sammeron/eglise.jpg',
-			others: [
-				'img/photo/project/eglise/sammeron/eglise.jpg',
-				'img/photo/project/eglise/sammeron/eglise.jpg',
-			]
+			trios: [[{
+				url: 'img/photo/project/eglise/sammeron/01.jpg',
+				caption: ''
+			}, {
+				url: 'img/photo/project/eglise/sammeron/02.jpg',
+				caption: ''
+			}, {
+				url: 'img/photo/project/eglise/sammeron/03.jpg',
+				caption: ''
+			}]]
 		},
 		moa: {
 			name: 'Commune de Sammeron (77)',

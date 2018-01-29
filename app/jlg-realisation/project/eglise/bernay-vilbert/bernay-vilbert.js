@@ -7,10 +7,16 @@ export const state = {
 		image: {
 			main: 'img/photo/project/eglise/bernay-vilbert/eglise.jpg',
 			mainPortrait: 'img/photo/project/eglise/bernay-vilbert/eglise.jpg',
-			others: [
-				'img/photo/project/eglise/bernay-vilbert/eglise.jpg',
-				'img/photo/project/eglise/bernay-vilbert/eglise.jpg',
-			]
+			trios: [[{
+				url: 'img/photo/project/eglise/bernay-vilbert/01.jpg',
+				caption: 'Coupe'
+			}, {
+				url: 'img/photo/project/eglise/bernay-vilbert/02.jpg',
+				caption: ''
+			}, {
+				url: 'img/photo/project/eglise/bernay-vilbert/03.jpg',
+				caption: ''
+			}]]
 		},
 		moa: {
 			name: 'Commune de Bernay-Vilbert (77)',
