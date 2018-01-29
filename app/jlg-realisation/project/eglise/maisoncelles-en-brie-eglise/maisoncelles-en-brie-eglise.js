@@ -8,10 +8,16 @@ export const state = {
 		image: {
 			main: 'img/photo/project/eglise/maisoncelles-en-brie/eglise.jpg',
 			mainPortrait: 'img/photo/project/eglise/maisoncelles-en-brie/eglise.jpg',
-			others: [
-				'img/photo/project/eglise/maisoncelles-en-brie/eglise.jpg',
-				'img/photo/project/eglise/maisoncelles-en-brie/eglise.jpg',
-			]
+			trios: [[{
+				url: 'img/photo/project/eglise/maisoncelles-en-brie/01.jpg',
+				caption: 'Coupe'
+			}, {
+				url: 'img/photo/project/eglise/maisoncelles-en-brie/02.jpg',
+				caption: 'Façade de l\'église'
+			}, {
+				url: 'img/photo/project/eglise/maisoncelles-en-brie/03.jpg',
+				caption: 'Intérieur de l\'église'
+			}]]
 		},
 		moa: {
 			name: 'Commune de Maisoncelles-en-Brie (77)',
