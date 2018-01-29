@@ -9,13 +9,13 @@ export const state = {
 			mainPortrait: 'img/photo/project/eglise/crecy-la-chapelle/eglise.jpg',
 			trios: [[{
 				url: 'img/photo/project/eglise/crecy-la-chapelle/01.jpg',
-				caption: 'Coupe'
+				caption: 'Image 1'
 			}, {
 				url: 'img/photo/project/eglise/crecy-la-chapelle/02.jpg',
-				caption: ''
+				caption: 'Image 2'
 			}, {
 				url: 'img/photo/project/eglise/crecy-la-chapelle/03.jpg',
-				caption: ''
+				caption: 'Image 3'
 			}]]
 		},
 		moa: {

@@ -7,10 +7,16 @@ export const state = {
 		image: {
 			main: 'img/photo/project/tertiaire/moissy-cramayel/moissy-cramayel.jpg',
 			mainPortrait: 'img/photo/project/tertiaire/moissy-cramayel/moissy-cramayel.jpg',
-			others: [
-				'img/photo/project/tertiaire/moissy-cramayel/moissy-cramayel.jpg',
-				'img/photo/project/tertiaire/moissy-cramayel/moissy-cramayel.jpg',
-			]
+			trios: [[{
+				url: 'img/photo/project/tertiaire/moissy-cramayel/01.jpg',
+				caption: 'Image 1'
+			}, {
+				url: 'img/photo/project/tertiaire/moissy-cramayel/02.jpg',
+				caption: 'Image 2'
+			}, {
+				url: 'img/photo/project/tertiaire/moissy-cramayel/03.jpg',
+				caption: 'Image 3'
+			}]]
 		},
 		moa: {
 			name: 'Ville de Moissy-Cramayel (77)',
