@@ -7,10 +7,16 @@ export const state = {
 		image: {
 			main: 'img/photo/project/eglise/louan-villegruis-fontaine/eglise.jpg',
 			mainPortrait: 'img/photo/project/eglise/louan-villegruis-fontaine/eglise.jpg',
-			others: [
-				'img/photo/project/eglise/louan-villegruis-fontaine/eglise.jpg',
-				'img/photo/project/eglise/louan-villegruis-fontaine/eglise.jpg',
-			]
+			trios: [[{
+				url: 'img/photo/project/eglise/louan-villegruis-fontaine/01.jpg',
+				caption: ''
+			}, {
+				url: 'img/photo/project/eglise/louan-villegruis-fontaine/02.jpg',
+				caption: ''
+			}, {
+				url: 'img/photo/project/eglise/louan-villegruis-fontaine/03.jpg',
+				caption: ''
+			}]]
 		},
 		moa: {
 			name: 'Commune de Louan-Villegruis-Fontaine (77)',

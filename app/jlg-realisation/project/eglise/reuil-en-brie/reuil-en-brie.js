@@ -7,10 +7,16 @@ export const state = {
 		image: {
 			main: 'img/photo/project/eglise/reuil-en-brie/eglise.jpg',
 			mainPortrait: 'img/photo/project/eglise/reuil-en-brie/eglise.jpg',
-			others: [
-				'img/photo/project/eglise/reuil-en-brie/eglise.jpg',
-				'img/photo/project/eglise/reuil-en-brie/eglise.jpg',
-			]
+			trios: [[{
+				url: 'img/photo/project/eglise/reuil-en-brie/01.jpg',
+				caption: ''
+			}, {
+				url: 'img/photo/project/eglise/reuil-en-brie/02.jpg',
+				caption: ''
+			}, {
+				url: 'img/photo/project/eglise/reuil-en-brie/03.jpg',
+				caption: ''
+			}]]
 		},
 		moa: {
 			name: 'Commune de Reuil-en-Brie (77)',
