@@ -9,13 +9,13 @@ export const state = {
 			mainPortrait: 'img/photo/project/eglise/louan-villegruis-fontaine/eglise.jpg',
 			trios: [[{
 				url: 'img/photo/project/eglise/louan-villegruis-fontaine/01.jpg',
-				caption: ''
+				caption: 'Avant restauration'
 			}, {
 				url: 'img/photo/project/eglise/louan-villegruis-fontaine/02.jpg',
-				caption: ''
+				caption: 'Après restauration'
 			}, {
 				url: 'img/photo/project/eglise/louan-villegruis-fontaine/03.jpg',
-				caption: ''
+				caption: 'L\'église de Louan'
 			}]]
 		},
 		moa: {
