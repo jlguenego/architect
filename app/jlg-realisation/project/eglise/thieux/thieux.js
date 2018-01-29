@@ -2,8 +2,8 @@ import textHtml from './text.html';
 
 export const state = {
 	data: {
-		title: `Eglise Saint Médard à Thieux`,
-		description: `Eglise Saint Médard à Thieux`,
+		title: `Eglise Saint-Médard à Thieux`,
+		description: `Eglise Saint-Médard à Thieux`,
 		image: {
 			main: 'img/photo/project/eglise/thieux/eglise.jpg',
 			mainPortrait: 'img/photo/project/eglise/thieux/eglise.jpg',
