@@ -5,5 +5,5 @@
 /dist
 /cfg/environments.js
 /app/crawler-prerender
-/suzana
+/suzana*
 *.zip
