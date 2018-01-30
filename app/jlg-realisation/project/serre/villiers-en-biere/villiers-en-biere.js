@@ -4,7 +4,7 @@ import textHtml from './text.html';
 export const state = {
 	data: {
 		title: `L’Orangerie du domaine de Villiers-en-Bière`,
-		description: `Restauration de l’Orangerie du domaine de Villiers-en-Bière`,
+		description: `Restauration de l’orangerie du domaine de Villiers-en-Bière`,
 		image: {
 			main: 'img/photo/project/serre/villiers-en-biere/serre.jpg',
 			mainPortrait: 'img/photo/project/serre/villiers-en-biere/serre.jpg',
