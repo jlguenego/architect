@@ -31,9 +31,6 @@ export const realisationRoute = {
 			key: 'serre',
 			value: 'Serres',
 		}, {
-			key: 'lavoir',
-			value: 'Lavoir',
-		}, {
 			key: 'tertiaire',
 			value: 'Tertiaire - Administration - Autres - Public',
 		}, {

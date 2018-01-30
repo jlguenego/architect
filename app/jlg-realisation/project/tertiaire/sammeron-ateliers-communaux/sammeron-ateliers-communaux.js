@@ -1,6 +1,7 @@
 import textHtml from './text.html';
 
 export const state = {
+	disabled: true,
 	data: {
 		title: `Ateliers communaux à Sammeron`,
 		description: `Construction des ateliers communaux à Sammeron`,
