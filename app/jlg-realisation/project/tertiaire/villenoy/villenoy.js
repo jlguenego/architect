@@ -7,10 +7,13 @@ export const state = {
 		image: {
 			main: 'img/photo/project/tertiaire/villenoy/villenoy.jpg',
 			mainPortrait: 'img/photo/project/tertiaire/villenoy/villenoy.jpg',
-			others: [
-				'img/photo/project/tertiaire/villenoy/villenoy.jpg',
-				'img/photo/project/tertiaire/villenoy/villenoy.jpg',
-			]
+			trios: [[{
+				url: 'img/photo/project/tertiaire/villenoy/01.jpg',
+				caption: 'Image 1'
+			}, {
+				url: 'img/photo/project/tertiaire/villenoy/02.jpg',
+				caption: 'Image 2'
+			}]]
 		},
 		moa: {
 			name: 'privée',

@@ -8,10 +8,16 @@ export const state = {
 		image: {
 			main: 'img/photo/project/scolaire/poincy/ecole.jpg',
 			mainPortrait: 'img/photo/project/scolaire/poincy/ecole.jpg',
-			others: [
-				'img/photo/project/scolaire/poincy/ecole.jpg',
-				'img/photo/project/scolaire/poincy/ecole.jpg',
-			]
+			trios: [[{
+				url: 'img/photo/project/scolaire/poincy/01.jpg',
+				caption: 'Image 1'
+			}, {
+				url: 'img/photo/project/scolaire/poincy/02.jpg',
+				caption: 'Image 2'
+			}, {
+				url: 'img/photo/project/scolaire/poincy/03.jpg',
+				caption: 'Image 3'
+			}]]
 		},
 		moa: {
 			name: 'Commune de Poincy (77)',

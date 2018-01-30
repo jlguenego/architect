@@ -8,10 +8,16 @@ export const state = {
 		image: {
 			main: 'img/photo/project/scolaire/venoy/venoy.jpg',
 			mainPortrait: 'img/photo/project/scolaire/venoy/venoy.jpg',
-			others: [
-				'img/photo/project/scolaire/venoy/venoy.jpg',
-				'img/photo/project/scolaire/venoy/venoy.jpg',
-			]
+			trios: [[{
+				url: 'img/photo/project/scolaire/venoy/01.jpg',
+				caption: 'Image 1'
+			}, {
+				url: 'img/photo/project/scolaire/venoy/02.jpg',
+				caption: 'Image 2'
+			}, {
+				url: 'img/photo/project/scolaire/venoy/03.jpg',
+				caption: 'Image 3'
+			}]]
 		},
 		moa: {
 			name: 'Conseil Régional de Bourgogne (21)',

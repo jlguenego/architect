@@ -8,10 +8,16 @@ export const state = {
 		image: {
 			main: 'img/photo/project/serre/villiers-en-biere/serre.jpg',
 			mainPortrait: 'img/photo/project/serre/villiers-en-biere/serre.jpg',
-			others: [
-				'img/photo/project/serre/villiers-en-biere/serre.jpg',
-				'img/photo/project/serre/villiers-en-biere/serre.jpg',
-			]
+			trios: [[{
+				url: 'img/photo/project/serre/villiers-en-biere/01.jpg',
+				caption: 'Image 1'
+			}, {
+				url: 'img/photo/project/serre/villiers-en-biere/02.jpg',
+				caption: 'Image 2'
+			}, {
+				url: 'img/photo/project/serre/villiers-en-biere/03.jpg',
+				caption: 'Image 3'
+			}]]
 		},
 		moa: {
 			name: 'Commune de Villiers-en-Bière (77)',

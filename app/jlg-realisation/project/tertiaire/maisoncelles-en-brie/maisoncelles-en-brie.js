@@ -7,10 +7,13 @@ export const state = {
 		image: {
 			main: 'img/photo/project/tertiaire/maisoncelles-en-brie/maisoncelles-en-brie.jpg',
 			mainPortrait: 'img/photo/project/tertiaire/maisoncelles-en-brie/maisoncelles-en-brie.jpg',
-			others: [
-				'img/photo/project/tertiaire/maisoncelles-en-brie/maisoncelles-en-brie.jpg',
-				'img/photo/project/tertiaire/maisoncelles-en-brie/maisoncelles-en-brie.jpg',
-			]
+			trios: [[{
+				url: 'img/photo/project/tertiaire/maisoncelles-en-brie/01.jpg',
+				caption: 'Image 1'
+			}, {
+				url: 'img/photo/project/tertiaire/maisoncelles-en-brie/02.jpg',
+				caption: 'Image 2'
+			}]]
 		},
 		moa: {
 			name: 'Commune de Maisoncelles-en-Brie (77)',

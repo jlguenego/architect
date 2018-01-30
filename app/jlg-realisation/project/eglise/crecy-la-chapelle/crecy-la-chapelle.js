@@ -7,10 +7,16 @@ export const state = {
 		image: {
 			main: 'img/photo/project/eglise/crecy-la-chapelle/eglise.jpg',
 			mainPortrait: 'img/photo/project/eglise/crecy-la-chapelle/eglise.jpg',
-			others: [
-				'img/photo/project/eglise/crecy-la-chapelle/eglise.jpg',
-				'img/photo/project/eglise/crecy-la-chapelle/eglise.jpg',
-			]
+			trios: [[{
+				url: 'img/photo/project/eglise/crecy-la-chapelle/01.jpg',
+				caption: 'Image 1'
+			}, {
+				url: 'img/photo/project/eglise/crecy-la-chapelle/02.jpg',
+				caption: 'Image 2'
+			}, {
+				url: 'img/photo/project/eglise/crecy-la-chapelle/03.jpg',
+				caption: 'Image 3'
+			}]]
 		},
 		moa: {
 			name: 'Ville de Crécy-la-Chapelle (77)',
