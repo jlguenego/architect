@@ -3,7 +3,8 @@ import textHtml from './text.html';
 export const state = {
 	data: {
 		title: `Réhabilitation d’un immeuble ancien à Maisoncelles-en-Brie`,
-		description: `Réhabilitation d’un immeuble ancien avec création d’un bar-brasserie et un multiservice à Maisoncelles-en-Brie`,
+		description: `Réhabilitation d’un immeuble ancien avec 
+création d’un bar-brasserie et un multiservice à Maisoncelles-en-Brie`,
 		image: {
 			main: 'img/photo/project/tertiaire/maisoncelles-en-brie/maisoncelles-en-brie.jpg',
 			mainPortrait: 'img/photo/project/tertiaire/maisoncelles-en-brie/maisoncelles-en-brie.jpg',
@@ -21,7 +22,8 @@ export const state = {
 		interventions: [
 			{
 				year: 2010,
-				title: 'Réhabilitation d’un immeuble ancien avec création d’un bar-brasserie et un multiservice à Maisoncelles-en-Brie',
+				title: `Réhabilitation d’un immeuble 
+ancien avec création d’un bar-brasserie et un multiservice à Maisoncelles-en-Brie`,
 				missions: [
 					'Maîtrise d’œuvre',
 					'OPC'
