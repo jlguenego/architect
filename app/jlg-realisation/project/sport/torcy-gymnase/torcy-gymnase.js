@@ -3,8 +3,8 @@ import textHtml from './text.html';
 
 export const state = {
 	data: {
-		title: `Gymnase « Jean Moulin » à Torcy`,
-		description: `Aménagement d’un local associatif « Club House », Gymnase « Jean Moulin » à Torcy`,
+		title: `Gymnase Jean Moulin à Torcy`,
+		description: `Aménagement d’un local associatif Club House, Gymnase Jean Moulin à Torcy`,
 		image: {
 			main: 'img/photo/project/sport/torcy/gymnase.jpg',
 			mainPortrait: 'img/photo/project/sport/torcy/gymnase.jpg',
