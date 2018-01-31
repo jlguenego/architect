@@ -242,11 +242,12 @@ footer {
 .parallax {
     padding: 0;
     margin: 0;
-    height: 500px;
     overflow: hidden;
     background-color: transparent;
+    jlg-parallax {
+        height: 500px;
+    }
     figcaption {
-        height: 50px;
         background-color: white;
         text-align: center;
         font-style: italic;
