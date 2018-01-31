@@ -10,7 +10,7 @@ const pathConfig = {
 	resources: ['app/img/**/*', 'app/wpk/**/*'],
 	rewriteBase: ['app/**/index.html', 'app/**/.htaccess'],
 	seo: ['app/crawler-prerender/**/*'],
-	ftp: ['dist/**/**', 'dist/**/.htaccess', '!dist/img/**/*', '!./**/*.map'],
+	ftp: ['dist/**/**', 'dist/**/.htaccess', '!xdist/img/**/*', '!./**/*.map'],
 	// ftp: ['dist/**/index.html', 'dist/.htaccess'],
 };
 
