@@ -6,17 +6,17 @@ export const state = {
 		title: `Remparts de Vezelay`,
 		description: `Restauration des remparts et de la tour des Ursulines.`,
 		image: {
-			main: 'img/photo/project/rempart/vezelay/rempart.jpg',
-			mainPortrait: 'img/photo/project/rempart/vezelay/rempart.jpg',
+			main: 'img/photo/project/rempart/vezelay/parallax.jpg',
+			mainPortrait: 'img/photo/project/rempart/vezelay/parallax.jpg',
 			trios: [[{
 				url: 'img/photo/project/rempart/vezelay/01.jpg',
-				caption: 'Image 1'
+				caption: 'Brochure explicative'
 			}, {
 				url: 'img/photo/project/rempart/vezelay/02.jpg',
-				caption: 'Image 2'
+				caption: 'Avant intervention'
 			}, {
 				url: 'img/photo/project/rempart/vezelay/03.jpg',
-				caption: 'Image 3'
+				caption: 'Après intervention'
 			}]]
 		},
 		moa: {
