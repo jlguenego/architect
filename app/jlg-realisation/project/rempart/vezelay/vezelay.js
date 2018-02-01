@@ -36,7 +36,7 @@ export const state = {
 		classement: 'Site patrimonial remarquable',
 		text: textHtml,
 		client: {
-			name: `Conseil Départemental de l'Yonne`,
+			name: `Conseil départemental de l'Yonne`,
 			zip: 89000,
 			type: 'Public Autres',
 		}

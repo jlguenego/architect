@@ -21,7 +21,7 @@ export const state = {
 			]
 		},
 		moa: {
-			name: 'Conseil Régional de Bourgogne (21)',
+			name: 'Conseil régional de Bourgogne (21)',
 			url: 'https://www.bourgognefranchecomte.fr/',
 		},
 		interventions: [{
@@ -35,7 +35,7 @@ export const state = {
 		}],
 		text: textHtml,
 		client: {
-			name: `Conseil Régional de Bourgogne`,
+			name: `Conseil régional de Bourgogne`,
 			zip: 21000,
 			type: 'Public Autres',
 		}
