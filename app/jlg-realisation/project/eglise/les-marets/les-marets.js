@@ -16,7 +16,8 @@ export const state = {
 			name: 'Commune de Les Mârets (77)',
 		},
 		interventions: [{
-			year: '2016 – En cours',
+			year: '2016',
+			ongoing: true,
 			title: `Restauration des parements extérieurs du chœur `,
 			missions: [
 				'Maîtrise d\'oeuvre',

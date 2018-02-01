@@ -18,7 +18,8 @@ export const state = {
 			url: 'http://www.lemesnilamelot.fr/',
 		},
 		interventions: [{
-			year: '2016 - En cours',
+			year: '2016',
+			ongoing: true,
 			title: `Restauration des parements extérieurs et réfection du beffroi du clocher`,
 			missions: [
 				'Maîtrise d\'oeuvre',

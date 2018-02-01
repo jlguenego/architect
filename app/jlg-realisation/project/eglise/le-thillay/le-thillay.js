@@ -17,7 +17,8 @@ export const state = {
 			url: 'http://www.mairie-le-thillay.fr/',
 		},
 		interventions: [{
-				year: '2016 – en cours',
+				year: '2016',
+				ongoing: true,
 				title: `Restauration du chevet`,
 				missions: [
 					'Maîtrise d’œuvre'

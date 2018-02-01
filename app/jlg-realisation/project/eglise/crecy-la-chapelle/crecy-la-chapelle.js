@@ -25,7 +25,8 @@ export const state = {
 			url: 'http://www.crecylachapelle.eu/',
 		},
 		interventions: [{
-				year: '2016 – En cours',
+				year: '2016',
+				ongoing: true,
 				title: `Réfection des menuiseries intérieures et de l’installation électrique`,
 				missions: [
 					'Maîtrise d\'oeuvre',

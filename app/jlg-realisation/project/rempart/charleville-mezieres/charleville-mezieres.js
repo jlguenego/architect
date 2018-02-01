@@ -17,7 +17,8 @@ export const state = {
 			url: 'http://www.cd08.fr/',
 		},
 		interventions: [{
-			year: '2015 – En cours',
+			year: '2015',
+			ongoing: true,
 			title: `Reprise de la structure des remparts, des charpentes et des bâtiments`,
 			missions: [
 				'Maîtrise d\'oeuvre',

@@ -25,7 +25,8 @@ export const state = {
 		},
 		interventions: [
 			{
-				year: '2017 – en cours',
+				year: '2017',
+				ongoing: true,
 				title: `Restauration de l’Orangerie du domaine de Villiers-en-Bière`,
 				missions: [
 					'Maîtrise d\'oeuvre',

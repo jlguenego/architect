@@ -18,7 +18,8 @@ export const state = {
 		},
 		interventions: [
 			{
-				year: '2016 – en cours',
+				year: '2016',
+				ongoing: true,
 				title: `Restauration des parements intérieurs et 
 					réfection de l’installation electrique et de chauffage`,
 				missions: [

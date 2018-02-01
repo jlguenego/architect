@@ -17,7 +17,8 @@ export const state = {
 			url: 'http://www.ville-chambly.fr/',
 		},
 		interventions: [{
-			year: '2017 – en cours',
+			year: '2017',
+			ongoing: true,
 			title: 'Construction d’un hangar de stockage et bureaux',
 			missions: [
 				'Maîtrise d\'oeuvre'

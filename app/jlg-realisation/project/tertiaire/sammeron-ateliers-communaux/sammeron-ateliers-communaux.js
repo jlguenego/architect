@@ -18,7 +18,8 @@ export const state = {
 			url: 'http://www.sammeron.fr/',
 		},
 		interventions: [{
-			year: '2017 – en cours',
+			year: '2017',
+			ongoing: true,
 			title: `Construction des ateliers communaux à Sammeron`,
 			missions: [
 				'Maîtrise d\'oeuvre'

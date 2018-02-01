@@ -17,7 +17,8 @@ export const state = {
 			url: 'http://www.mairie-dammarie-les-lys.fr/',
 		},
 		interventions: [{
-			year: '2016 - en cours',
+			year: '2016',
+			ongoing: true,
 			title: `Restauration et mise en valeur des vestiges de l’ancienne abbaye`,
 			missions: [
 				'Etude préalable',

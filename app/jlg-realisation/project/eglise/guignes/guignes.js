@@ -17,7 +17,8 @@ export const state = {
 			url: 'http://www.ville-guignes.fr/',
 		},
 		interventions: [{
-				year: '2016 – En cours',
+				year: '2016',
+				ongoing: true,
 				title: `Restauration de la toiture de l’église`,
 				missions: [
 					'Maîtrise d\'oeuvre',

@@ -17,7 +17,8 @@ export const state = {
 		},
 		interventions: [
 			{
-				year: '2016 - En cours',
+				year: '2016',
+				ongoing: true,
 				title: `Restauration de la Fabrique du parc du château`,
 				missions: [
 					'Mission de maîtrise d’œuvre',

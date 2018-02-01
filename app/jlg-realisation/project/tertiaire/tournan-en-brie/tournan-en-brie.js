@@ -17,7 +17,8 @@ export const state = {
 			url: 'http://www.tournan-en-brie.fr/',
 		},
 		interventions: [{
-			year: '2017 – en cours',
+			year: '2017',
+			ongoing: true,
 			title: 'Réhabilitation d’une ancienne grange en locaux administratifs',
 			missions: [
 				'Maîtrise d\'oeuvre'

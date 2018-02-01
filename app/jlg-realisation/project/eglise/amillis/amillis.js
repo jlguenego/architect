@@ -16,7 +16,8 @@ export const state = {
 			name: 'Commune de Amillis (77)',
 		},
 		interventions: [{
-			year: '2016 – En cours',
+			year: '2016',
+			ongoing: true,
 			title: `Restauration des parements extérieurs de l’église`,
 			missions: [
 				'Maîtrise d\'oeuvre',
