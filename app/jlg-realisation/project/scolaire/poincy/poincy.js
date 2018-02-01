@@ -10,13 +10,13 @@ export const state = {
 			trios: [
 				[{
 					url: 'img/photo/project/scolaire/poincy/01.jpg',
-					caption: 'Image 1'
+					caption: `Façade arrière de l'école`
 				}, {
 					url: 'img/photo/project/scolaire/poincy/02.jpg',
-					caption: 'Image 2'
+					caption: 'Avant travaux'
 				}, {
 					url: 'img/photo/project/scolaire/poincy/03.jpg',
-					caption: 'Image 3'
+					caption: 'Après travaux'
 				}]
 			]
 		},
