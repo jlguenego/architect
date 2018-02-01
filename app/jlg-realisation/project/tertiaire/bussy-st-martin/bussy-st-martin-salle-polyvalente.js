@@ -16,16 +16,19 @@ export const state = {
 			name: 'Commune de Bussy-Saint-Martin (77)',
 			url: 'http://www.bussy-saint-martin.com/',
 		},
-		interventions: [
-			{
-				year: 2016,
-				title: `Extension de la salle polyvalente à Bussy-Saint-Martin`,
-				missions: [
-					'Maîtrise d\'oeuvre'
-				],
-				price: '184 000 € HT'
-			}
-		],
+		interventions: [{
+			year: 2016,
+			title: `Extension de la salle polyvalente à Bussy-Saint-Martin`,
+			missions: [
+				'Maîtrise d\'oeuvre'
+			],
+			price: '184 000 € HT'
+		}],
 		text: textHtml,
+		client: {
+			name: `Bussy-Saint-Martin`,
+			zip: 77600,
+			type: 'Mairie',
+		}
 	}
 };

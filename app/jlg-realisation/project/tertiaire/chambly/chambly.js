@@ -16,16 +16,19 @@ export const state = {
 			name: 'Ville de Chambly (60)',
 			url: 'http://www.ville-chambly.fr/',
 		},
-		interventions: [
-			{
-				year: '2017 – en cours',
-				title: 'Construction d’un hangar de stockage et bureaux',
-				missions: [
-					'Maîtrise d\'oeuvre'
-				],
-				price: '480 000 € HT'
-			}
-		],
+		interventions: [{
+			year: '2017 – en cours',
+			title: 'Construction d’un hangar de stockage et bureaux',
+			missions: [
+				'Maîtrise d\'oeuvre'
+			],
+			price: '480 000 € HT'
+		}],
 		text: textHtml,
+		client: {
+			name: 'Chambly',
+			zip: 60230,
+			type: 'Mairie',
+		}
 	}
 };

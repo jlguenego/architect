@@ -30,6 +30,7 @@ export const state = {
 			}
 		],
 		text: textHtml,
+		client: 'privé',
 	}
 };
 

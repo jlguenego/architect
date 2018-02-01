@@ -16,16 +16,19 @@ export const state = {
 			name: 'Ville de Joigny (89)',
 			url: 'http://www.ville-joigny.fr/',
 		},
-		interventions: [
-			{
-				year: 2015,
-				title: 'Aménagement CPAM',
-				missions: [
-					'Maîtrise d\'oeuvre'
-				],
-				price: '210 000 € HT'
-			}
-		],
+		interventions: [{
+			year: 2015,
+			title: 'Aménagement CPAM',
+			missions: [
+				'Maîtrise d\'oeuvre'
+			],
+			price: '210 000 € HT'
+		}],
 		text: textHtml,
+		client: {
+			name: `Joigny`,
+			zip: 89300,
+			type: 'Mairie',
+		}
 	}
 };

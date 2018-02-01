@@ -16,17 +16,19 @@ export const state = {
 			name: 'Ville de Tournan-en-Brie (77)',
 			url: 'http://www.tournan-en-brie.fr/',
 		},
-		interventions: [
-			{
-				year: '2017 – en cours',
-				title: 'Réhabilitation d’une ancienne grange en locaux administratifs',
-				missions: [
-					'Maîtrise d\'oeuvre'
-				],
-				price: '741 900 € HT'
-			}
-		],
+		interventions: [{
+			year: '2017 – en cours',
+			title: 'Réhabilitation d’une ancienne grange en locaux administratifs',
+			missions: [
+				'Maîtrise d\'oeuvre'
+			],
+			price: '741 900 € HT'
+		}],
 		text: textHtml,
+		client: {
+			name: `Tournan-en-Brie`,
+			zip: 77220,
+			type: 'Mairie',
+		}
 	}
 };
-

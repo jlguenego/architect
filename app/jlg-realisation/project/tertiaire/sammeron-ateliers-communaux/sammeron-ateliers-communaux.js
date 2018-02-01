@@ -17,17 +17,19 @@ export const state = {
 			name: 'Commune de Sammeron (77)',
 			url: 'http://www.sammeron.fr/',
 		},
-		interventions: [
-			{
-				year: '2017 – en cours',
-				title: `Construction des ateliers communaux à Sammeron`,
-				missions: [
-					'Maîtrise d\'oeuvre'
-				],
-				price: '280 000 € HT'
-			}
-		],
+		interventions: [{
+			year: '2017 – en cours',
+			title: `Construction des ateliers communaux à Sammeron`,
+			missions: [
+				'Maîtrise d\'oeuvre'
+			],
+			price: '280 000 € HT'
+		}],
 		text: textHtml,
+		client: {
+			name: 'Sammeron',
+			zip: 77260,
+			type: 'Mairie',
+		}
 	}
 };
-
