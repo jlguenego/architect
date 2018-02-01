@@ -10,13 +10,13 @@ export const state = {
 			trios: [
 				[{
 					url: 'img/photo/project/scolaire/dammarie-les-lys/01.jpg',
-					caption: 'Image 1'
+					caption: 'Pendant le chantier'
 				}, {
 					url: 'img/photo/project/scolaire/dammarie-les-lys/02.jpg',
-					caption: 'Image 2'
+					caption: 'Après les travaux - bibliothèque'
 				}, {
 					url: 'img/photo/project/scolaire/dammarie-les-lys/03.jpg',
-					caption: 'Image 3'
+					caption: 'Après les travaux - espace accueil'
 				}]
 			]
 		},
