@@ -13,7 +13,7 @@ app.run(($rootScope) => {
 	$rootScope.now = new Date();
 });
 
-app.run(($transitions) => {
+app.run(($rootScope, $transitions, $state) => {
 
 	$transitions.onSuccess({}, function(transition) {
 		angular.element(document.body).removeClass(transition.from().name);
@@ -21,4 +21,8 @@ app.run(($transitions) => {
 		// this should be managed by ui router... :(
 		document.body.scrollTop = document.documentElement.scrollTop = 0;
 	});
+
+	$rootScope.gotoState = function(to, params) {
+		$state.go(to, params);
+	};
 });

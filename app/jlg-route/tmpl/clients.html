@@ -13,7 +13,7 @@
 					<th>Code postal </th>
 					<th>Année</th>
 				</tr>
-				<tr ng-repeat="client in $ctrl.mairies | orderBy : 'name'" class="table-row">
+				<tr ng-repeat="client in $ctrl.mairies | orderBy : 'name'" class="table-row" ng-click="$root.gotoState('realisations:client', {client: client.name})">
 					<td>{{client.name}}</td>
 					<td>{{client.zip}}</td>
 					<td>{{client.year}}</td>
