@@ -2,7 +2,7 @@ import realisationHtml from './tmpl/realisation.html';
 
 export const realisationRoute = {
 	template: realisationHtml,
-	controller: function RealisationCtrl($stateParams, projects) {
+	controller: function RealisationCtrl($stateParams, projects, misc) {
 		'ngInject';
 
 		this.chapterMap = [{
@@ -59,7 +59,7 @@ export const realisationRoute = {
 					if (typeof n.data.client !== 'object') {
 						return false;
 					}
-					if (n.data.client.name.toLowerCase() !== $stateParams.client.toLowerCase()) {
+					if (misc.toSlug(n.data.client.name) !== misc.toSlug($stateParams.client)) {
 						return false;
 					}
 				}

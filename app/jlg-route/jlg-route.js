@@ -13,7 +13,7 @@ app.run(($rootScope) => {
 	$rootScope.now = new Date();
 });
 
-app.run(($rootScope, $transitions, $state) => {
+app.run(($rootScope, $transitions, $state, misc) => {
 
 	$transitions.onSuccess({}, function(transition) {
 		angular.element(document.body).removeClass(transition.from().name);
@@ -23,6 +23,7 @@ app.run(($rootScope, $transitions, $state) => {
 	});
 
 	$rootScope.gotoState = function(to, params) {
+		params.client = misc.toSlug(params.client);
 		$state.go(to, params);
 	};
 });
