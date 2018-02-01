@@ -57,7 +57,7 @@ app.controller('ClientCtrl', function ClientCtrl() {
 			name: 'Bombon',
 			zip: 77720,
 			type: 'Mairie',
-			year: '20109-2013',
+			year: '2010-2013',
 		}, {
 			name: 'Monthyon',
 			zip: 77122,

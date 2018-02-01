@@ -13,7 +13,7 @@
 					<th>Code postal </th>
 					<th>Année</th>
 				</tr>
-				<tr ng-repeat="client in $ctrl.mairies | orderBy : 'zip'" class="table-row">
+				<tr ng-repeat="client in $ctrl.mairies | orderBy : 'name'" class="table-row">
 					<td>{{client.name}}</td>
 					<td>{{client.zip}}</td>
 					<td>{{client.year}}</td>
@@ -33,7 +33,7 @@
 					<th>Code postal </th>
 					<th>Année</th>
 				</tr>
-				<tr ng-repeat="client in $ctrl.autresEntitesPubliques" class="table-row">
+				<tr ng-repeat="client in $ctrl.autresEntitesPubliques | orderBy : 'name'" class="table-row">
 					<td>{{client.name}}</td>
 					<td>{{client.zip}}</td>
 					<td>{{client.year}}</td>
