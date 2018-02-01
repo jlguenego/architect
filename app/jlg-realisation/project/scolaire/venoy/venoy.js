@@ -3,8 +3,8 @@ import textHtml from './text.html';
 
 export const state = {
 	data: {
-		title: `Laboratoire d’analyses sensorielles au Lycée « La Brosse »`,
-		description: `Réalisation d’un laboratoire d’analyses sensorielles au Lycée « La Brosse » à Venoy`,
+		title: `Laboratoire d’analyses sensorielles au Lycée La Brosse`,
+		description: `Réalisation d’un laboratoire d’analyses sensorielles au Lycée La Brosse à Venoy`,
 		image: {
 			main: 'img/photo/project/scolaire/venoy/venoy.jpg',
 			mainPortrait: 'img/photo/project/scolaire/venoy/venoy.jpg',
@@ -26,7 +26,7 @@ export const state = {
 		interventions: [
 			{
 				year: 2010,
-				title: `Réalisation d’un laboratoire d’analyses sensorielles au Lycée « La Brosse »`,
+				title: `Réalisation d’un laboratoire d’analyses sensorielles au Lycée La Brosse`,
 				missions: [
 					'Maîtrise d’œuvre',
 					'OPC'

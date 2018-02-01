@@ -2,7 +2,7 @@ import textHtml from './text.html';
 
 export const state = {
 	data: {
-		title: `Lycée « Vauban » à Auxerre`,
+		title: `Lycée Vauban à Auxerre`,
 		description: `Restauration des lucarnes du lycée Vauban à Auxerre`,
 		image: {
 			main: 'img/photo/project/restauration-par-ext/auxerre/auxerre.jpg',
@@ -26,7 +26,7 @@ export const state = {
 		},
 		interventions: [{
 			year: 2011,
-			title: `Restauration des lucarnes du lycée « Vauban »`,
+			title: `Restauration des lucarnes du lycée Vauban`,
 			missions: [
 				'Maîtrise d’œuvre',
 				'OPC'
