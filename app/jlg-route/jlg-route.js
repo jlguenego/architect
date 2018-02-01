@@ -15,11 +15,17 @@ app.run(($rootScope) => {
 
 app.run(($rootScope, $transitions, $state, misc) => {
 
+	$transitions.onStart({}, function(trans) {
+		angular.element(document.body).removeClass('loading');
+	});
+
 	$transitions.onSuccess({}, function(transition) {
 		angular.element(document.body).removeClass(transition.from().name);
 		angular.element(document.body).addClass(transition.to().name);
 		// this should be managed by ui router... :(
 		document.body.scrollTop = document.documentElement.scrollTop = 0;
+		angular.element(document.body).addClass('loading');
+
 	});
 
 	$rootScope.gotoState = function(to, params) {

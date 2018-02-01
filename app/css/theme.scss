@@ -100,9 +100,7 @@ h6 {
     }
 }
 
-article {
+body.loading {
     will-change: opacity;
     animation: fadein 1s forwards;
 }
-
-
