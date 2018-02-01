@@ -3,7 +3,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<h1>Nos réalisations <span ng-show="$ctrl.client">pour {{$ctrl.getClientName()}}</span></h1>
+					<h1>Nos réalisations <span ng-show="$ctrl.client">pour {{$ctrl.client.name}} ({{$ctrl.client.zip}})</span></h1>
 				</div>
 			</div>
 		</div>
@@ -12,7 +12,7 @@
 			<div class="row" ng-show="$ctrl[chapter.key + 'Trios'].length > 0">
 				<div class="col-12">
 					<h2>{{chapter.value}}</h2>
-					<p ng-show="chapter.description">{{chapter.description}}</p>
+					<p ng-show="chapter.description && !$ctrl.client">{{chapter.description}}</p>
 				</div>
 			</div>
 

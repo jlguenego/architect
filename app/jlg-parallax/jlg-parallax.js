@@ -96,7 +96,6 @@ app.component('jlgParallax', {
 				ratio = this.images.landscape.width / this.images.landscape.height;
 			} else {
 				// portrait
-				// console.log('this.img.src', this.img.src);
 				if (this.img.src.indexOf(this.images.portrait.url) < 0) {
 					this.img.onload = setOpacity;
 					this.img.src = this.images.portrait.url;

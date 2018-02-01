@@ -7,7 +7,6 @@ app.component('jlgFacebookShare', {
 	template: fbShareHtml,
 	controller: function JLGFacebookShareCtrl($element) {
 		this.share = (event) => {
-			console.log('share', event);
 			const url = window.location.href;
 			const x = window.screen.width / 4;
 			const y = window.screen.height / 4;

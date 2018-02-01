@@ -47,10 +47,7 @@ export const realisationRoute = {
 			value: 'Titi',
 		}];
 
-		console.log('$stateParams', $stateParams);
-		// if ($stateParams.client) {
-
-		// }
+		
 
 		const chapters = this.chapterMap.map(n => n.key);
 		chapters.forEach(type => {
@@ -63,7 +60,13 @@ export const realisationRoute = {
 						return false;
 					}
 				}
-				return n.type === type;
+				if (n.type !== type) {
+					return false;
+				}
+				if ($stateParams.client) {
+					this.client = n.data.client;
+				}
+				return true;
 			}).reduce((acc, n, i) => {
 				if (i % 3) {
 					acc[acc.length - 1].push(n);

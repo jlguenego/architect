@@ -3,7 +3,6 @@ const app = angular.module('jlg-clients', []);
 app.controller('ClientCtrl', function ClientCtrl(projects) {
 	'ngInject';
 	this.list = projects.filter(state => typeof state.data.client === 'object').reduce((acc, state) => {
-		console.log('state, acc', state, acc);
 		const years = state.data.interventions.map(n => n.year).sort();
 		const duplicate = acc.find(client => client.name === state.data.client.name);
 		if (duplicate) {
