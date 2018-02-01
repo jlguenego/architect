@@ -48,13 +48,23 @@ export const realisationRoute = {
 		}];
 
 		console.log('$stateParams', $stateParams);
-		if ($stateParams.client) {
-			
-		}
+		// if ($stateParams.client) {
+
+		// }
 
 		const chapters = this.chapterMap.map(n => n.key);
 		chapters.forEach(type => {
-			this[`${type}Trios`] = projects.filter(n => n.type === type).reduce((acc, n, i) => {
+			this[`${type}Trios`] = projects.filter(n => {
+				if ($stateParams.client) {
+					if (typeof n.data.client !== 'object') {
+						return false;
+					}
+					if (n.data.client.name.toLowerCase() !== $stateParams.client.toLowerCase()) {
+						return false;
+					}
+				}
+				return n.type === type;
+			}).reduce((acc, n, i) => {
 				if (i % 3) {
 					acc[acc.length - 1].push(n);
 				} else {
