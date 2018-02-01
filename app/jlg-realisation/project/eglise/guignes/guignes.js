@@ -16,8 +16,7 @@ export const state = {
 			name: 'Commune de Guignes (77)',
 			url: 'http://www.ville-guignes.fr/',
 		},
-		interventions: [
-			{
+		interventions: [{
 				year: '2016 – En cours',
 				title: `Restauration de la toiture de l’église`,
 				missions: [
@@ -33,5 +32,10 @@ export const state = {
 		],
 		classement: ' Inscrit MH',
 		text: textHtml,
+		client: {
+			name: 'Guignes',
+			zip: 77390,
+			type: 'Mairie',
+		}
 	}
 };

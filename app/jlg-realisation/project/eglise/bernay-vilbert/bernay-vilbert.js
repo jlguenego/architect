@@ -7,23 +7,24 @@ export const state = {
 		image: {
 			main: 'img/photo/project/eglise/bernay-vilbert/eglise.jpg',
 			mainPortrait: 'img/photo/project/eglise/bernay-vilbert/eglise.jpg',
-			trios: [[{
-				url: 'img/photo/project/eglise/bernay-vilbert/01.jpg',
-				caption: 'Coupe'
-			}, {
-				url: 'img/photo/project/eglise/bernay-vilbert/02.jpg',
-				caption: ''
-			}, {
-				url: 'img/photo/project/eglise/bernay-vilbert/03.jpg',
-				caption: ''
-			}]]
+			trios: [
+				[{
+					url: 'img/photo/project/eglise/bernay-vilbert/01.jpg',
+					caption: 'Coupe'
+				}, {
+					url: 'img/photo/project/eglise/bernay-vilbert/02.jpg',
+					caption: ''
+				}, {
+					url: 'img/photo/project/eglise/bernay-vilbert/03.jpg',
+					caption: ''
+				}]
+			]
 		},
 		moa: {
 			name: 'Commune de Bernay-Vilbert (77)',
 			url: 'http://bernay-vilbert.fr/',
 		},
-		interventions: [
-			{
+		interventions: [{
 				year: 2014,
 				title: `Réfection des parements intérieurs et travaux d’électricité`,
 				missions: [
@@ -37,6 +38,10 @@ export const state = {
 			}
 		],
 		text: textHtml,
+		client: {
+			name: 'Bernay-Vilbert',
+			zip: 77540,
+			type: 'Mairie',
+		}
 	}
 };
-

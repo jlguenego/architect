@@ -16,8 +16,7 @@ export const state = {
 			name: 'Commune de Villeneuve-sous-Dammartin (77)',
 			url: 'http://www.villeneuve-sous-dammartin.fr/',
 		},
-		interventions: [
-			{
+		interventions: [{
 				year: '2015 - 2017',
 				title: `Restauration du bas-côté nord`,
 				missions: [
@@ -41,6 +40,10 @@ export const state = {
 			}
 		],
 		text: textHtml,
+		client: {
+			name: 'Villeneuve-sous-Dammartin',
+			zip: 77230,
+			type: 'Mairie',
+		}
 	}
 };
-

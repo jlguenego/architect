@@ -16,18 +16,19 @@ export const state = {
 			name: 'Ville de Dammarie-les-Lys (77)',
 			url: 'http://www.mairie-dammarie-les-lys.fr/',
 		},
-		interventions: [
-			{
-				year: '2016 - en cours',
-				title: `Restauration et mise en valeur des vestiges de l’ancienne abbaye`,
-				missions: [
-					'Etude préalable',
-				],
-			},
-		],
+		interventions: [{
+			year: '2016 - en cours',
+			title: `Restauration et mise en valeur des vestiges de l’ancienne abbaye`,
+			missions: [
+				'Etude préalable',
+			],
+		}, ],
 		classement: 'Classé MH',
 		text: textHtml,
+		client: {
+			name: `Dammarie-les-Lys`,
+			zip: 77190,
+			type: 'Mairie',
+		}
 	}
 };
-
-

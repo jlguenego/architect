@@ -7,16 +7,18 @@ export const state = {
 		image: {
 			main: 'img/photo/project/eglise/chauconin/saint-saturnin.jpg',
 			mainPortrait: 'img/photo/project/eglise/chauconin/saint-saturnin.jpg',
-			trios: [[{
-				url: 'img/photo/project/eglise/chauconin/01.jpg',
-				caption: 'Coupe'
-			}, {
-				url: 'img/photo/project/eglise/chauconin/02.jpg',
-				caption: 'Côté sud après intervention'
-			}, {
-				url: 'img/photo/project/eglise/chauconin/03.jpg',
-				caption: 'Côté est pendant intervention'
-			}]]
+			trios: [
+				[{
+					url: 'img/photo/project/eglise/chauconin/01.jpg',
+					caption: 'Coupe'
+				}, {
+					url: 'img/photo/project/eglise/chauconin/02.jpg',
+					caption: 'Côté sud après intervention'
+				}, {
+					url: 'img/photo/project/eglise/chauconin/03.jpg',
+					caption: 'Côté est pendant intervention'
+				}]
+			]
 		},
 		moa: {
 			name: 'Mairie de Chauconin-Neufmontiers (77)',
@@ -45,5 +47,10 @@ export const state = {
 		],
 		classement: 'Inscrit MH',
 		text: textHtml,
+		client: {
+			name: 'Chauconin-Neufmontiers',
+			zip: 77124,
+			type: 'Mairie',
+		}
 	}
 };

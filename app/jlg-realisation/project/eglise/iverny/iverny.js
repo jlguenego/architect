@@ -28,6 +28,11 @@ export const state = {
 			}
 		],
 		text: textHtml,
+		client: {
+			name: 'Iverny',
+			zip: 77165,
+			type: 'Mairie',
+		}
 	}
 };
 

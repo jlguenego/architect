@@ -75,4 +75,20 @@ Logements collectifs, Promotions immobilières, maisons individuelles`,
 			}
 		},
 	});
+	$stateProvider.state({
+		name: 'realisations:client',
+		url: '/realisations/client/{commune}',
+		component: 'realisationRoute',
+		data: {
+			title: `Nos réalisations.`,
+			description: `
+Cabinet d'architecture DEMETRESCU - GUENEGO: liste de nos réalisations.
+Projet architecturaux réalisé par nos architectes du patrimoine.
+Eglises, Chateaux, Granges, Ecoles, Remparts, Mairies,
+Logements collectifs, Promotions immobilières, maisons individuelles`,
+			image: {
+				main: 'img/photo/ferrieres-landscape.jpg'
+			}
+		},
+	});
 });

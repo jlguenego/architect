@@ -16,8 +16,7 @@ export const state = {
 			name: 'Commune du Le Thillay (95)',
 			url: 'http://www.mairie-le-thillay.fr/',
 		},
-		interventions: [
-			{
+		interventions: [{
 				year: '2016 – en cours',
 				title: `Restauration du chevet`,
 				missions: [
@@ -31,6 +30,10 @@ export const state = {
 			}
 		],
 		text: textHtml,
+		client: {
+			name: 'Le Thillay',
+			zip: 95500,
+			type: 'Mairie',
+		}
 	}
 };
-

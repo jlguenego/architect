@@ -53,6 +53,12 @@ export const state = {
 			}
 		],
 		text: textHtml,
+		client: {
+			name: 'Louan-Villegruis-Fontaine',
+			zip: 77560,
+			type: 'Mairie',
+			year: '2016',
+		}
 	}
 };
 

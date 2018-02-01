@@ -7,27 +7,32 @@ export const state = {
 		image: {
 			main: 'img/photo/project/eglise/reuil-en-brie/eglise.jpg',
 			mainPortrait: 'img/photo/project/eglise/reuil-en-brie/eglise.jpg',
-			trios: [[{
-				url: 'img/photo/project/eglise/reuil-en-brie/01.jpg',
-				caption: ''
-			}, {
-				url: 'img/photo/project/eglise/reuil-en-brie/02.jpg',
-				caption: ''
-			}, {
-				url: 'img/photo/project/eglise/reuil-en-brie/03.jpg',
-				caption: ''
-			}]]
+			trios: [
+				[{
+					url: 'img/photo/project/eglise/reuil-en-brie/01.jpg',
+					caption: ''
+				}, {
+					url: 'img/photo/project/eglise/reuil-en-brie/02.jpg',
+					caption: ''
+				}, {
+					url: 'img/photo/project/eglise/reuil-en-brie/03.jpg',
+					caption: ''
+				}]
+			]
 		},
 		moa: {
 			name: 'Commune de Reuil-en-Brie (77)',
 			url: 'http://www.reuil-en-brie.fr/',
 		},
-		interventions: [
-			{
-				year: 2009,
-				title: 'Etude préalable'
-			}
-		],
+		interventions: [{
+			year: 2009,
+			title: 'Etude préalable'
+		}],
 		text: textHtml,
+		client: {
+			name: 'Reuil-en-Brie',
+			zip: 77260,
+			type: 'Mairie',
+		}
 	}
 };

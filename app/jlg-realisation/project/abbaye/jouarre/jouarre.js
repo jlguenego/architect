@@ -16,8 +16,7 @@ export const state = {
 			name: 'Ville de Jouarre (77)',
 			url: 'http://www.jouarre.fr/',
 		},
-		interventions: [
-			{
+		interventions: [{
 				year: 2016,
 				title: `Réfection des parements extérieurs`,
 				missions: [
@@ -33,6 +32,10 @@ export const state = {
 		],
 		classement: 'Classé MH',
 		text: textHtml,
+		client: {
+			name: `Jouarre`,
+			zip: 77640,
+			type: 'Mairie',
+		}
 	}
 };
-

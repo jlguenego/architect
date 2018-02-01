@@ -7,23 +7,24 @@ export const state = {
 		image: {
 			main: 'img/photo/project/chateau/bussy-st-martin/chateau.jpg',
 			mainPortrait: 'img/photo/project/chateau/bussy-st-martin/chateau.jpg',
-			trios: [[{
-				url: 'img/photo/project/chateau/bussy-st-martin/01.jpg',
-				caption: 'Plans'
-			}, {
-				url: 'img/photo/project/chateau/bussy-st-martin/02.jpg',
-				caption: ''
-			}, {
-				url: 'img/photo/project/chateau/bussy-st-martin/03.jpg',
-				caption: ''
-			}]]
+			trios: [
+				[{
+					url: 'img/photo/project/chateau/bussy-st-martin/01.jpg',
+					caption: 'Plans'
+				}, {
+					url: 'img/photo/project/chateau/bussy-st-martin/02.jpg',
+					caption: ''
+				}, {
+					url: 'img/photo/project/chateau/bussy-st-martin/03.jpg',
+					caption: ''
+				}]
+			]
 		},
 		moa: {
 			name: 'Communauté d’agglomération de Marne et Gondoire',
 			url: 'http://www.marneetgondoire.fr/'
 		},
-		interventions: [
-			{
+		interventions: [{
 				year: 2010,
 				title: `Travaux de sécurisation du château de Rentilly `,
 				missions: [
@@ -44,6 +45,10 @@ export const state = {
 		],
 		classement: 'Inscrit MH',
 		text: textHtml,
+		client: {
+			name: `Bussy-Saint-Martin`,
+			zip: 77600,
+			type: 'Mairie',
+		}
 	}
 };
-

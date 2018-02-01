@@ -7,23 +7,24 @@ export const state = {
 		image: {
 			main: 'img/photo/project/eglise/sammeron/eglise.jpg',
 			mainPortrait: 'img/photo/project/eglise/sammeron/eglise.jpg',
-			trios: [[{
-				url: 'img/photo/project/eglise/sammeron/01.jpg',
-				caption: ''
-			}, {
-				url: 'img/photo/project/eglise/sammeron/02.jpg',
-				caption: ''
-			}, {
-				url: 'img/photo/project/eglise/sammeron/03.jpg',
-				caption: ''
-			}]]
+			trios: [
+				[{
+					url: 'img/photo/project/eglise/sammeron/01.jpg',
+					caption: ''
+				}, {
+					url: 'img/photo/project/eglise/sammeron/02.jpg',
+					caption: ''
+				}, {
+					url: 'img/photo/project/eglise/sammeron/03.jpg',
+					caption: ''
+				}]
+			]
 		},
 		moa: {
 			name: 'Commune de Sammeron (77)',
 			url: 'http://www.sammeron.fr/',
 		},
-		interventions: [
-			{
+		interventions: [{
 				year: 2014,
 				title: `Restauration du bas-côté sud`,
 				missions: [
@@ -39,6 +40,10 @@ export const state = {
 		],
 		classement: ' Inscrit MH',
 		text: textHtml,
+		client: {
+			name: 'Sammeron',
+			zip: 77260,
+			type: 'Mairie',
+		}
 	}
 };
-

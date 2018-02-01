@@ -15,19 +15,21 @@ export const state = {
 		moa: {
 			name: 'Commune de Les Mârets (77)',
 		},
-		interventions: [
-			{
-				year: '2016 – En cours',
-				title: `Restauration des parements extérieurs du chœur `,
-				missions: [
-					'Maîtrise d\'oeuvre',
-					'OPC'
-				],
-				price: '140 000 € HT'
-			},
-		],
+		interventions: [{
+			year: '2016 – En cours',
+			title: `Restauration des parements extérieurs du chœur `,
+			missions: [
+				'Maîtrise d\'oeuvre',
+				'OPC'
+			],
+			price: '140 000 € HT'
+		}, ],
 		classement: 'Classée MH',
 		text: textHtml,
+		client: {
+			name: 'Les Mârets',
+			zip: 77560,
+			type: 'Mairie',
+		}
 	}
 };
-

@@ -16,8 +16,7 @@ export const state = {
 			name: 'Commune de Moussy-le-Vieux (77)',
 			url: 'http://www.moussy-le-vieux.fr/',
 		},
-		interventions: [
-			{
+		interventions: [{
 				year: 2015,
 				title: `Restauration du clocher`,
 				missions: [
@@ -32,7 +31,10 @@ export const state = {
 		],
 		classement: 'Inscrit MH',
 		text: textHtml,
+		client: {
+			name: 'Moussy-le-Vieux',
+			zip: 77230,
+			type: 'Mairie',
+		}
 	}
 };
-
-

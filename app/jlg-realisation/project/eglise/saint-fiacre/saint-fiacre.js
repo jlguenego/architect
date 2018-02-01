@@ -15,8 +15,7 @@ export const state = {
 		moa: {
 			name: 'Commune de Saint-Fiacre (77)',
 		},
-		interventions: [
-			{
+		interventions: [{
 				year: 2016,
 				title: `Restauration du clocher et des sols de l’église`,
 				missions: [
@@ -30,6 +29,10 @@ export const state = {
 			}
 		],
 		text: textHtml,
+		client: {
+			name: 'Saint-Fiacre',
+			zip: 77470,
+			type: 'Mairie',
+		}
 	}
 };
-

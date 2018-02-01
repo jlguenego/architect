@@ -35,6 +35,7 @@ export const state = {
 		],
 		classement: 'Classé MH',
 		text: textHtml,
+		client: 'privé'
 	}
 };
 

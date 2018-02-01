@@ -15,8 +15,7 @@ export const state = {
 		moa: {
 			name: 'privée',
 		},
-		interventions: [
-			{
+		interventions: [{
 				year: 2016,
 				title: `Réfection des toitures du pavillon d’entrée`,
 				missions: [
@@ -34,7 +33,6 @@ export const state = {
 		],
 		classement: 'Inscrit MH',
 		text: textHtml,
+		client: 'privé'
 	}
 };
-
-

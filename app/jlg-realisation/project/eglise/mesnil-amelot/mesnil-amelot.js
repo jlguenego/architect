@@ -1,4 +1,3 @@
-
 import textHtml from './text.html';
 
 export const state = {
@@ -18,18 +17,21 @@ export const state = {
 			name: 'Commune du Mesnil-Amelot (77)',
 			url: 'http://www.lemesnilamelot.fr/',
 		},
-		interventions: [
-			{
-				year: '2016 - En cours',
-				title: `Restauration des parements extérieurs et réfection du beffroi du clocher`,
-				missions: [
-					'Maîtrise d\'oeuvre',
-					'OPC'
-				],
-				price: '390 000 € HT'
-			}
-		],
+		interventions: [{
+			year: '2016 - En cours',
+			title: `Restauration des parements extérieurs et réfection du beffroi du clocher`,
+			missions: [
+				'Maîtrise d\'oeuvre',
+				'OPC'
+			],
+			price: '390 000 € HT'
+		}],
 		classement: 'Classée MH',
 		text: textHtml,
+		client: {
+			name: 'Mesnil-Amélot',
+			zip: 77990,
+			type: 'Mairie',
+		}
 	}
 };

@@ -38,6 +38,11 @@ export const state = {
 		],
 		classement: 'Inscrit MH',
 		text: textHtml,
+		client: {
+			name: 'EPAMARNE',
+			zip: 77186,
+			type: 'Public Autres',
+		}
 	}
 };
 

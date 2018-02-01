@@ -1,4 +1,3 @@
-
 import textHtml from './text.html';
 
 export const state = {
@@ -8,23 +7,24 @@ export const state = {
 		image: {
 			main: 'img/photo/project/eglise/varennes-sur-seine/varennes-sur-seine.jpg',
 			mainPortrait: 'img/photo/project/eglise/varennes-sur-seine/varennes-sur-seine.jpg',
-			trios: [[{
-				url: 'img/photo/project/eglise/varennes-sur-seine/01.jpg',
-				caption: 'Plans'
-			}, {
-				url: 'img/photo/project/eglise/varennes-sur-seine/02.jpg',
-				caption: 'Restauration de la couverture'
-			}, {
-				url: 'img/photo/project/eglise/varennes-sur-seine/03.jpg',
-				caption: 'Restauration des parements intérieurs'
-			}]]
+			trios: [
+				[{
+					url: 'img/photo/project/eglise/varennes-sur-seine/01.jpg',
+					caption: 'Plans'
+				}, {
+					url: 'img/photo/project/eglise/varennes-sur-seine/02.jpg',
+					caption: 'Restauration de la couverture'
+				}, {
+					url: 'img/photo/project/eglise/varennes-sur-seine/03.jpg',
+					caption: 'Restauration des parements intérieurs'
+				}]
+			]
 		},
 		moa: {
 			name: 'Commune de Varennes sur Seine (77)',
 			url: 'http://www.varennes-sur-seine.fr/',
 		},
-		interventions: [
-			{
+		interventions: [{
 				year: 2015,
 				title: `Restauration des parements intérieurs`,
 				missions: [
@@ -67,6 +67,10 @@ export const state = {
 		],
 		classement: 'Inscrit MH',
 		text: textHtml,
+		client: {
+			name: 'Varennes-sur-Seine',
+			zip: 77230,
+			type: 'Mairie',
+		}
 	}
 };
-

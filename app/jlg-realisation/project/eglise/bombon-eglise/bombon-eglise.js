@@ -45,6 +45,11 @@ export const state = {
 		],
 		classement: 'Inscrit MH',
 		text: textHtml,
+		client: {
+			name: 'Bombon',
+			zip: 77720,
+			type: 'Mairie',
+		}
 	}
 };
 

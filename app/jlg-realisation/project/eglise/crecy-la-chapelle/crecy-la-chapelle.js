@@ -7,23 +7,24 @@ export const state = {
 		image: {
 			main: 'img/photo/project/eglise/crecy-la-chapelle/eglise.jpg',
 			mainPortrait: 'img/photo/project/eglise/crecy-la-chapelle/eglise.jpg',
-			trios: [[{
-				url: 'img/photo/project/eglise/crecy-la-chapelle/01.jpg',
-				caption: 'Image 1'
-			}, {
-				url: 'img/photo/project/eglise/crecy-la-chapelle/02.jpg',
-				caption: 'Image 2'
-			}, {
-				url: 'img/photo/project/eglise/crecy-la-chapelle/03.jpg',
-				caption: 'Image 3'
-			}]]
+			trios: [
+				[{
+					url: 'img/photo/project/eglise/crecy-la-chapelle/01.jpg',
+					caption: 'Image 1'
+				}, {
+					url: 'img/photo/project/eglise/crecy-la-chapelle/02.jpg',
+					caption: 'Image 2'
+				}, {
+					url: 'img/photo/project/eglise/crecy-la-chapelle/03.jpg',
+					caption: 'Image 3'
+				}]
+			]
 		},
 		moa: {
 			name: 'Ville de Crécy-la-Chapelle (77)',
 			url: 'http://www.crecylachapelle.eu/',
 		},
-		interventions: [
-			{
+		interventions: [{
 				year: '2016 – En cours',
 				title: `Réfection des menuiseries intérieures et de l’installation électrique`,
 				missions: [
@@ -45,5 +46,10 @@ export const state = {
 			}
 		],
 		text: textHtml,
+		client: {
+			name: 'Crécy-la-Chapelle',
+			zip: 77580,
+			type: 'Mairie',
+		}
 	}
 };

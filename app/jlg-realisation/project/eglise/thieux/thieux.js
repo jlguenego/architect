@@ -15,13 +15,15 @@ export const state = {
 		moa: {
 			name: 'Commune de Thieux (77)',
 		},
-		interventions: [
-			{
-				year: 2016,
-				title: `Etude préalable`
-			}
-		],
+		interventions: [{
+			year: 2016,
+			title: `Etude préalable`
+		}],
 		text: textHtml,
+		client: {
+			name: 'Thieux',
+			zip: 77230,
+			type: 'Mairie',
+		}
 	}
 };
-
