@@ -10,13 +10,13 @@ export const state = {
 			mainPortrait: 'img/photo/project/scolaire/venoy/venoy.jpg',
 			trios: [[{
 				url: 'img/photo/project/scolaire/venoy/01.jpg',
-				caption: 'Image 1'
+				caption: 'Plan du projet'
 			}, {
 				url: 'img/photo/project/scolaire/venoy/02.jpg',
-				caption: 'Image 2'
+				caption: 'Unité de plateforme sensorielle'
 			}, {
 				url: 'img/photo/project/scolaire/venoy/03.jpg',
-				caption: 'Image 3'
+				caption: 'Pendant les travaux'
 			}]]
 		},
 		moa: {
