@@ -29,7 +29,7 @@
 				<tbody class="mission" ng-repeat="intervention in $ctrl.data.interventions">
 					<tr>
 						<td>
-							<b>{{intervention.year}}</b>
+							<b>{{intervention.year}} <span ng-show="intervention.ongoing">- en cours</span></b>
 						</td>
 						<td>{{intervention.title}}</td>
 					</tr>
