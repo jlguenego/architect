@@ -77,7 +77,7 @@ Logements collectifs, Promotions immobilières, maisons individuelles`,
 	});
 	$stateProvider.state({
 		name: 'realisations:client',
-		url: '/realisations/client/{commune}',
+		url: '/realisations/client/{client}',
 		component: 'realisationRoute',
 		data: {
 			title: `Nos réalisations.`,

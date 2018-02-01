@@ -2,7 +2,7 @@ import realisationHtml from './tmpl/realisation.html';
 
 export const realisationRoute = {
 	template: realisationHtml,
-	controller: function RealisationCtrl(projects) {
+	controller: function RealisationCtrl($stateParams, projects) {
 		'ngInject';
 
 		this.chapterMap = [{
@@ -42,7 +42,15 @@ export const realisationRoute = {
 		}, {
 			key: 'scolaire',
 			value: 'Scolaire - Education',
+		}, {
+			key: 'titi',
+			value: 'Titi',
 		}];
+
+		console.log('$stateParams', $stateParams);
+		if ($stateParams.client) {
+			
+		}
 
 		const chapters = this.chapterMap.map(n => n.key);
 		chapters.forEach(type => {
