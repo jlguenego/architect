@@ -34,5 +34,10 @@ export const state = {
 			price: '170 000 € HT'
 		}],
 		text: textHtml,
+		client: {
+			name: `Grisy-Suisnes`,
+			zip: 77166,
+			type: 'Mairie',
+		}
 	}
 };

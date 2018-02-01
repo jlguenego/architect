@@ -1,4 +1,3 @@
-
 import textHtml from './text.html';
 
 export const state = {
@@ -17,17 +16,20 @@ export const state = {
 			name: 'Ville de Torcy (77)',
 			url: 'http://www.ville-torcy.fr/',
 		},
-		interventions: [
-			{
-				year: 2016,
-				title: `Aménagement d’un local associatif « Club House »`,
-				missions: [
-					'Etude',
-					'Autorisation de travaux'
-				],
-				price: '110 000 Euros HT'
-			}
-		],
+		interventions: [{
+			year: 2016,
+			title: `Aménagement d’un local associatif « Club House »`,
+			missions: [
+				'Etude',
+				'Autorisation de travaux'
+			],
+			price: '110 000 Euros HT'
+		}],
 		text: textHtml,
+		client: {
+			name: 'Torcy',
+			zip: 77200,
+			type: 'Mairie',
+		}
 	}
 };

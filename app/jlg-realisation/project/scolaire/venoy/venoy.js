@@ -35,6 +35,11 @@ export const state = {
 			}
 		],
 		text: textHtml,
+		client: {
+			name: `Conseil Régional de Bourgogne`,
+			zip: 21000,
+			type: 'Public Autres',
+		}
 	}
 };
 

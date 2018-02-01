@@ -1,4 +1,3 @@
-
 import textHtml from './text.html';
 
 export const state = {
@@ -17,19 +16,21 @@ export const state = {
 			name: 'Conseil départemental des Ardennes (08)',
 			url: 'http://www.cd08.fr/',
 		},
-		interventions: [
-			{
-				year: '2015 – En cours',
-				title: `Reprise de la structure des remparts, des charpentes et des bâtiments`,
-				missions: [
-					'Maîtrise d\'oeuvre',
-					'OPC'
-				],
-				price: '360 000 € HT'
-			}
-		],
+		interventions: [{
+			year: '2015 – En cours',
+			title: `Reprise de la structure des remparts, des charpentes et des bâtiments`,
+			missions: [
+				'Maîtrise d\'oeuvre',
+				'OPC'
+			],
+			price: '360 000 € HT'
+		}],
 		classement: 'Inscrit MH',
 		text: textHtml,
+		client: {
+			name: `Conseil départemental des Ardennes`,
+			zip: '08000',
+			type: 'Public Autres',
+		}
 	}
 };
-

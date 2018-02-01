@@ -1,4 +1,3 @@
-
 import textHtml from './text.html';
 
 export const state = {
@@ -17,8 +16,7 @@ export const state = {
 			name: 'Commune de Coupvray (77)',
 			url: 'http://www.coupvray.fr/',
 		},
-		interventions: [
-			{
+		interventions: [{
 				year: '2016 - En cours',
 				title: `Restauration de la Maison de Maître`,
 				missions: [
@@ -49,7 +47,10 @@ export const state = {
 		],
 		classement: 'Inscrit MH',
 		text: textHtml,
+		client: {
+			name: `Coupvray`,
+			zip: 77700,
+			type: 'Mairie',
+		}
 	}
 };
-
-

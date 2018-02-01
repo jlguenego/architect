@@ -1,4 +1,3 @@
-
 import textHtml from './text.html';
 
 export const state = {
@@ -17,17 +16,20 @@ export const state = {
 			name: 'Commune de Varennes sur Seine (77)',
 			url: 'http://www.varennes-sur-seine.fr/',
 		},
-		interventions: [
-			{
-				year: 2016,
-				title: `Construction d’un club house`,
-				missions: [
-					'Maîtrise d’œuvre',
-					'OPC'
-				],
-				price: '150 400 Euros HT'
-			}
-		],
+		interventions: [{
+			year: 2016,
+			title: `Construction d’un club house`,
+			missions: [
+				'Maîtrise d’œuvre',
+				'OPC'
+			],
+			price: '150 400 Euros HT'
+		}],
 		text: textHtml,
+		client: {
+			name: 'Varennes-sur-Seine',
+			zip: 77230,
+			type: 'Mairie',
+		}
 	}
 };

@@ -28,6 +28,11 @@ export const state = {
 			}
 		],
 		text: textHtml,
+		client: {
+			name: `Chelles`,
+			zip: 77500,
+			type: 'Mairie',
+		}
 	}
 };
 

@@ -35,6 +35,11 @@ export const state = {
 			}
 		],
 		text: textHtml,
+		client: {
+			name: `Villiers-en-Bière`,
+			zip: 77190,
+			type: 'Mairie',
+		}
 	}
 };
 

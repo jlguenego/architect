@@ -1,4 +1,3 @@
-
 import textHtml from './text.html';
 
 export const state = {
@@ -17,18 +16,19 @@ export const state = {
 			name: 'Ville de Bois-le-roi (77)',
 			url: 'http://www.ville-boisleroi.fr/',
 		},
-		interventions: [
-			{
-				year: '2017',
-				title: `Rénovation extérieure et intérieure mairie`,
-				missions: [
-					'Maîtrise d’œuvre'
-				],
-				price: '350 000 € HT'
-			}
-		],
+		interventions: [{
+			year: '2017',
+			title: `Rénovation extérieure et intérieure mairie`,
+			missions: [
+				'Maîtrise d’œuvre'
+			],
+			price: '350 000 € HT'
+		}],
 		text: textHtml,
+		client: {
+			name: `Bois-le-Roi`,
+			zip: 77590,
+			type: 'Mairie',
+		}
 	}
 };
-
-
