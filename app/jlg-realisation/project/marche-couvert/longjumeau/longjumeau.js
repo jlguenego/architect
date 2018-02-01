@@ -10,13 +10,13 @@ export const state = {
 			trios: [
 				[{
 					url: 'img/photo/project/marche-couvert/longjumeau/01.jpg',
-					caption: 'Image 1'
+					caption: 'Façades'
 				}, {
 					url: 'img/photo/project/marche-couvert/longjumeau/02.jpg',
-					caption: 'Image 2'
+					caption: 'Avant travaux'
 				}, {
 					url: 'img/photo/project/marche-couvert/longjumeau/03.jpg',
-					caption: 'Image 3'
+					caption: 'Après travaux'
 				}]
 			]
 		},
