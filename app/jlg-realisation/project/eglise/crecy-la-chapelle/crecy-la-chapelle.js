@@ -10,13 +10,13 @@ export const state = {
 			trios: [
 				[{
 					url: 'img/photo/project/eglise/crecy-la-chapelle/01.jpg',
-					caption: 'Image 1'
+					caption: 'Plan'
 				}, {
 					url: 'img/photo/project/eglise/crecy-la-chapelle/02.jpg',
-					caption: 'Image 2'
+					caption: 'Tour du clocher en travaux'
 				}, {
 					url: 'img/photo/project/eglise/crecy-la-chapelle/03.jpg',
-					caption: 'Image 3'
+					caption: `Refection des parements autour de l'horloge du clocher`
 				}]
 			]
 		},
