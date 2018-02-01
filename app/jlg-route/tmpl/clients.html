@@ -2,8 +2,7 @@
 	<section>
 		<div class="container">
 			<h1>Nos clients</h1>
-			<p>Nous indiquons ici seulement nos clients publics, 
-				les clients privés souhaitant la plupart rester sous confidence. 
+			<p>Nous indiquons ici seulement nos clients publics, les clients privés souhaitant la plupart rester sous confidence.
 			</p>
 			<h2>Public</h2>
 			<h3>Mairies</h3>
@@ -33,7 +32,7 @@
 					<th>Code postal </th>
 					<th>Année</th>
 				</tr>
-				<tr ng-repeat="client in $ctrl.autresEntitesPubliques | orderBy : 'name'" class="table-row">
+				<tr ng-repeat="client in $ctrl.autresEntitesPubliques | orderBy : 'name'" class="table-row" ng-click="$root.gotoState('realisations:client', {client: client.name})">
 					<td>{{client.name}}</td>
 					<td>{{client.zip}}</td>
 					<td>{{client.year}}</td>
