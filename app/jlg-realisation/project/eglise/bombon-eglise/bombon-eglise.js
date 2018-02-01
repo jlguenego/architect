@@ -9,13 +9,13 @@ export const state = {
 			mainPortrait: 'img/photo/project/eglise/bombon/eglise.jpg',
 			trios: [[{
 				url: 'img/photo/project/eglise/bombon/01.jpg',
-				caption: 'Image 1'
+				caption: 'Coupe'
 			}, {
 				url: 'img/photo/project/eglise/bombon/02.jpg',
-				caption: 'Image 2'
+				caption: 'Travaux'
 			}, {
 				url: 'img/photo/project/eglise/bombon/03.jpg',
-				caption: 'Image 3'
+				caption: `Le clocher de l'église`
 			}]]
 		},
 		moa: {
