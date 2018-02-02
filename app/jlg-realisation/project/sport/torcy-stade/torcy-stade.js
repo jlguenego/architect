@@ -26,7 +26,7 @@ export const state = {
 		},
 		interventions: [{
 			year: 2015,
-			title: `Aménagement d’un local associatif « Club House », Stade Fremoy`,
+			title: `Aménagement d’un local associatif Club House, Stade Fremoy`,
 			missions: [
 				'Etude',
 				'Autorisation de travaux'
