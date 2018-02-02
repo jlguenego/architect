@@ -6,8 +6,8 @@ export const state = {
 		title: `Laboratoire d’analyses sensorielles au Lycée La Brosse`,
 		description: `Réalisation d’un laboratoire d’analyses sensorielles au Lycée La Brosse à Venoy`,
 		image: {
-			main: 'img/photo/project/scolaire/venoy/venoy.jpg',
-			mainPortrait: 'img/photo/project/scolaire/venoy/venoy.jpg',
+			main: 'img/photo/project/scolaire/venoy/parallax.jpg',
+			mainPortrait: 'img/photo/project/scolaire/venoy/parallax-portrait.jpg',
 			trios: [[{
 				url: 'img/photo/project/scolaire/venoy/01.jpg',
 				caption: 'Plan du projet'
