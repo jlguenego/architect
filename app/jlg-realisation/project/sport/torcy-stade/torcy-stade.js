@@ -5,11 +5,19 @@ export const state = {
 		title: `Stade Fremoy à Torcy`,
 		description: `Aménagement d’un local associatif « Club House », Stade Fremoy à Torcy`,
 		image: {
-			main: 'img/photo/project/sport/torcy-stade/torcy-stade.jpg',
-			mainPortrait: 'img/photo/project/sport/torcy-stade/torcy-stade.jpg',
-			others: [
-				'img/photo/project/sport/torcy-stade/torcy-stade.jpg',
-				'img/photo/project/sport/torcy-stade/torcy-stade.jpg',
+			main: 'img/photo/project/sport/torcy-stade/parallax.jpg',
+			mainPortrait: 'img/photo/project/sport/torcy-stade/parallax.jpg',
+			trios: [
+				[{
+					url: 'img/photo/project/sport/torcy-stade/01.jpg',
+					caption: `Avant le projet`
+				}, {
+					url: 'img/photo/project/sport/torcy-stade/02.jpg',
+					caption: 'Projet proposé'
+				}, {
+					url: 'img/photo/project/sport/torcy-stade/03.jpg',
+					caption: 'Projet réalisé'
+				}]
 			]
 		},
 		moa: {
