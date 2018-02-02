@@ -3,10 +3,10 @@ import textHtml from './text.html';
 export const state = {
 	data: {
 		title: `Stade Fremoy à Torcy`,
-		description: `Aménagement d’un local associatif « Club House », Stade Fremoy à Torcy`,
+		description: `Aménagement d’un local associatif de type Club House, Stade Fremoy à Torcy`,
 		image: {
 			main: 'img/photo/project/sport/torcy-stade/parallax.jpg',
-			mainPortrait: 'img/photo/project/sport/torcy-stade/parallax.jpg',
+			mainPortrait: 'img/photo/project/sport/torcy-stade/parallax-portrait.jpg',
 			trios: [
 				[{
 					url: 'img/photo/project/sport/torcy-stade/01.jpg',

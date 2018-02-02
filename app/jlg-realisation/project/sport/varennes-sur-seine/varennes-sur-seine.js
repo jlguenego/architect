@@ -5,11 +5,19 @@ export const state = {
 		title: `Stade de Varennes-sur-Seine`,
 		description: `Construction d’un club house Stade de Varennes-sur-Seine (77)`,
 		image: {
-			main: 'img/photo/project/sport/varennes-sur-seine/stade.jpg',
-			mainPortrait: 'img/photo/project/sport/varennes-sur-seine/stade.jpg',
-			others: [
-				'img/photo/project/sport/varennes-sur-seine/stade.jpg',
-				'img/photo/project/sport/varennes-sur-seine/stade.jpg',
+			main: 'img/photo/project/sport/varennes-sur-seine/parallax.jpg',
+			mainPortrait: 'img/photo/project/sport/varennes-sur-seine/parallax.jpg',
+			trios: [
+				[{
+					url: 'img/photo/project/sport/varennes-sur-seine/01.jpg',
+					caption: `Présentation du projet`
+				}, {
+					url: 'img/photo/project/sport/varennes-sur-seine/02.jpg',
+					caption: 'Avant le projet'
+				}, {
+					url: 'img/photo/project/sport/varennes-sur-seine/03.jpg',
+					caption: 'Juste avant la fin du chantier'
+				}]
 			]
 		},
 		moa: {
