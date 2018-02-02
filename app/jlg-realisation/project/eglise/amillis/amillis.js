@@ -7,9 +7,17 @@ export const state = {
 		image: {
 			main: 'img/photo/project/eglise/amillis/eglise.jpg',
 			mainPortrait: 'img/photo/project/eglise/amillis/eglise.jpg',
-			others: [
-				'img/photo/project/eglise/amillis/eglise.jpg',
-				'img/photo/project/eglise/amillis/eglise.jpg',
+			trios: [
+				[{
+					url: 'img/photo/project/eglise/amillis/01.jpg',
+					caption: `Pendant travauxs`
+				}, {
+					url: 'img/photo/project/eglise/amillis/02.jpg',
+					caption: 'Réfection couverture'
+				}, {
+					url: 'img/photo/project/eglise/amillis/03.jpg',
+					caption: 'Réfection parements extérieurs'
+				}]
 			]
 		},
 		moa: {
