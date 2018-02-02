@@ -10,7 +10,7 @@ export const state = {
 			trios: [
 				[{
 					url: 'img/photo/project/eglise/amillis/01.jpg',
-					caption: `Pendant travauxs`
+					caption: `Pendant travaux`
 				}, {
 					url: 'img/photo/project/eglise/amillis/02.jpg',
 					caption: 'Réfection couverture'

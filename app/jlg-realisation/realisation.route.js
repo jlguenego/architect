@@ -6,6 +6,9 @@ export const realisationRoute = {
 		'ngInject';
 
 		this.chapterMap = [{
+			key: 'chateau',
+			value: 'Chateaux',
+		}, {
 			key: 'eglise',
 			value: 'Eglises',
 			description: `
@@ -21,9 +24,6 @@ export const realisationRoute = {
 		}, {
 			key: 'ferme',
 			value: 'Fermes',
-		}, {
-			key: 'chateau',
-			value: 'Chateaux',
 		}, {
 			key: 'restauration-par-ext',
 			value: 'Restauration - Parements extérieurs',

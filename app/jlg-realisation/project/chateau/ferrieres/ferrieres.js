@@ -6,11 +6,39 @@ export const state = {
 		description: `
 Restauration des parements extérieurs ainsi que de tous les intérieurs. Réaffectation du château`,
 		image: {
-			main: 'img/photo/project/chateau/ferrieres/ferrieres.jpg',
-			mainPortrait: 'img/photo/project/chateau/ferrieres/ferrieres-portrait.jpg',
-			others: [
-				'img/photo/project/chateau/ferrieres/ferrieres.jpg',
-				'img/photo/project/chateau/ferrieres/ferrieres.jpg',
+			main: 'img/photo/project/chateau/ferrieres/parallax.jpg',
+			mainPortrait: 'img/photo/project/chateau/ferrieres/parallax.jpg',
+			trios: [
+				[{
+					url: 'img/photo/project/chateau/ferrieres/01.jpg',
+					caption: `Avant travaux`
+				}, {
+					url: 'img/photo/project/chateau/ferrieres/02.jpg',
+					caption: 'Pendant travaux'
+				}, {
+					url: 'img/photo/project/chateau/ferrieres/03.jpg',
+					caption: 'Réfection parements extérieurs'
+				}],
+				[{
+					url: 'img/photo/project/chateau/ferrieres/04.jpg',
+					caption: `Façade Sud - côté jardins`
+				}, {
+					url: 'img/photo/project/chateau/ferrieres/05.jpg',
+					caption: 'Réfection plafond'
+				}, {
+					url: 'img/photo/project/chateau/ferrieres/06.jpg',
+					caption: `Escalier de l'entrée`
+				}],
+				[{
+					url: 'img/photo/project/chateau/ferrieres/07.jpg',
+					caption: `Façade Nord - côté entrée`
+				}, {
+					url: 'img/photo/project/chateau/ferrieres/08.jpg',
+					caption: 'Transformation en salle de restaurant de luxe'
+				}, {
+					url: 'img/photo/project/chateau/ferrieres/09.jpg',
+					caption: 'Salle de réception après restauration'
+				}]
 			]
 		},
 		moa: {
