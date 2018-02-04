@@ -36,7 +36,12 @@ module.exports = {
 						sourceMap: true,
 						root: './wpk'
 					}
-				}, 'postcss-loader']
+				}, {
+					loader: 'postcss-loader',
+					options: {
+						sourceMap: true,
+					}
+				}]
 			})
 		}, {
 			test: /\.scss$/,
@@ -49,7 +54,12 @@ module.exports = {
 						sourceMap: true,
 						// root: '../img'
 					}
-				}, 'postcss-loader', {
+				}, {
+					loader: 'postcss-loader',
+					options: {
+						sourceMap: true,
+					}
+				}, {
 					loader: 'sass-loader',
 					options: {
 						sourceMap: true,
