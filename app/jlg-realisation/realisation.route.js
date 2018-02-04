@@ -7,7 +7,7 @@ export const realisationRoute = {
 
 		this.chapterMap = [{
 			key: 'chateau',
-			value: 'Chateaux',
+			value: 'Châteaux',
 		}, {
 			key: 'eglise',
 			value: 'Eglises',
