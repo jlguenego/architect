@@ -5,11 +5,20 @@ export const state = {
 		title: `Château de Bombon`,
 		description: `Réfection des toitures du pavillon d’entrée`,
 		image: {
-			main: 'img/photo/project/chateau/bombon/chateau.jpg',
-			mainPortrait: 'img/photo/project/chateau/bombon/chateau.jpg',
-			others: [
-				'img/photo/project/chateau/bombon/chateau.jpg',
-				'img/photo/project/chateau/bombon/chateau.jpg',
+			main: 'img/photo/project/chateau/bombon/parallax.jpg',
+			mainPortrait: 'img/photo/project/chateau/bombon/parallax.jpg',
+			trios: [
+				[{
+					url: 'img/photo/project/chateau/bombon/01.jpg',
+					caption: `Juste avant la fin de la restauration`
+				}, {
+					url: 'img/photo/project/chateau/bombon/02.jpg',
+					caption: 'Façades'
+				}, {
+					url: 'img/photo/project/chateau/bombon/03.jpg',
+					// eslint-disable-next-line
+					caption: 'Entrée du château'
+				}]
 			]
 		},
 		moa: {

@@ -37,7 +37,7 @@ export const state = {
 			},
 			{
 				year: 2015,
-				title: `Restauration du pavillon d’entrée, dit « de la Poterne »`,
+				title: `Restauration du pavillon d’entrée, dit de la Poterne`,
 				missions: [
 					'Mission de maîtrise d’œuvre',
 				],
