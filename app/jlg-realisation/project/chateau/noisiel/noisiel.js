@@ -6,7 +6,7 @@ export const state = {
 		description: `Réfection des parements extérieurs du château de l’ancienne Chocolaterie Menier`,
 		image: {
 			main: 'img/photo/project/chateau/noisiel/parallax.jpg',
-			mainPortrait: 'img/photo/project/chateau/noisiel/parallax-portrait.jpg',
+			mainPortrait: 'img/photo/project/chateau/noisiel/parallax.jpg',
 			trios: [
 				[{
 					url: 'img/photo/project/chateau/noisiel/01.jpg',
