@@ -5,11 +5,19 @@ export const state = {
 		title: `Château de Noisiel et manège à Noisiel`,
 		description: `Réfection des parements extérieurs du château de l’ancienne Chocolaterie Menier`,
 		image: {
-			main: 'img/photo/project/chateau/noisiel/chateau.jpg',
-			mainPortrait: 'img/photo/project/chateau/noisiel/chateau.jpg',
-			others: [
-				'img/photo/project/chateau/noisiel/chateau.jpg',
-				'img/photo/project/chateau/noisiel/chateau.jpg',
+			main: 'img/photo/project/chateau/noisiel/parallax.jpg',
+			mainPortrait: 'img/photo/project/chateau/noisiel/parallax-portrait.jpg',
+			trios: [
+				[{
+					url: 'img/photo/project/chateau/noisiel/01.jpg',
+					caption: ''
+				}, {
+					url: 'img/photo/project/chateau/noisiel/02.jpg',
+					caption: ''
+				}, {
+					url: 'img/photo/project/chateau/noisiel/03.jpg',
+					caption: ''
+				}]
 			]
 		},
 		moa: {

@@ -3,14 +3,14 @@ import textHtml from './text.html';
 export const state = {
 	data: {
 		title: `Château de Rentilly à Bussy-Saint-Martin`,
-		description: `Réfection des toitures du pavillon d’entrée`,
+		description: `Travaux de sécurisation du château de Rentilly`,
 		image: {
 			main: 'img/photo/project/chateau/bussy-st-martin/chateau.jpg',
 			mainPortrait: 'img/photo/project/chateau/bussy-st-martin/chateau.jpg',
 			trios: [
 				[{
 					url: 'img/photo/project/chateau/bussy-st-martin/01.jpg',
-					caption: 'Plans'
+					caption: ''
 				}, {
 					url: 'img/photo/project/chateau/bussy-st-martin/02.jpg',
 					caption: ''
