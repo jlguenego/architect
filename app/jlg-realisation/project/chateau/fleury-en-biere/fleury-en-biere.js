@@ -2,14 +2,24 @@ import textHtml from './text.html';
 
 export const state = {
 	data: {
+		priority: 500,
 		title: `Château de Fleury-en-Bière`,
 		description: `Restauration de la Fabrique du parc du château`,
 		image: {
-			main: 'img/photo/project/chateau/fleury-en-biere/fleury-en-biere.jpg',
-			mainPortrait: 'img/photo/project/chateau/fleury-en-biere/fleury-en-biere.jpg',
-			others: [
-				'img/photo/project/chateau/fleury-en-biere/fleury-en-biere.jpg',
-				'img/photo/project/chateau/fleury-en-biere/fleury-en-biere.jpg',
+			main: 'img/photo/project/chateau/fleury-en-biere/parallax.jpg',
+			mainPortrait: 'img/photo/project/chateau/fleury-en-biere/parallax-portrait.jpg',
+			trios: [
+				[{
+					url: 'img/photo/project/chateau/fleury-en-biere/01.jpg',
+					caption: `Après restauration`
+				}, {
+					url: 'img/photo/project/chateau/fleury-en-biere/02.jpg',
+					caption: 'Avant incendie'
+				}, {
+					url: 'img/photo/project/chateau/fleury-en-biere/03.jpg',
+					// eslint-disable-next-line
+					caption: 'Incendie (<a href="https://actu.fr/ile-de-france/melun_77288/incendie-dans-un-chateau-classe-monument-historique_6631956.html">source</a>)'
+				}]
 			]
 		},
 		moa: {

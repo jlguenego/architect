@@ -1,7 +1,7 @@
 <div>
 	<img ng-click="$ctrl.state = 1;" ng-src="{{$ctrl.url}}">
 </div>
-<figcaption>{{$ctrl.caption}}</figcaption>
+<figcaption ng-bind-html="$ctrl.caption"></figcaption>
 <overlay ng-click="$ctrl.state = 0;">
 	<img ng-click="$ctrl.state = 0;" ng-src="{{$ctrl.url}}">
 </overlay>

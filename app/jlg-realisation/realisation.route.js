@@ -67,6 +67,10 @@ export const realisationRoute = {
 					this.client = n.data.client;
 				}
 				return true;
+			}).sort((a, b) => {
+				const pa = a.data.priority || 0;
+				const pb = b.data.priority || 0;
+				return pb - pa;
 			}).reduce((acc, n, i) => {
 				if (i % 3) {
 					acc[acc.length - 1].push(n);

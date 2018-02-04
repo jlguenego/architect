@@ -2,6 +2,7 @@ import textHtml from './text.html';
 
 export const state = {
 	data: {
+		priority: 1000,
 		title: `Château de Ferrières-en-Brie`,
 		description: `
 Restauration des parements extérieurs ainsi que de tous les intérieurs. Réaffectation du château`,
