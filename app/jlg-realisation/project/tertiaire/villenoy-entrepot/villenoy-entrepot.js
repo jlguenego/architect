@@ -9,10 +9,10 @@ export const state = {
 			mainPortrait: 'img/photo/project/tertiaire/villenoy-entrepot/entrepot.jpg',
 			trios: [[{
 				url: 'img/photo/project/tertiaire/villenoy-entrepot/01.jpg',
-				caption: 'Image 1'
+				caption: ``
 			}, {
 				url: 'img/photo/project/tertiaire/villenoy-entrepot/02.jpg',
-				caption: 'Image 2'
+				caption: ``
 			}]]
 		},
 		moa: {
