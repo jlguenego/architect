@@ -10,13 +10,13 @@ export const state = {
 			trios: [
 				[{
 					url: 'img/photo/project/tertiaire/moissy-cramayel/01.jpg',
-					caption: 'Image 1'
+					caption: 'Façade'
 				}, {
 					url: 'img/photo/project/tertiaire/moissy-cramayel/02.jpg',
-					caption: 'Image 2'
+					caption: 'Pendant travaux'
 				}, {
 					url: 'img/photo/project/tertiaire/moissy-cramayel/03.jpg',
-					caption: 'Image 3'
+					caption: 'Après travaux'
 				}]
 			]
 		},

@@ -11,10 +11,10 @@ création d’un bar-brasserie et un multiservice à Maisoncelles-en-Brie`,
 			trios: [
 				[{
 					url: 'img/photo/project/tertiaire/maisoncelles-en-brie/01.jpg',
-					caption: 'Image 1'
+					caption: 'Intérieur en travaux'
 				}, {
 					url: 'img/photo/project/tertiaire/maisoncelles-en-brie/02.jpg',
-					caption: 'Image 2'
+					caption: 'Extérieurs'
 				}]
 			]
 		},
