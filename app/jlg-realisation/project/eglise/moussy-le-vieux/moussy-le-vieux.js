@@ -5,11 +5,29 @@ export const state = {
 		title: `Eglise Saint Martin de Moussy-le-Vieux`,
 		description: `Restauration du clocher - Eglise Saint Martin de Moussy-le-Vieux`,
 		image: {
-			main: 'img/photo/project/eglise/moussy-le-vieux/eglise.jpg',
-			mainPortrait: 'img/photo/project/eglise/moussy-le-vieux/eglise.jpg',
-			others: [
-				'img/photo/project/eglise/moussy-le-vieux/eglise.jpg',
-				'img/photo/project/eglise/moussy-le-vieux/eglise.jpg',
+			main: 'img/photo/project/eglise/moussy-le-vieux/parallax.jpg',
+			mainPortrait: 'img/photo/project/eglise/moussy-le-vieux/parallax-portrait.jpg',
+			trios: [
+				[{
+					url: 'img/photo/project/eglise/moussy-le-vieux/01.jpg',
+					caption: `Carte postale ancienne`
+				}, {
+					url: 'img/photo/project/eglise/moussy-le-vieux/02.jpg',
+					caption: `Eglise avant restauration du clocher`
+				}, {
+					url: 'img/photo/project/eglise/moussy-le-vieux/03.jpg',
+					caption: `Lizica faisant le relevé`
+				}],
+				[{
+					url: 'img/photo/project/eglise/moussy-le-vieux/04.jpg',
+					caption: `Echaffaudage du clocher`
+				}, {
+					url: 'img/photo/project/eglise/moussy-le-vieux/05.jpg',
+					caption: `Après restauration du clocher`
+				}, {
+					url: 'img/photo/project/eglise/moussy-le-vieux/06.jpg',
+					caption: `Horloge du clocher restaurée`
+				}]
 			]
 		},
 		moa: {
