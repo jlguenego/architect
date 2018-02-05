@@ -5,11 +5,29 @@ export const state = {
 		title: `Eglise Saint-Pierre et Saint-Paul de Villeneuve-sous-Dammartin`,
 		description: `Eglise Saint-Pierre et Saint-Paul de Villeneuve-sous-Dammartin`,
 		image: {
-			main: 'img/photo/project/eglise/villeneuve-sous-dammartin/eglise.jpg',
-			mainPortrait: 'img/photo/project/eglise/villeneuve-sous-dammartin/eglise.jpg',
-			others: [
-				'img/photo/project/eglise/villeneuve-sous-dammartin/eglise.jpg',
-				'img/photo/project/eglise/villeneuve-sous-dammartin/eglise.jpg',
+			main: 'img/photo/project/eglise/villeneuve-sous-dammartin/parallax.jpg',
+			mainPortrait: 'img/photo/project/eglise/villeneuve-sous-dammartin/parallax-portrait.jpg',
+			trios: [
+				[{
+					url: 'img/photo/project/eglise/villeneuve-sous-dammartin/01.jpg',
+					caption: `Clocher avant travaux`
+				}, {
+					url: 'img/photo/project/eglise/villeneuve-sous-dammartin/02.jpg',
+					caption: `Clocher pendant travaux`
+				}, {
+					url: 'img/photo/project/eglise/villeneuve-sous-dammartin/03.jpg',
+					caption: `Clocher après travaux`
+				}],
+				[{
+					url: 'img/photo/project/eglise/villeneuve-sous-dammartin/04.jpg',
+					caption: `Bas côté avant travaux`
+				}, {
+					url: 'img/photo/project/eglise/villeneuve-sous-dammartin/05.jpg',
+					caption: `Bas côté après travaux`
+				}, {
+					url: 'img/photo/project/eglise/villeneuve-sous-dammartin/06.jpg',
+					caption: `Perspective ̀d'artiste (Lizica DEMETRESCU)`
+				}]
 			]
 		},
 		moa: {
