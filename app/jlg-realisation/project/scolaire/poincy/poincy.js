@@ -2,6 +2,7 @@ import textHtml from './text.html';
 
 export const state = {
 	data: {
+		priority: 1000,
 		title: `Ecole de Poincy`,
 		description: `Réhabilitation de l’école à Poincy`,
 		image: {

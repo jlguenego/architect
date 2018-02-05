@@ -3,6 +3,7 @@ import textHtml from './text.html';
 
 export const state = {
 	data: {
+		priority: 500,
 		title: `Laboratoire d’analyses sensorielles au Lycée La Brosse`,
 		description: `Réalisation d’un laboratoire d’analyses sensorielles au Lycée La Brosse à Venoy`,
 		image: {
