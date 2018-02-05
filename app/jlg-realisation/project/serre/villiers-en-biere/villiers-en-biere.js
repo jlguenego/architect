@@ -10,13 +10,13 @@ export const state = {
 			mainPortrait: 'img/photo/project/serre/villiers-en-biere/serre.jpg',
 			trios: [[{
 				url: 'img/photo/project/serre/villiers-en-biere/01.jpg',
-				caption: 'Image 1'
+				caption: 'Plan du relevé'
 			}, {
 				url: 'img/photo/project/serre/villiers-en-biere/02.jpg',
-				caption: 'Image 2'
+				caption: `Extérieur de l'orangerie`
 			}, {
 				url: 'img/photo/project/serre/villiers-en-biere/03.jpg',
-				caption: 'Image 3'
+				caption: `Intérieur de l'orangerie`
 			}]]
 		},
 		moa: {
