@@ -5,11 +5,19 @@ export const state = {
 		title: `Eglise Saint-Fiacre à Saint-Fiacre`,
 		description: `Eglise Saint-Fiacre à Saint-Fiacre`,
 		image: {
-			main: 'img/photo/project/eglise/saint-fiacre/eglise.jpg',
-			mainPortrait: 'img/photo/project/eglise/saint-fiacre/eglise.jpg',
-			others: [
-				'img/photo/project/eglise/saint-fiacre/eglise.jpg',
-				'img/photo/project/eglise/saint-fiacre/eglise.jpg',
+			main: 'img/photo/project/eglise/saint-fiacre/parallax.jpg',
+			mainPortrait: 'img/photo/project/eglise/saint-fiacre/parallax-portrait.jpg',
+			trios: [
+				[{
+					url: 'img/photo/project/eglise/saint-fiacre/01.jpg',
+					caption: ``
+				}, {
+					url: 'img/photo/project/eglise/saint-fiacre/02.jpg',
+					caption: ``
+				}, {
+					url: 'img/photo/project/eglise/saint-fiacre/03.jpg',
+					caption: ``
+				}]
 			]
 		},
 		moa: {
@@ -17,6 +25,7 @@ export const state = {
 		},
 		interventions: [{
 				year: 2016,
+				ongoing: true,
 				title: `Restauration du clocher et des sols de l’église`,
 				missions: [
 					'Maîtrise d’œuvre'
