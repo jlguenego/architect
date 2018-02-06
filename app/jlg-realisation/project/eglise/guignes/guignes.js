@@ -5,11 +5,19 @@ export const state = {
 		title: `Eglise Saint Jacques le Mineur de Guignes`,
 		description: `Eglise Saint Jacques le Mineur de Guignes`,
 		image: {
-			main: 'img/photo/project/eglise/guignes/eglise.jpg',
-			mainPortrait: 'img/photo/project/eglise/guignes/eglise.jpg',
-			others: [
-				'img/photo/project/eglise/guignes/eglise.jpg',
-				'img/photo/project/eglise/guignes/eglise.jpg',
+			main: 'img/photo/project/eglise/guignes/parallax.jpg',
+			mainPortrait: 'img/photo/project/eglise/guignes/parallax-portrait.jpg',
+			trios: [
+				[{
+					url: 'img/photo/project/eglise/guignes/01.jpg',
+					caption: `Dessins d'architecture`
+				}, {
+					url: 'img/photo/project/eglise/guignes/02.jpg',
+					caption: `Intérieur`
+				}, {
+					url: 'img/photo/project/eglise/guignes/03.jpg',
+					caption: `Exterieur`
+				}]
 			]
 		},
 		moa: {
@@ -24,7 +32,7 @@ export const state = {
 					'Maîtrise d\'oeuvre',
 					'OPC'
 				],
-				price: '430 300 € HT'
+				// price: '430 300 € HT'
 			},
 			{
 				year: 2016,
