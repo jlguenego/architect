@@ -5,17 +5,17 @@ export const state = {
 		title: `Château de Rentilly à Bussy-Saint-Martin`,
 		description: `Travaux de sécurisation du château de Rentilly`,
 		image: {
-			main: 'img/photo/project/chateau/bussy-st-martin/chateau.jpg',
-			mainPortrait: 'img/photo/project/chateau/bussy-st-martin/chateau.jpg',
+			main: 'img/photo/project/chateau/rentilly/chateau.jpg',
+			mainPortrait: 'img/photo/project/chateau/rentilly/chateau.jpg',
 			trios: [
 				[{
-					url: 'img/photo/project/chateau/bussy-st-martin/01.jpg',
+					url: 'img/photo/project/chateau/rentilly/01.jpg',
 					caption: ''
 				}, {
-					url: 'img/photo/project/chateau/bussy-st-martin/02.jpg',
+					url: 'img/photo/project/chateau/rentilly/02.jpg',
 					caption: ''
 				}, {
-					url: 'img/photo/project/chateau/bussy-st-martin/03.jpg',
+					url: 'img/photo/project/chateau/rentilly/03.jpg',
 					caption: ''
 				}]
 			]
