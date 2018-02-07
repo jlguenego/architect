@@ -5,14 +5,17 @@ export const state = {
 		title: `Construction d’un entrepôt et bureaux à Villenoy`,
 		description: `Construction d’un entrepôt et bureaux à Villenoy`,
 		image: {
-			main: 'img/photo/project/tertiaire/villenoy/villenoy.jpg',
-			mainPortrait: 'img/photo/project/tertiaire/villenoy/villenoy.jpg',
+			main: 'img/photo/project/tertiaire/villenoy/parallax.jpg',
+			mainPortrait: 'img/photo/project/tertiaire/villenoy/parallax-portrait.jpg',
 			trios: [[{
 				url: 'img/photo/project/tertiaire/villenoy/01.jpg',
-				caption: ``
+				caption: `Avant projet`
 			}, {
 				url: 'img/photo/project/tertiaire/villenoy/02.jpg',
-				caption: ``
+				caption: `Volet paysager`
+			}, {
+				url: 'img/photo/project/tertiaire/villenoy/03.jpg',
+				caption: `Après projet`
 			}]]
 		},
 		moa: {
