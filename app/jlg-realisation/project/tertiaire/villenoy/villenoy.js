@@ -2,7 +2,8 @@ import textHtml from './text.html';
 
 export const state = {
 	data: {
-		title: `Construction d’un entrepôt et bureaux à Villenoy`,
+		priority: 1000,
+		title: `Construction d’un entrepôt et bureaux à Villenoy (1)`,
 		description: `Construction d’un entrepôt et bureaux à Villenoy`,
 		image: {
 			main: 'img/photo/project/tertiaire/villenoy/parallax.jpg',

@@ -2,17 +2,21 @@ import textHtml from './text.html';
 
 export const state = {
 	data: {
-		title: `Construction d’un entrepôt et bureaux à Villenoy`,
+		priority: 999,
+		title: `Construction d’un entrepôt et bureaux à Villenoy (2)`,
 		description: `Construction d’un entrepôt et bureaux à Villenoy`,
 		image: {
-			main: 'img/photo/project/tertiaire/villenoy-entrepot/entrepot.jpg',
-			mainPortrait: 'img/photo/project/tertiaire/villenoy-entrepot/entrepot.jpg',
+			main: 'img/photo/project/tertiaire/villenoy-entrepot/parallax.jpg',
+			mainPortrait: 'img/photo/project/tertiaire/villenoy-entrepot/parallax-portrait.jpg',
 			trios: [[{
 				url: 'img/photo/project/tertiaire/villenoy-entrepot/01.jpg',
-				caption: ``
+				caption: `Avant projet`
 			}, {
 				url: 'img/photo/project/tertiaire/villenoy-entrepot/02.jpg',
-				caption: ``
+				caption: `Volet paysager`
+			}, {
+				url: 'img/photo/project/tertiaire/villenoy-entrepot/03.jpg',
+				caption: `Après travaux`
 			}]]
 		},
 		moa: {
