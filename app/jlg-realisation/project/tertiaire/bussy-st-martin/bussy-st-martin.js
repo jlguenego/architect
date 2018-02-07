@@ -20,7 +20,7 @@ export const state = {
 				}],
 				[{
 					url: 'img/photo/project/tertiaire/bussy-st-martin/04.jpg',
-					caption: `Volet paysager initial (finalement les revêtements ont été fait en bois)`
+					caption: `Volet paysager`
 				}, {
 					url: 'img/photo/project/tertiaire/bussy-st-martin/05.jpg',
 					caption: `Vue aérienne Google avant travaux`
