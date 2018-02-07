@@ -14,7 +14,7 @@
 					<th>Année</th>
 				</tr>
 				<tr ng-repeat="client in $ctrl.mairies | orderBy : 'name'" class="table-row" ng-click="$root.gotoState('realisations:client', {client: client.slug})">
-					<td><a ui-sref="realisations:client({client: client.slug})">x</a>{{client.name}}</td>
+					<td><a ui-sref="realisations:client({client: client.slug})"></a>{{client.name}}</td>
 					<td>{{client.zip}}</td>
 					<td>{{client.year}}</td>
 				</tr>

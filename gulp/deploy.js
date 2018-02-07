@@ -21,7 +21,7 @@ module.exports = function(gulp, pathConfig) {
 		console.log(deployEnv.base);		
 		return gulp.src(pathConfig.seo, { base: pathConfig.base })
 			.pipe(replace(new RegExp('http://localhost:8000/app/', 'g'), `${deployEnv.url}`))
-			.pipe(replace(new RegExp('<base href="/app/">'), `<base href="${deployEnv.base}">`))
+			.pipe(replace(new RegExp('href="/app/', 'g'), `href="${deployEnv.base}`))
 			.pipe(gulp.dest(pathConfig.dist));
 	});
 
