@@ -17,7 +17,6 @@ HCCrawler.launch({
 			const html = document.querySelector('html').cloneNode(true);
 
 			html.querySelector('body').innerHTML = 'Hello crawler';
-			html.querySelector('style').innerHTML = '';
 			const links = html.querySelectorAll('link');
 			for (let i = 0; i < links.length; i++) {
 				links[i].parentNode.removeChild(links[i]);
@@ -26,6 +25,7 @@ HCCrawler.launch({
 			return {
 				dom: result,
 			};
+			
 		},
 		// Function to be called with evaluated results from browsers
 		onSuccess: (result => {
