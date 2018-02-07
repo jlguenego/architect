@@ -33,6 +33,7 @@ app.component('jlgParallax', {
 				loadImage(this.landscape),
 				loadImage(this.portrait),
 			]).then(images => {
+				$element.addClass('loaded');
 				this.images = {
 					landscape: images[0],
 					portrait: images[1],
