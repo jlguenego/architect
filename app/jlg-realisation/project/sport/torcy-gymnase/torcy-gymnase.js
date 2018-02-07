@@ -5,11 +5,33 @@ export const state = {
 		title: `Gymnase Jean Moulin à Torcy`,
 		description: `Aménagement d’un local associatif Club House, Gymnase Jean Moulin à Torcy`,
 		image: {
-			main: 'img/photo/project/sport/torcy/gymnase.jpg',
-			mainPortrait: 'img/photo/project/sport/torcy/gymnase.jpg',
-			others: [
-				'img/photo/project/sport/torcy/gymnase.jpg',
-				'img/photo/project/sport/torcy/gymnase.jpg',
+			main: 'img/photo/project/sport/torcy/parallax.jpg',
+			mainPortrait: 'img/photo/project/sport/torcy/parallax-portrait.jpg',
+			trios: [
+				[{
+					url: 'img/photo/project/sport/torcy/01.jpg',
+					caption: `Avant travaux`
+				}, {
+					url: 'img/photo/project/sport/torcy/02.jpg',
+					caption: `Avant travaux`
+				}, {
+					url: 'img/photo/project/sport/torcy/03.jpg',
+					caption: `Avant travaux`
+				}],
+				[{
+					url: 'img/photo/project/sport/torcy/04.jpg',
+					caption: `Après travaux - extérieur`
+				}, {
+					url: 'img/photo/project/sport/torcy/05.jpg',
+					caption: `Après travaux - extérieur`
+				}, {
+					url: 'img/photo/project/sport/torcy/06.jpg',
+					caption: `Après travaux - intérieur`
+				}],
+				[{
+					url: 'img/photo/project/sport/torcy/07.jpg',
+					caption: `Après travaux - intérieur`
+				}]
 			]
 		},
 		moa: {
