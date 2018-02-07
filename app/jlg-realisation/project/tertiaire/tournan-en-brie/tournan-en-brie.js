@@ -5,12 +5,21 @@ export const state = {
 		title: `Locaux administratifs à Tournan-en-Brie`,
 		description: `Réhabilitation d’une ancienne grange en locaux administratifs à Tournan-en-Brie`,
 		image: {
-			main: 'img/photo/project/tertiaire/tournan-en-brie/tertiaire.jpg',
-			mainPortrait: 'img/photo/project/tertiaire/tournan-en-brie/tertiaire.jpg',
-			others: [
-				'img/photo/project/tertiaire/tournan-en-brie/tertiaire.jpg',
-				'img/photo/project/tertiaire/tournan-en-brie/tertiaire.jpg',
-			]
+			main: 'img/photo/project/tertiaire/tournan-en-brie/parallax.jpg',
+			mainPortrait: 'img/photo/project/tertiaire/tournan-en-brie/parallax-portrait.jpg',
+			trios: [[{
+				url: 'img/photo/project/tertiaire/tournan-en-brie/01.jpg',
+				caption: `Extérieur avant travaux`
+			}, {
+				url: 'img/photo/project/tertiaire/tournan-en-brie/02.jpg',
+				caption: `Dessins architecturaux`
+			}, {
+				url: 'img/photo/project/tertiaire/tournan-en-brie/03.jpg',
+				caption: `Rendu projet`
+			}], [{
+				url: 'img/photo/project/tertiaire/tournan-en-brie/04.jpg',
+				caption: `Rendu projet`
+			}]]
 		},
 		moa: {
 			name: 'Ville de Tournan-en-Brie (77)',
@@ -23,7 +32,7 @@ export const state = {
 			missions: [
 				'Maîtrise d\'oeuvre'
 			],
-			price: '741 900 € HT'
+			// price: '741 900 € HT'
 		}],
 		text: textHtml,
 		client: {
