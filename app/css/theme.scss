@@ -60,6 +60,8 @@ ul {
 
 button,
 .button {
+    background-color: hsla(0, 0%, 100%, 0);
+    transition: background-color 200ms;
     &:hover {
         background-color: hsla(0, 0%, 100%, 0.2);
     }

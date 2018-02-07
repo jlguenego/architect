@@ -16,7 +16,7 @@ HCCrawler.launch({
 		evaluatePage: () => {
 			const html = document.querySelector('html').cloneNode(true);
 
-			html.querySelector('body').innerHTML = 'Hello crawler';
+			// html.querySelector('body').innerHTML = 'Hello crawler';
 			const links = html.querySelectorAll('link');
 			for (let i = 0; i < links.length; i++) {
 				links[i].parentNode.removeChild(links[i]);
