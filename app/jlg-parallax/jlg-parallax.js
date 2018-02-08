@@ -2,7 +2,6 @@ import './jlg-parallax.scss';
 
 import '../jlg-load-image/jlg-load-image.js';
 
-
 const app = angular.module('jlg-parallax', ['jlg-load-image']);
 
 app.component('jlgParallax', {
