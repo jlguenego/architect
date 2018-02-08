@@ -1,37 +1,24 @@
 import './jlg-parallax.scss';
 
-const app = angular.module('jlg-parallax', []);
+import '../jlg-load-image/jlg-load-image.js';
+
+
+const app = angular.module('jlg-parallax', ['jlg-load-image']);
 
 app.component('jlgParallax', {
 	bindings: {
 		landscape: '<',
 		portrait: '<',
 	},
-	controller: function JLGParallaxCtrl($scope, $element, $q, $compile, $document, $timeout) {
-		function loadImage(url) {
-			return $q(function (resolve, reject) {
-				angular.element('<img/>').attr('src', url).on('load', function (e) {
-					const width = this.width;
-					const height = this.height;
-					angular.element(this).remove();
-					resolve({
-						url,
-						width,
-						height
-					});
-				});
-			});
-
-		}
-
-
+	controller: function JLGParallaxCtrl($scope, $element, $q, $compile, $document, $timeout, loadImage) {
+		'ngInject';
 		this.$onInit = () => {
 			const html = `<img src="">`;
 			$element.html(html);
 			this.img = $element[0].querySelector('img');
 			$q.all([
-				loadImage(this.landscape),
-				loadImage(this.portrait),
+				loadImage.load(this.landscape),
+				loadImage.load(this.portrait),
 			]).then(images => {
 				$element.addClass('loaded');
 				this.images = {
