@@ -14,9 +14,9 @@ jlg-facebook-share {
         padding: 0.5em;
         font-size: 2em;
         color: white;
-        background-color: hsl(225, 37%, 50%);
+        background-color: $primaryColor;
         &:hover {
-            background-color: hsl(225, 37%, 43%);
+            background-color: lighten($primaryColor, 10%);
         }
     }
 }
