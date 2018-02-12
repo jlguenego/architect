@@ -45,9 +45,12 @@ export const realisationRoute = {
 		}, {
 			key: 'titi',
 			value: 'Titi',
-		}];
-
+		}]; 
 		
+		this.chapterMap.forEach(n => {
+			n.image = `img/photo/project/${n.key}/thumbnail-${n.key}.jpg`;
+			n.state = `realisations:category({category: '${n.key}'})`;
+		});	
 
 		const chapters = this.chapterMap.map(n => n.key);
 		chapters.forEach(type => {
