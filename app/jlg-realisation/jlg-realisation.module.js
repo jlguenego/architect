@@ -105,6 +105,10 @@ Cabinet d'architecture DEMETRESCU - GUENEGO: liste de nos réalisations.
 Projet architecturaux réalisé par nos architectes du patrimoine.
 Eglises, Chateaux, Granges, Ecoles, Remparts, Mairies,
 Logements collectifs, Promotions immobilières, maisons individuelles`,
+			image: {
+				main: 'img/photo/ferrieres-landscape.jpg'
+			}
 		},
+
 	});
 });
