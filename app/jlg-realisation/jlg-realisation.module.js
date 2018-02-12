@@ -96,7 +96,7 @@ Logements collectifs, Promotions immobilières, maisons individuelles`,
 
 	$stateProvider.state({
 		name: 'realisations:category',
-		url: '/realisations/category/{category}',
+		url: '/realisations/{category}',
 		component: 'categoryRoute',
 		data: {
 			title: `Nos réalisations.`,
