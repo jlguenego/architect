@@ -37,9 +37,6 @@ const chapterMap = [{
 }, {
 	key: 'scolaire',
 	value: 'Scolaire - Education',
-}, {
-	key: 'titi',
-	value: 'Titi',
 }];
 
 chapterMap.forEach(n => {
