@@ -3,24 +3,30 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<h1>Nos réalisations <span ng-show="$ctrl.client">pour {{$ctrl.client.name}} ({{$ctrl.client.zip}})</span></h1>
+					<h1>Nos réalisations
+						<span ng-show="$ctrl.client">pour {{$ctrl.client.name}} ({{$ctrl.client.zip}})</span>
+					</h1>
 				</div>
 			</div>
 		</div>
 
 		<div class="container" ng-repeat="chapter in $ctrl.chapterMap">
-			<div class="row" ng-show="$ctrl[chapter.key + 'Trios'].length > 0">
+			<div class="col-4" ng-show="!$ctrl.client.name">
+				<jlg-category-thumbnail state="chapter.state" label="chapter.value" image="chapter.image"></jlg-category-thumbnail>
+			</div>
+
+			<div class="row" ng-show="$ctrl[chapter.key + 'Trios'].length > 0 && $ctrl.client.name">
 				<div class="col-12">
 					<h2>{{chapter.value}}</h2>
 					<p ng-show="chapter.description && !$ctrl.client">{{chapter.description}}</p>
 				</div>
 			</div>
 
-			<div class="row mb-4rem" ng-repeat="trio in $ctrl[chapter.key + 'Trios']" ng-show="$ctrl[chapter.key + 'Trios'].length > 0">
+			<div class="row mb-4rem" ng-repeat="trio in $ctrl[chapter.key + 'Trios']" ng-show="$ctrl[chapter.key + 'Trios'].length > 0 && $ctrl.client.name">
 				<div class="col-4 realisation-item" ng-repeat="project in trio">
 					<jlg-thumbnail href="'.' + project.url" src="project.data.image.thumbnail" caption="project.data.title"></jlg-thumbnail>
 				</div>
 			</div>
-		</div>
+		</div>	
 	</section>
 </article>

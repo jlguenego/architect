@@ -5,6 +5,7 @@ import './tmpl/project.scss';
 
 import { jlgThumbnail } from './jlg-thumbnail.component.js';
 import { realisationRoute } from './realisation.route.js';
+import { categoryRoute } from './category.route.js';
 
 
 
@@ -33,7 +34,7 @@ context.keys().forEach(function(key) {
 	}
 	state.name = state.name || getName(key);
 	state.type = state.type || getType(key);
-	state.url = `/realisations/${state.name}`;
+	state.url = `/realisations/${state.type}/${state.name}`;
 	state.template = state.template || projectHtml;
 	state.controller = state.controller || function($state) {
 		'ngInject';
@@ -57,6 +58,7 @@ context.keys().forEach(function(key) {
 
 app.component('jlgThumbnail', jlgThumbnail);
 app.component('realisationRoute', realisationRoute);
+app.component('categoryRoute', categoryRoute);
 
 app.config(($stateProvider) => {
 	$stateProvider.state({
@@ -90,5 +92,23 @@ Logements collectifs, Promotions immobilières, maisons individuelles`,
 				main: 'img/photo/ferrieres-landscape.jpg'
 			}
 		},
+	});
+
+	$stateProvider.state({
+		name: 'realisations:category',
+		url: '/realisations/{category}',
+		component: 'categoryRoute',
+		data: {
+			title: `Nos réalisations.`,
+			description: `
+Cabinet d'architecture DEMETRESCU - GUENEGO: liste de nos réalisations.
+Projet architecturaux réalisé par nos architectes du patrimoine.
+Eglises, Chateaux, Granges, Ecoles, Remparts, Mairies,
+Logements collectifs, Promotions immobilières, maisons individuelles`,
+			image: {
+				main: 'img/photo/ferrieres-landscape.jpg'
+			}
+		},
+
 	});
 });
