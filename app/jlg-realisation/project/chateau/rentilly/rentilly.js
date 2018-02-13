@@ -46,9 +46,9 @@ export const state = {
 		classement: 'Inscrit MH',
 		text: textHtml,
 		client: {
-			name: `Bussy-Saint-Martin`,
+			name: `Communauté d’agglomération de Marne et Gondoire`,
 			zip: 77600,
-			type: 'Mairie',
+			type: 'Public Autres',
 		}
 	}
 };
