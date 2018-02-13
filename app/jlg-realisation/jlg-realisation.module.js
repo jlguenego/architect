@@ -68,7 +68,7 @@ app.config(($stateProvider) => {
 		data: {
 			title: `Nos réalisations.`,
 			description: `
-Cabinet d'architecture DEMETRESCU - GUENEGO: liste de nos réalisations.
+Cabinet d'architecture DEMETRESCU - GUENEGO : liste de nos réalisations.
 Projet architecturaux réalisé par nos architectes du patrimoine.
 Eglises, Chateaux, Granges, Ecoles, Remparts, Mairies,
 Logements collectifs, Promotions immobilières, maisons individuelles`,
@@ -84,7 +84,7 @@ Logements collectifs, Promotions immobilières, maisons individuelles`,
 		data: {
 			title: `Nos réalisations.`,
 			description: `
-Cabinet d'architecture DEMETRESCU - GUENEGO: liste de nos réalisations.
+Cabinet d'architecture DEMETRESCU - GUENEGO : liste de nos réalisations.
 Projet architecturaux réalisé par nos architectes du patrimoine.
 Eglises, Chateaux, Granges, Ecoles, Remparts, Mairies,
 Logements collectifs, Promotions immobilières, maisons individuelles`,
@@ -101,7 +101,7 @@ Logements collectifs, Promotions immobilières, maisons individuelles`,
 		data: {
 			title: `Nos réalisations.`,
 			description: `
-Cabinet d'architecture DEMETRESCU - GUENEGO: liste de nos réalisations.
+Cabinet d'architecture DEMETRESCU - GUENEGO : liste de nos réalisations.
 Projet architecturaux réalisé par nos architectes du patrimoine.
 Eglises, Chateaux, Granges, Ecoles, Remparts, Mairies,
 Logements collectifs, Promotions immobilières, maisons individuelles`,
