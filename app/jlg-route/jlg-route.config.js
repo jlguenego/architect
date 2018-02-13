@@ -27,7 +27,7 @@ export function config($locationProvider, $stateProvider, $urlRouterProvider) {
 		controllerAs: '$ctrl',
 		data: {
 			title: `Nos clients.`,
-			description: `Cabinet d'architecture DEMETRESCU - GUENEGO: liste de nos clients.`,
+			description: `Cabinet d'architecture DEMETRESCU - GUENEGO : liste de nos clients.`,
 			image: {
 				main: 'img/photo/ferrieres-landscape.jpg'
 			}
