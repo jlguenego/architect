@@ -1,5 +1,13 @@
 @import '../css/variable';
 
+body.sprite-loaded {
+	jlg-category-thumbnail {
+		a::after {
+			opacity: 0.8;
+		}
+	}
+}
+
 jlg-category-thumbnail {
 	display: block;
 	position: relative;
@@ -48,7 +56,7 @@ jlg-category-thumbnail {
 		&::after {
 			content: "";
 			position: absolute;
-			opacity: .80;
+			opacity: 1;
 			background: hsl(120, 10%, 35%);
 			width: 100%;
 			height: 100%;

@@ -16,6 +16,7 @@ import './jlg-photo-thumbnail/jlg-photo-thumbnail.js';
 import './jlg-category-thumbnail/jlg-category-thumbnail.js';
 import './jlg-misc/jlg-misc.js';
 import './jlg-category/jlg-category.js';
+import './jlg-sprite/jlg-sprite.js';
 
 angular.module('main', [
 	'ngSanitize',
@@ -31,4 +32,5 @@ angular.module('main', [
 	'jlg-category-thumbnail',
 	'jlg-misc',
 	'jlg-category',
+	'jlg-sprite',
 ]);
