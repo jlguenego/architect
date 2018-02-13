@@ -12,8 +12,8 @@ export function config($locationProvider, $stateProvider, $urlRouterProvider) {
 		url: '/',
 		template: accueilHtml,
 		data: {
-			title: `Cabinet d'architecture DEMETRESCU - GUENEGO`,
-			description: `Cabinet d'architecture DEMETRESCU - GUENEGO : architectes DPLG, architectes du patrimoine.`,
+			title: `Cabinet d'architecture DEMETRESCU - GUÉNÉGO`,
+			description: `Cabinet d'architecture DEMETRESCU - GUÉNÉGO : Architectes DPLG, architectes du patrimoine.`,
 			image: {
 				main: 'img/photo/ferrieres-landscape.jpg'
 			}
@@ -27,7 +27,7 @@ export function config($locationProvider, $stateProvider, $urlRouterProvider) {
 		controllerAs: '$ctrl',
 		data: {
 			title: `Nos clients.`,
-			description: `Cabinet d'architecture DEMETRESCU - GUENEGO : liste de nos clients.`,
+			description: `Cabinet d'architecture DEMETRESCU - GUÉNÉGO : Liste de nos clients.`,
 			image: {
 				main: 'img/photo/ferrieres-landscape.jpg'
 			}
@@ -41,7 +41,7 @@ export function config($locationProvider, $stateProvider, $urlRouterProvider) {
 		data: {
 			title: 'Contactez-nous.',
 			description: `
-Adresse du Cabinet d'architecture: 99 rue de Paris, Batiment A - 1er étage. 77200 TORCY. Ile de France.`,
+Adresse du Cabinet d'architecture: 99 rue de Paris, Bâtiment A - 1er étage. 77200 TORCY. Ile de France.`,
 			image: {
 				main: 'img/photo/ferrieres-landscape.jpg'
 			}
