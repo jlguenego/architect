@@ -14,7 +14,7 @@ app.run(($location, $transitions, seoConfig) => {
 			return;
 		}
 
-		document.querySelector('title').innerHTML = `${seoConfig.titlePrefix}: ${data.title}`;
+		document.querySelector('title').innerHTML = `${seoConfig.titlePrefix} : ${data.title}`;
 		document.querySelector('meta[name="description"]').setAttribute('content', data.description);
 
 		// seo open graph
