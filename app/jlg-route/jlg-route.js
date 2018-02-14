@@ -6,7 +6,7 @@ const app = angular.module('jlg-route', ['ui.router', 'jlg-seo', 'jlg-clients'])
 
 app.config(config);
 app.run((seoConfig) => {
-	seoConfig.titlePrefix = 'Architectes GUÉNÉGO';
+	seoConfig.titlePrefix = 'Cabinet d\'architecture DEMETRESCU - GUÉNÉGO';
 });
 
 app.run(($rootScope) => {
