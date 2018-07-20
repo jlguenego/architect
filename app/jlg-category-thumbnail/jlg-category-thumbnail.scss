@@ -15,7 +15,7 @@ jlg-category-thumbnail {
 	padding-top: 75%;
 	overflow: hidden;
 	box-shadow: 1px 1px 10px #eee;
-	>div {
+	div {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -44,7 +44,7 @@ jlg-category-thumbnail {
 		&:hover {
 			opacity: 0;
 		}
-		>span {
+		span {
 			display: block;
 			position: absolute;
 			width: 100%;
@@ -67,6 +67,23 @@ jlg-category-thumbnail {
 		}
 		&:hover::after {
 			opacity: 0;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	body.sprite-loaded {
+		jlg-category-thumbnail {
+			a::after {
+				opacity: 0.65;
+			}
+		}
+	}
+
+	jlg-category-thumbnail {
+		box-shadow: 1px 1px 10px hsla(0, 0%, 0%, 0.082);
+		div, a {
+			pointer-events: none;
 		}
 	}
 }

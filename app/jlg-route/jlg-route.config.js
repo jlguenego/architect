@@ -12,7 +12,7 @@ export function config($locationProvider, $stateProvider, $urlRouterProvider) {
 		url: '/',
 		template: accueilHtml,
 		data: {
-			title: `Cabinet d'architecture DEMETRESCU - GUÉNÉGO`,
+			title: `Accueil`,
 			description: `Cabinet d'architecture DEMETRESCU - GUÉNÉGO : Architectes DPLG, architectes du patrimoine.`,
 			image: {
 				main: 'img/photo/ferrieres-landscape.jpg'
