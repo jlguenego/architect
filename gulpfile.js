@@ -19,4 +19,4 @@ require('./gulp/clean.js')(gulp, pathConfig);
 require('./gulp/build.js')(gulp, pathConfig);
 require('./gulp/deploy.js')(gulp, pathConfig);
 
-gulp.task('default', ['rebuild']);
+gulp.task('default', gulp.parallel('rebuild'));

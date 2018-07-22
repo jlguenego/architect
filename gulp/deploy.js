@@ -1,4 +1,3 @@
-const runSequence = require('run-sequence');
 const replace = require('gulp-replace');
 const gutil = require('gulp-util');
 const ftp = require('gulp-ftp');
@@ -32,7 +31,5 @@ module.exports = function(gulp, pathConfig) {
 			.pipe(gutil.noop());
 	});
 
-	gulp.task('deploy', [], function() {
-		runSequence('deploy:config', 'deploy:seo', 'deploy:ftp');
-	});
+	gulp.task('deploy', gulp.series('deploy:config', 'deploy:seo', 'deploy:ftp'));
 };

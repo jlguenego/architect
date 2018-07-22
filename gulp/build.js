@@ -1,7 +1,6 @@
 const replace = require('gulp-replace');
 const webpack = require('webpack');
 const webpackConfig = require('../webpack.config.js');
-const runSequence = require('run-sequence');
 const gutil = require('gulp-util');
 
 
@@ -31,11 +30,7 @@ module.exports = function(gulp, pathConfig) {
 			.pipe(gulp.dest(pathConfig.dist));
 	});
 
-	gulp.task('build', function() {
-		runSequence('build:webpack', ['build:resources', 'build:html', 'build:htaccess']);
-	});
+	gulp.task('build', gulp.series('build:webpack', gulp.parallel('build:resources', 'build:html', 'build:htaccess')));
 
-	gulp.task('rebuild', function() {
-		runSequence('clean', 'build');
-	});
+	gulp.task('rebuild', gulp.series('clean', 'build'));
 };

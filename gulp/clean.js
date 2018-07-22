@@ -9,6 +9,5 @@ module.exports = function(gulp, pathConfig) {
 	gulp.task('clean:wpk', function() {
 		return del([pathConfig.wpk]);
 	});
-
-	gulp.task('clean', ['clean:dist', 'clean:wpk']);
+	gulp.task('clean', gulp.parallel('clean:dist', 'clean:wpk'));
 };
