@@ -25,6 +25,8 @@ module.exports = {
 		}, {
 			test: /\.css$/,
 			use: [{
+				loader: MiniCssExtractPlugin.loader,
+			}, {
 				loader: 'css-loader',
 				options: {
 					minimize: true,
@@ -40,6 +42,8 @@ module.exports = {
 		}, {
 			test: /\.scss$/,
 			use: [{
+				loader: MiniCssExtractPlugin.loader,
+			}, {
 				loader: 'css-loader',
 				options: {
 					minimize: false,
