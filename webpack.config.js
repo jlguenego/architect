@@ -1,10 +1,7 @@
-const webpack = require('webpack');
 const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const SpritesmithPlugin = require('webpack-spritesmith');
 const mySpriteTemplate = require('./utils/sprite.js');
-
-
 
 module.exports = {
 	entry: {
@@ -27,45 +24,39 @@ module.exports = {
 			}]
 		}, {
 			test: /\.css$/,
-			use: ExtractTextPlugin.extract({
-				fallback: 'style-loader',
-				use: [{
-					loader: 'css-loader',
-					options: {
-						minimize: true,
-						sourceMap: true,
-						root: './wpk'
-					}
-				}, {
-					loader: 'postcss-loader',
-					options: {
-						sourceMap: true,
-					}
-				}]
-			})
+			use: [{
+				loader: 'css-loader',
+				options: {
+					minimize: true,
+					sourceMap: true,
+					root: './wpk'
+				}
+			}, {
+				loader: 'postcss-loader',
+				options: {
+					sourceMap: true,
+				}
+			}]
 		}, {
 			test: /\.scss$/,
-			use: ExtractTextPlugin.extract({
-				fallback: 'style-loader',
-				use: [{
-					loader: 'css-loader',
-					options: {
-						minimize: false,
-						sourceMap: true,
-						// root: '../img'
-					}
-				}, {
-					loader: 'postcss-loader',
-					options: {
-						sourceMap: true,
-					}
-				}, {
-					loader: 'sass-loader',
-					options: {
-						sourceMap: true,
-					}
-				}]
-			})
+			use: [{
+				loader: 'css-loader',
+				options: {
+					minimize: false,
+					sourceMap: true,
+					// root: '../img'
+				}
+			}, {
+				loader: 'postcss-loader',
+				options: {
+					sourceMap: true,
+				}
+			}, {
+				loader: 'sass-loader',
+				options: {
+					sourceMap: true,
+				}
+			}]
 		}, {
 			test: /\.html$/,
 			use: [{
@@ -151,14 +142,8 @@ module.exports = {
 	},
 	devtool: 'source-map',
 	plugins: [
-		new ExtractTextPlugin('[name].css'),
-		new webpack.optimize.CommonsChunkPlugin('vendors'),
-		new webpack.optimize.UglifyJsPlugin({
-			compress: {
-				warnings: false,
-				// drop_console: true
-			},
-			sourceMap: true,
+		new MiniCssExtractPlugin({
+			filename: '[name].css',
 		}),
 		new SpritesmithPlugin({
 			src: {

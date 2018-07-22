@@ -6,6 +6,7 @@ const config = require('./package.json');
 
 const webpack = require('webpack');
 const webpackConfig = require('./webpack.config.js');
+webpackConfig.mode = 'development';
 const webpackDevMiddleware = require('webpack-dev-middleware');
 
 var app = express();
